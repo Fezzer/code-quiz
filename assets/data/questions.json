@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = \u0027Lydia\u0027;\n  let age = 21;\n}\n\nsayHi();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = \u0027Lydia\u0027;\n  let age = 21;\n}\n\nsayHi();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -28,7 +28,7 @@
   },
   {
     "id": "2",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfor (var i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\nfor (let i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfor (var i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\nfor (let i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -50,7 +50,7 @@
   },
   {
     "id": "3",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () =\u003E 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () =\u003E 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -77,7 +77,7 @@
   },
   {
     "id": "4",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n\u002Btrue;\n!\u0027Lydia\u0027;\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n\u002Btrue;\n!\u0027Lydia\u0027;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -99,7 +99,7 @@
   },
   {
     "id": "5",
-    "question": "Which one is true?\n\n\u0060\u0060\u0060javascript\nconst bird = {\n  size: \u0027small\u0027,\n};\n\nconst mouse = {\n  name: \u0027Mickey\u0027,\n  small: true,\n};\n\u0060\u0060\u0060",
+    "question": "Which one is true?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst bird = {\n  size: \u0027small\u0027,\n};\n\nconst mouse = {\n  name: \u0027Mickey\u0027,\n  small: true,\n};\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -126,7 +126,7 @@
   },
   {
     "id": "6",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet c = { greeting: \u0027Hey!\u0027 };\nlet d;\n\nd = c;\nc.greeting = \u0027Hello\u0027;\nconsole.log(d.greeting);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet c = { greeting: \u0027Hey!\u0027 };\nlet d;\n\nd = c;\nc.greeting = \u0027Hello\u0027;\nconsole.log(d.greeting);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -158,7 +158,7 @@
   },
   {
     "id": "7",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet a = 3;\nlet b = new Number(3);\nlet c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet a = 3;\nlet b = new Number(3);\nlet c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -185,7 +185,7 @@
   },
   {
     "id": "8",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor;\n    return this.newColor;\n  }\n\n  constructor({ newColor = \u0027green\u0027 } = {}) {\n    this.newColor = newColor;\n  }\n}\n\nconst freddie = new Chameleon({ newColor: \u0027purple\u0027 });\nconsole.log(freddie.colorChange(\u0027orange\u0027));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor;\n    return this.newColor;\n  }\n\n  constructor({ newColor = \u0027green\u0027 } = {}) {\n    this.newColor = newColor;\n  }\n}\n\nconst freddie = new Chameleon({ newColor: \u0027purple\u0027 });\nconsole.log(freddie.colorChange(\u0027orange\u0027));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -212,7 +212,7 @@
   },
   {
     "id": "9",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet greeting;\ngreetign = {}; // Typo!\nconsole.log(greetign);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet greeting;\ngreetign = {}; // Typo!\nconsole.log(greetign);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -234,7 +234,7 @@
   },
   {
     "id": "10",
-    "question": "What happens when we do this?\n\n\u0060\u0060\u0060javascript\nfunction bark() {\n  console.log(\u0027Woof!\u0027);\n}\n\nbark.animal = \u0027dog\u0027;\n\u0060\u0060\u0060",
+    "question": "What happens when we do this?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction bark() {\n  console.log(\u0027Woof!\u0027);\n}\n\nbark.animal = \u0027dog\u0027;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -261,7 +261,7 @@
   },
   {
     "id": "11",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nPerson.getFullName = function() {\n  return \u0060${this.firstName} ${this.lastName}\u0060;\n};\n\nconsole.log(member.getFullName());\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nPerson.getFullName = function() {\n  return \u0060${this.firstName} ${this.lastName}\u0060;\n};\n\nconsole.log(member.getFullName());\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -288,7 +288,7 @@
   },
   {
     "id": "12",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nconst sarah = Person(\u0027Sarah\u0027, \u0027Smith\u0027);\n\nconsole.log(lydia);\nconsole.log(sarah);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nconst sarah = Person(\u0027Sarah\u0027, \u0027Smith\u0027);\n\nconsole.log(lydia);\nconsole.log(sarah);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -359,7 +359,7 @@
   },
   {
     "id": "15",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\nsum(1, \u00272\u0027);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\nsum(1, \u00272\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -386,7 +386,7 @@
   },
   {
     "id": "16",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet number = 0;\nconsole.log(number\u002B\u002B);\nconsole.log(\u002B\u002Bnumber);\nconsole.log(number);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet number = 0;\nconsole.log(number\u002B\u002B);\nconsole.log(\u002B\u002Bnumber);\nconsole.log(number);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -413,7 +413,7 @@
   },
   {
     "id": "17",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = \u0027Lydia\u0027;\nconst age = 21;\n\ngetPersonInfo\u0060${person} is ${age} years old\u0060;\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = \u0027Lydia\u0027;\nconst age = 21;\n\ngetPersonInfo\u0060${person} is ${age} years old\u0060;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -435,7 +435,7 @@
   },
   {
     "id": "18",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction checkAge(data) {\n  if (data === { age: 18 }) {\n    console.log(\u0027You are an adult!\u0027);\n  } else if (data == { age: 18 }) {\n    console.log(\u0027You are still an adult.\u0027);\n  } else {\n    console.log(\u0060Hmm.. You don\u0027t have an age I guess\u0060);\n  }\n}\n\ncheckAge({ age: 18 });\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction checkAge(data) {\n  if (data === { age: 18 }) {\n    console.log(\u0027You are an adult!\u0027);\n  } else if (data == { age: 18 }) {\n    console.log(\u0027You are still an adult.\u0027);\n  } else {\n    console.log(\u0060Hmm.. You don\u0027t have an age I guess\u0060);\n  }\n}\n\ncheckAge({ age: 18 });\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -457,7 +457,7 @@
   },
   {
     "id": "19",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getAge(...args) {\n  console.log(typeof args);\n}\n\ngetAge(21);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getAge(...args) {\n  console.log(typeof args);\n}\n\ngetAge(21);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -484,7 +484,7 @@
   },
   {
     "id": "20",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getAge() {\n  \u0027use strict\u0027;\n  age = 21;\n  console.log(age);\n}\n\ngetAge();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getAge() {\n  \u0027use strict\u0027;\n  age = 21;\n  console.log(age);\n}\n\ngetAge();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -511,7 +511,7 @@
   },
   {
     "id": "21",
-    "question": "What\u0027s the value of \u0060sum\u0060?\n\n\u0060\u0060\u0060javascript\nconst sum = eval(\u002710*10\u002B5\u0027);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the value of \u0060sum\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst sum = eval(\u002710*10\u002B5\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -538,7 +538,7 @@
   },
   {
     "id": "22",
-    "question": "How long is cool_secret accessible?\n\n\u0060\u0060\u0060javascript\nsessionStorage.setItem(\u0027cool_secret\u0027, 123);\n\u0060\u0060\u0060",
+    "question": "How long is cool_secret accessible?\n\n\u003Cpre class=\u0027js\u0027\u003E\nsessionStorage.setItem(\u0027cool_secret\u0027, 123);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -565,7 +565,7 @@
   },
   {
     "id": "23",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nvar num = 8;\nvar num = 10;\n\nconsole.log(num);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nvar num = 8;\nvar num = 10;\n\nconsole.log(num);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -592,7 +592,7 @@
   },
   {
     "id": "24",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst obj = { 1: \u0027a\u0027, 2: \u0027b\u0027, 3: \u0027c\u0027 };\nconst set = new Set([1, 2, 3, 4, 5]);\n\nobj.hasOwnProperty(\u00271\u0027);\nobj.hasOwnProperty(1);\nset.has(\u00271\u0027);\nset.has(1);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst obj = { 1: \u0027a\u0027, 2: \u0027b\u0027, 3: \u0027c\u0027 };\nconst set = new Set([1, 2, 3, 4, 5]);\n\nobj.hasOwnProperty(\u00271\u0027);\nobj.hasOwnProperty(1);\nset.has(\u00271\u0027);\nset.has(1);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -619,7 +619,7 @@
   },
   {
     "id": "25",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst obj = { a: \u0027one\u0027, b: \u0027two\u0027, a: \u0027three\u0027 };\nconsole.log(obj);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst obj = { a: \u0027one\u0027, b: \u0027two\u0027, a: \u0027three\u0027 };\nconsole.log(obj);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -668,7 +668,7 @@
   },
   {
     "id": "27",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfor (let i = 1; i \u003C 5; i\u002B\u002B) {\n  if (i === 3) continue;\n  console.log(i);\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfor (let i = 1; i \u003C 5; i\u002B\u002B) {\n  if (i === 3) continue;\n  console.log(i);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -695,7 +695,7 @@
   },
   {
     "id": "28",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nString.prototype.giveLydiaPizza = () =\u003E {\n  return \u0027Just give Lydia pizza already!\u0027;\n};\n\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name.giveLydiaPizza())\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nString.prototype.giveLydiaPizza = () =\u003E {\n  return \u0027Just give Lydia pizza already!\u0027;\n};\n\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name.giveLydiaPizza())\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -722,7 +722,7 @@
   },
   {
     "id": "29",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst a = {};\nconst b = { key: \u0027b\u0027 };\nconst c = { key: \u0027c\u0027 };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst a = {};\nconst b = { key: \u0027b\u0027 };\nconst c = { key: \u0027c\u0027 };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -749,7 +749,7 @@
   },
   {
     "id": "30",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst foo = () =\u003E console.log(\u0027First\u0027);\nconst bar = () =\u003E setTimeout(() =\u003E console.log(\u0027Second\u0027));\nconst baz = () =\u003E console.log(\u0027Third\u0027);\n\nbar();\nfoo();\nbaz();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst foo = () =\u003E console.log(\u0027First\u0027);\nconst bar = () =\u003E setTimeout(() =\u003E console.log(\u0027Second\u0027));\nconst baz = () =\u003E console.log(\u0027Third\u0027);\n\nbar();\nfoo();\nbaz();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -776,7 +776,7 @@
   },
   {
     "id": "31",
-    "question": "What is the event.target when clicking the button?\n\n\u0060\u0060\u0060html\n\u003Cdiv onclick=\u0022console.log(\u0027first div\u0027)\u0022\u003E\n  \u003Cdiv onclick=\u0022console.log(\u0027second div\u0027)\u0022\u003E\n    \u003Cbutton onclick=\u0022console.log(\u0027button\u0027)\u0022\u003E\n      Click!\n    \u003C/button\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u0060\u0060\u0060",
+    "question": "What is the event.target when clicking the button?\n\n\u003C/pre\u003Ehtml\n\u003Cdiv onclick=\u0022console.log(\u0027first div\u0027)\u0022\u003E\n  \u003Cdiv onclick=\u0022console.log(\u0027second div\u0027)\u0022\u003E\n    \u003Cbutton onclick=\u0022console.log(\u0027button\u0027)\u0022\u003E\n      Click!\n    \u003C/button\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -803,7 +803,7 @@
   },
   {
     "id": "32",
-    "question": "When you click the paragraph, what\u0027s the logged output?\n\n\u0060\u0060\u0060html\n\u003Cdiv onclick=\u0022console.log(\u0027div\u0027)\u0022\u003E\n  \u003Cp onclick=\u0022console.log(\u0027p\u0027)\u0022\u003E\n    Click here!\n  \u003C/p\u003E\n\u003C/div\u003E\n\u0060\u0060\u0060",
+    "question": "When you click the paragraph, what\u0027s the logged output?\n\n\u003C/pre\u003Ehtml\n\u003Cdiv onclick=\u0022console.log(\u0027div\u0027)\u0022\u003E\n  \u003Cp onclick=\u0022console.log(\u0027p\u0027)\u0022\u003E\n    Click here!\n  \u003C/p\u003E\n\u003C/div\u003E\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -830,7 +830,7 @@
   },
   {
     "id": "33",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = { name: \u0027Lydia\u0027 };\n\nfunction sayHi(age) {\n  return \u0060${this.name} is ${age}\u0060;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = { name: \u0027Lydia\u0027 };\n\nfunction sayHi(age) {\n  return \u0060${this.name} is ${age}\u0060;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -857,7 +857,7 @@
   },
   {
     "id": "34",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction sayHi() {\n  return (() =\u003E 0)();\n}\n\nconsole.log(typeof sayHi());\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sayHi() {\n  return (() =\u003E 0)();\n}\n\nconsole.log(typeof sayHi());\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -884,7 +884,7 @@
   },
   {
     "id": "35",
-    "question": "Which of these values are falsy?\n\n\u0060\u0060\u0060javascript\n0;\nnew Number(0);\n(\u0027\u0027);\n(\u0027 \u0027);\nnew Boolean(false);\nundefined;\n\u0060\u0060\u0060",
+    "question": "Which of these values are falsy?\n\n\u003Cpre class=\u0027js\u0027\u003E\n0;\nnew Number(0);\n(\u0027\u0027);\n(\u0027 \u0027);\nnew Boolean(false);\nundefined;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -911,7 +911,7 @@
   },
   {
     "id": "36",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(typeof typeof 1);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(typeof typeof 1);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -938,7 +938,7 @@
   },
   {
     "id": "37",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst numbers = [1, 2, 3];\nnumbers[10] = 11;\nconsole.log(numbers);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst numbers = [1, 2, 3];\nnumbers[10] = 11;\nconsole.log(numbers);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -965,7 +965,7 @@
   },
   {
     "id": "38",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n(() =\u003E {\n  let x, y;\n  try {\n    throw new Error();\n  } catch (x) {\n    (x = 1), (y = 2);\n    console.log(x);\n  }\n  console.log(x);\n  console.log(y);\n})();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n(() =\u003E {\n  let x, y;\n  try {\n    throw new Error();\n  } catch (x) {\n    (x = 1), (y = 2);\n    console.log(x);\n  }\n  console.log(x);\n  console.log(y);\n})();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1019,7 +1019,7 @@
   },
   {
     "id": "40",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n[[0, 1], [2, 3]].reduce(\n  (acc, cur) =\u003E {\n    return acc.concat(cur);\n  },\n  [1, 2],\n);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[[0, 1], [2, 3]].reduce(\n  (acc, cur) =\u003E {\n    return acc.concat(cur);\n  },\n  [1, 2],\n);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1046,7 +1046,7 @@
   },
   {
     "id": "41",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n!!null;\n!!\u0027\u0027;\n!!1;\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n!!null;\n!!\u0027\u0027;\n!!1;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1073,7 +1073,7 @@
   },
   {
     "id": "42",
-    "question": "What does the \u0060setInterval\u0060 method return in the browser?\n\n\u0060\u0060\u0060javascript\nsetInterval(() =\u003E console.log(\u0027Hi\u0027), 1000);\n\u0060\u0060\u0060",
+    "question": "What does the \u0060setInterval\u0060 method return in the browser?\n\n\u003Cpre class=\u0027js\u0027\u003E\nsetInterval(() =\u003E console.log(\u0027Hi\u0027), 1000);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1100,7 +1100,7 @@
   },
   {
     "id": "43",
-    "question": "What does this return?\n\n\u0060\u0060\u0060javascript\n[...\u0027Lydia\u0027];\n\u0060\u0060\u0060",
+    "question": "What does this return?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[...\u0027Lydia\u0027];\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1127,7 +1127,7 @@
   },
   {
     "id": "44",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction* generator(i) {\n  yield i;\n  yield i * 2;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next().value);\nconsole.log(gen.next().value);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction* generator(i) {\n  yield i;\n  yield i * 2;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next().value);\nconsole.log(gen.next().value);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1154,7 +1154,7 @@
   },
   {
     "id": "45",
-    "question": "What does this return?\n\n\u0060\u0060\u0060javascript\nconst firstPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 500, \u0027one\u0027);\n});\n\nconst secondPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 100, \u0027two\u0027);\n});\n\nPromise.race([firstPromise, secondPromise]).then(res =\u003E console.log(res));\n\u0060\u0060\u0060",
+    "question": "What does this return?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst firstPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 500, \u0027one\u0027);\n});\n\nconst secondPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 100, \u0027two\u0027);\n});\n\nPromise.race([firstPromise, secondPromise]).then(res =\u003E console.log(res));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1181,7 +1181,7 @@
   },
   {
     "id": "46",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet person = { name: \u0027Lydia\u0027 };\nconst members = [person];\nperson = null;\n\nconsole.log(members);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet person = { name: \u0027Lydia\u0027 };\nconst members = [person];\nperson = null;\n\nconsole.log(members);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1208,7 +1208,7 @@
   },
   {
     "id": "47",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const item in person) {\n  console.log(item);\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const item in person) {\n  console.log(item);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1235,7 +1235,7 @@
   },
   {
     "id": "48",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(3 \u002B 4 \u002B \u00275\u0027);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(3 \u002B 4 \u002B \u00275\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1262,7 +1262,7 @@
   },
   {
     "id": "49",
-    "question": "What\u0027s the value of \u0060num\u0060?\n\n\u0060\u0060\u0060javascript\nconst num = parseInt(\u00277*6\u0027, 10);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the value of \u0060num\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst num = parseInt(\u00277*6\u0027, 10);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1289,7 +1289,7 @@
   },
   {
     "id": "50",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n[1, 2, 3].map(num =\u003E {\n  if (typeof num === \u0027number\u0027) return;\n  return num * 2;\n});\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[1, 2, 3].map(num =\u003E {\n  if (typeof num === \u0027number\u0027) return;\n  return num * 2;\n});\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1316,7 +1316,7 @@
   },
   {
     "id": "51",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getInfo(member, year) {\n  member.name = \u0027Lydia\u0027;\n  year = \u00271998\u0027;\n}\n\nconst person = { name: \u0027Sarah\u0027 };\nconst birthYear = \u00271997\u0027;\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getInfo(member, year) {\n  member.name = \u0027Lydia\u0027;\n  year = \u00271998\u0027;\n}\n\nconst person = { name: \u0027Sarah\u0027 };\nconst birthYear = \u00271997\u0027;\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1343,7 +1343,7 @@
   },
   {
     "id": "52",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction greeting() {\n  throw \u0027Hello world!\u0027;\n}\n\nfunction sayHi() {\n  try {\n    const data = greeting();\n    console.log(\u0027It worked!\u0027, data);\n  } catch (e) {\n    console.log(\u0027Oh no an error:\u0027, e);\n  }\n}\n\nsayHi();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction greeting() {\n  throw \u0027Hello world!\u0027;\n}\n\nfunction sayHi() {\n  try {\n    const data = greeting();\n    console.log(\u0027It worked!\u0027, data);\n  } catch (e) {\n    console.log(\u0027Oh no an error:\u0027, e);\n  }\n}\n\nsayHi();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1370,7 +1370,7 @@
   },
   {
     "id": "53",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction Car() {\n  this.make = \u0027Lamborghini\u0027;\n  return { make: \u0027Maserati\u0027 };\n}\n\nconst myCar = new Car();\nconsole.log(myCar.make);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction Car() {\n  this.make = \u0027Lamborghini\u0027;\n  return { make: \u0027Maserati\u0027 };\n}\n\nconst myCar = new Car();\nconsole.log(myCar.make);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1397,7 +1397,7 @@
   },
   {
     "id": "54",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n(() =\u003E {\n  let x = (y = 10);\n})();\n\nconsole.log(typeof x);\nconsole.log(typeof y);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n(() =\u003E {\n  let x = (y = 10);\n})();\n\nconsole.log(typeof x);\nconsole.log(typeof y);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1424,7 +1424,7 @@
   },
   {
     "id": "55",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nDog.prototype.bark = function() {\n  console.log(\u0060Woof I am ${this.name}\u0060);\n};\n\nconst pet = new Dog(\u0027Mara\u0027);\n\npet.bark();\n\ndelete Dog.prototype.bark;\n\npet.bark();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nDog.prototype.bark = function() {\n  console.log(\u0060Woof I am ${this.name}\u0060);\n};\n\nconst pet = new Dog(\u0027Mara\u0027);\n\npet.bark();\n\ndelete Dog.prototype.bark;\n\npet.bark();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1451,7 +1451,7 @@
   },
   {
     "id": "56",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst set = new Set([1, 1, 2, 3, 4]);\n\nconsole.log(set);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst set = new Set([1, 1, 2, 3, 4]);\n\nconsole.log(set);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1478,7 +1478,7 @@
   },
   {
     "id": "57",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n// counter.js\nlet counter = 10;\nexport default counter;\n\u0060\u0060\u0060\n\n\u0060\u0060\u0060javascript\n// index.js\nimport myCounter from \u0027./counter\u0027;\n\nmyCounter \u002B= 1;\n\nconsole.log(myCounter);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// counter.js\nlet counter = 10;\nexport default counter;\n\u003C/pre\u003E\n\n\u003Cpre class=\u0027js\u0027\u003E\n// index.js\nimport myCounter from \u0027./counter\u0027;\n\nmyCounter \u002B= 1;\n\nconsole.log(myCounter);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1505,7 +1505,7 @@
   },
   {
     "id": "58",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst name = \u0027Lydia\u0027;\nage = 21;\n\nconsole.log(delete name);\nconsole.log(delete age);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia\u0027;\nage = 21;\n\nconsole.log(delete name);\nconsole.log(delete age);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1532,7 +1532,7 @@
   },
   {
     "id": "59",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst [y] = numbers;\n\nconsole.log(y);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst numbers = [1, 2, 3, 4, 5];\nconst [y] = numbers;\n\nconsole.log(y);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1559,7 +1559,7 @@
   },
   {
     "id": "60",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst user = { name: \u0027Lydia\u0027, age: 21 };\nconst admin = { admin: true, ...user };\n\nconsole.log(admin);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst user = { name: \u0027Lydia\u0027, age: 21 };\nconst admin = { admin: true, ...user };\n\nconsole.log(admin);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1586,7 +1586,7 @@
   },
   {
     "id": "61",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = { name: \u0027Lydia\u0027 };\n\nObject.defineProperty(person, \u0027age\u0027, { value: 21 });\n\nconsole.log(person);\nconsole.log(Object.keys(person));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = { name: \u0027Lydia\u0027 };\n\nObject.defineProperty(person, \u0027age\u0027, { value: 21 });\n\nconsole.log(person);\nconsole.log(Object.keys(person));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1613,7 +1613,7 @@
   },
   {
     "id": "62",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst settings = {\n  username: \u0027lydiahallie\u0027,\n  level: 19,\n  health: 90,\n};\n\nconst data = JSON.stringify(settings, [\u0027level\u0027, \u0027health\u0027]);\nconsole.log(data);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst settings = {\n  username: \u0027lydiahallie\u0027,\n  level: 19,\n  health: 90,\n};\n\nconst data = JSON.stringify(settings, [\u0027level\u0027, \u0027health\u0027]);\nconsole.log(data);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1640,7 +1640,7 @@
   },
   {
     "id": "63",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet num = 10;\n\nconst increaseNumber = () =\u003E num\u002B\u002B;\nconst increasePassedNumber = number =\u003E number\u002B\u002B;\n\nconst num1 = increaseNumber();\nconst num2 = increasePassedNumber(num1);\n\nconsole.log(num1);\nconsole.log(num2);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet num = 10;\n\nconst increaseNumber = () =\u003E num\u002B\u002B;\nconst increasePassedNumber = number =\u003E number\u002B\u002B;\n\nconst num1 = increaseNumber();\nconst num2 = increasePassedNumber(num1);\n\nconsole.log(num1);\nconsole.log(num2);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1667,7 +1667,7 @@
   },
   {
     "id": "64",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst value = { number: 10 };\n\nconst multiply = (x = { ...value }) =\u003E {\n  console.log((x.number *= 2));\n};\n\nmultiply();\nmultiply();\nmultiply(value);\nmultiply(value);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst value = { number: 10 };\n\nconst multiply = (x = { ...value }) =\u003E {\n  console.log((x.number *= 2));\n};\n\nmultiply();\nmultiply();\nmultiply(value);\nmultiply(value);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1694,7 +1694,7 @@
   },
   {
     "id": "65",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n[1, 2, 3, 4].reduce((x, y) =\u003E console.log(x, y));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[1, 2, 3, 4].reduce((x, y) =\u003E console.log(x, y));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1721,7 +1721,7 @@
   },
   {
     "id": "66",
-    "question": "With which constructor can we successfully extend the \u0060Dog\u0060 class?\n\n\u0060\u0060\u0060javascript\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n};\n\nclass Labrador extends Dog {\n  // 1\n  constructor(name, size) {\n    this.size = size;\n  }\n  // 2\n  constructor(name, size) {\n    super(name);\n    this.size = size;\n  }\n  // 3\n  constructor(size) {\n    super(name);\n    this.size = size;\n  }\n  // 4\n  constructor(name, size) {\n    this.name = name;\n    this.size = size;\n  }\n\n};\n\u0060\u0060\u0060",
+    "question": "With which constructor can we successfully extend the \u0060Dog\u0060 class?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n};\n\nclass Labrador extends Dog {\n  // 1\n  constructor(name, size) {\n    this.size = size;\n  }\n  // 2\n  constructor(name, size) {\n    super(name);\n    this.size = size;\n  }\n  // 3\n  constructor(size) {\n    super(name);\n    this.size = size;\n  }\n  // 4\n  constructor(name, size) {\n    this.name = name;\n    this.size = size;\n  }\n\n};\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1748,7 +1748,7 @@
   },
   {
     "id": "67",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n// index.js\nconsole.log(\u0027running index.js\u0027);\nimport { sum } from \u0027./sum.js\u0027;\nconsole.log(sum(1, 2));\n\n// sum.js\nconsole.log(\u0027running sum.js\u0027);\nexport const sum = (a, b) =\u003E a \u002B b;\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// index.js\nconsole.log(\u0027running index.js\u0027);\nimport { sum } from \u0027./sum.js\u0027;\nconsole.log(sum(1, 2));\n\n// sum.js\nconsole.log(\u0027running sum.js\u0027);\nexport const sum = (a, b) =\u003E a \u002B b;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1775,7 +1775,7 @@
   },
   {
     "id": "68",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(Number(2) === Number(2));\nconsole.log(Boolean(false) === Boolean(false));\nconsole.log(Symbol(\u0027foo\u0027) === Symbol(\u0027foo\u0027));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(Number(2) === Number(2));\nconsole.log(Boolean(false) === Boolean(false));\nconsole.log(Symbol(\u0027foo\u0027) === Symbol(\u0027foo\u0027));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1802,7 +1802,7 @@
   },
   {
     "id": "69",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst name = \u0027Lydia Hallie\u0027;\nconsole.log(name.padStart(13));\nconsole.log(name.padStart(2));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\nconsole.log(name.padStart(13));\nconsole.log(name.padStart(2));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1829,7 +1829,7 @@
   },
   {
     "id": "70",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(\u0027\uD83E\uDD51\u0027 \u002B \u0027\uD83D\uDCBB\u0027);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0027\uD83E\uDD51\u0027 \u002B \u0027\uD83D\uDCBB\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1856,7 +1856,7 @@
   },
   {
     "id": "71",
-    "question": "How can we log the values that are commented out after the console.log statement?\n\n\u0060\u0060\u0060javascript\nfunction* startGame() {\n  const answer = yield \u0027Do you love JavaScript?\u0027;\n  if (answer !== \u0027Yes\u0027) {\n    return \u0022Oh wow... Guess we\u0027re done here\u0022;\n  }\n  return \u0027JavaScript loves you back \u2764\uFE0F\u0027;\n}\n\nconst game = startGame();\nconsole.log(/* 1 */); // Do you love JavaScript?\nconsole.log(/* 2 */); // JavaScript loves you back \u2764\uFE0F\n\u0060\u0060\u0060",
+    "question": "How can we log the values that are commented out after the console.log statement?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction* startGame() {\n  const answer = yield \u0027Do you love JavaScript?\u0027;\n  if (answer !== \u0027Yes\u0027) {\n    return \u0022Oh wow... Guess we\u0027re done here\u0022;\n  }\n  return \u0027JavaScript loves you back \u2764\uFE0F\u0027;\n}\n\nconst game = startGame();\nconsole.log(/* 1 */); // Do you love JavaScript?\nconsole.log(/* 2 */); // JavaScript loves you back \u2764\uFE0F\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1883,7 +1883,7 @@
   },
   {
     "id": "72",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(String.raw\u0060Hello\\nworld\u0060);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(String.raw\u0060Hello\\nworld\u0060);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1910,7 +1910,7 @@
   },
   {
     "id": "73",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nasync function getData() {\n  return await Promise.resolve(\u0027I made it!\u0027);\n}\n\nconst data = getData();\nconsole.log(data);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nasync function getData() {\n  return await Promise.resolve(\u0027I made it!\u0027);\n}\n\nconst data = getData();\nconsole.log(data);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1937,7 +1937,7 @@
   },
   {
     "id": "74",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction addToList(item, list) {\n  return list.push(item);\n}\n\nconst result = addToList(\u0027apple\u0027, [\u0027banana\u0027]);\nconsole.log(result);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction addToList(item, list) {\n  return list.push(item);\n}\n\nconst result = addToList(\u0027apple\u0027, [\u0027banana\u0027]);\nconsole.log(result);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1964,7 +1964,7 @@
   },
   {
     "id": "75",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst box = { x: 10, y: 20 };\n\nObject.freeze(box);\n\nconst shape = box;\nshape.x = 100;\n\nconsole.log(shape);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst box = { x: 10, y: 20 };\n\nObject.freeze(box);\n\nconst shape = box;\nshape.x = 100;\n\nconsole.log(shape);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -1991,7 +1991,7 @@
   },
   {
     "id": "76",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst { name: myName } = { name: \u0027Lydia\u0027 };\n\nconsole.log(name);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst { name: myName } = { name: \u0027Lydia\u0027 };\n\nconsole.log(name);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2018,7 +2018,7 @@
   },
   {
     "id": "77",
-    "question": "Is this a pure function?\n\n\u0060\u0060\u0060javascript\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\u0060\u0060\u0060",
+    "question": "Is this a pure function?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2035,7 +2035,7 @@
   },
   {
     "id": "78",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nconst add = () =\u003E {\n  const cache = {};\n  return num =\u003E {\n    if (num in cache) {\n      return \u0060From cache! ${cache[num]}\u0060;\n    } else {\n      const result = num \u002B 10;\n      cache[num] = result;\n      return \u0060Calculated! ${result}\u0060;\n    }\n  };\n};\n\nconst addFunction = add();\nconsole.log(addFunction(10));\nconsole.log(addFunction(10));\nconsole.log(addFunction(5 * 2));\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst add = () =\u003E {\n  const cache = {};\n  return num =\u003E {\n    if (num in cache) {\n      return \u0060From cache! ${cache[num]}\u0060;\n    } else {\n      const result = num \u002B 10;\n      cache[num] = result;\n      return \u0060Calculated! ${result}\u0060;\n    }\n  };\n};\n\nconst addFunction = add();\nconsole.log(addFunction(10));\nconsole.log(addFunction(10));\nconsole.log(addFunction(5 * 2));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2062,7 +2062,7 @@
   },
   {
     "id": "79",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nconst myLifeSummedUp = [\u0027\u2615\u0027, \u0027\uD83D\uDCBB\u0027, \u0027\uD83C\uDF77\u0027, \u0027\uD83C\uDF6B\u0027];\n\nfor (let item in myLifeSummedUp) {\n  console.log(item);\n}\n\nfor (let item of myLifeSummedUp) {\n  console.log(item);\n}\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myLifeSummedUp = [\u0027\u2615\u0027, \u0027\uD83D\uDCBB\u0027, \u0027\uD83C\uDF77\u0027, \u0027\uD83C\uDF6B\u0027];\n\nfor (let item in myLifeSummedUp) {\n  console.log(item);\n}\n\nfor (let item of myLifeSummedUp) {\n  console.log(item);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2089,7 +2089,7 @@
   },
   {
     "id": "80",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nconst list = [1 \u002B 2, 1 * 2, 1 / 2];\nconsole.log(list);\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst list = [1 \u002B 2, 1 * 2, 1 / 2];\nconsole.log(list);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2116,7 +2116,7 @@
   },
   {
     "id": "81",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nfunction sayHi(name) {\n  return \u0060Hi there, ${name}\u0060;\n}\n\nconsole.log(sayHi());\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sayHi(name) {\n  return \u0060Hi there, ${name}\u0060;\n}\n\nconsole.log(sayHi());\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2143,7 +2143,7 @@
   },
   {
     "id": "82",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nvar status = \u0027\uD83D\uDE0E\u0027;\n\nsetTimeout(() =\u003E {\n  const status = \u0027\uD83D\uDE0D\u0027;\n\n  const data = {\n    status: \u0027\uD83E\uDD51\u0027,\n    getStatus() {\n      return this.status;\n    },\n  };\n\n  console.log(data.getStatus());\n  console.log(data.getStatus.call(this));\n}, 0);\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nvar status = \u0027\uD83D\uDE0E\u0027;\n\nsetTimeout(() =\u003E {\n  const status = \u0027\uD83D\uDE0D\u0027;\n\n  const data = {\n    status: \u0027\uD83E\uDD51\u0027,\n    getStatus() {\n      return this.status;\n    },\n  };\n\n  console.log(data.getStatus());\n  console.log(data.getStatus.call(this));\n}, 0);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2170,7 +2170,7 @@
   },
   {
     "id": "83",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nlet city = person.city;\ncity = \u0027Amsterdam\u0027;\n\nconsole.log(person);\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nlet city = person.city;\ncity = \u0027Amsterdam\u0027;\n\nconsole.log(person);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2197,7 +2197,7 @@
   },
   {
     "id": "84",
-    "question": "What is the output?\n\n\u0060\u0060\u0060javascript\nfunction checkAge(age) {\n  if (age \u003C 18) {\n    const message = \u0022Sorry, you\u0027re too young.\u0022;\n  } else {\n    const message = \u0022Yay! You\u0027re old enough!\u0022;\n  }\n\n  return message;\n}\n\nconsole.log(checkAge(21));\n\u0060\u0060\u0060",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction checkAge(age) {\n  if (age \u003C 18) {\n    const message = \u0022Sorry, you\u0027re too young.\u0022;\n  } else {\n    const message = \u0022Yay! You\u0027re old enough!\u0022;\n  }\n\n  return message;\n}\n\nconsole.log(checkAge(21));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2224,7 +2224,7 @@
   },
   {
     "id": "85",
-    "question": "What kind of information would get logged?\n\n\u0060\u0060\u0060javascript\nfetch(\u0027https://www.website.com/api/user/1\u0027)\n  .then(res =\u003E res.json())\n  .then(res =\u003E console.log(res));\n\u0060\u0060\u0060",
+    "question": "What kind of information would get logged?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfetch(\u0027https://www.website.com/api/user/1\u0027)\n  .then(res =\u003E res.json())\n  .then(res =\u003E console.log(res));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2251,7 +2251,7 @@
   },
   {
     "id": "86",
-    "question": "Which option is a way to set \u0060hasName\u0060 equal to \u0060true\u0060, provided you cannot pass \u0060true\u0060 as an argument?\n\n\u0060\u0060\u0060javascript\nfunction getName(name) {\n  const hasName = //\n}\n\u0060\u0060\u0060",
+    "question": "Which option is a way to set \u0060hasName\u0060 equal to \u0060true\u0060, provided you cannot pass \u0060true\u0060 as an argument?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getName(name) {\n  const hasName = //\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2278,7 +2278,7 @@
   },
   {
     "id": "87",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(\u0027I want pizza\u0027[0]);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0027I want pizza\u0027[0]);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2305,7 +2305,7 @@
   },
   {
     "id": "88",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction sum(num1, num2 = num1) {\n  console.log(num1 \u002B num2);\n}\n\nsum(10);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sum(num1, num2 = num1) {\n  console.log(num1 \u002B num2);\n}\n\nsum(10);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2332,7 +2332,7 @@
   },
   {
     "id": "89",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\n// module.js\nexport default () =\u003E \u0027Hello world\u0027;\nexport const name = \u0027Lydia\u0027;\n\n// index.js\nimport * as data from \u0027./module\u0027;\n\nconsole.log(data);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// module.js\nexport default () =\u003E \u0027Hello world\u0027;\nexport const name = \u0027Lydia\u0027;\n\n// index.js\nimport * as data from \u0027./module\u0027;\n\nconsole.log(data);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2359,7 +2359,7 @@
   },
   {
     "id": "90",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Person {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nconst member = new Person(\u0027John\u0027);\nconsole.log(typeof member);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Person {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nconst member = new Person(\u0027John\u0027);\nconsole.log(typeof member);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2386,7 +2386,7 @@
   },
   {
     "id": "91",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet newList = [1, 2, 3].push(4);\n\nconsole.log(newList.push(5));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet newList = [1, 2, 3].push(4);\n\nconsole.log(newList.push(5));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2413,7 +2413,7 @@
   },
   {
     "id": "92",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction giveLydiaPizza() {\n  return \u0027Here is pizza!\u0027;\n}\n\nconst giveLydiaChocolate = () =\u003E\n  \u0022Here\u0027s chocolate... now go hit the gym already.\u0022;\n\nconsole.log(giveLydiaPizza.prototype);\nconsole.log(giveLydiaChocolate.prototype);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction giveLydiaPizza() {\n  return \u0027Here is pizza!\u0027;\n}\n\nconst giveLydiaChocolate = () =\u003E\n  \u0022Here\u0027s chocolate... now go hit the gym already.\u0022;\n\nconsole.log(giveLydiaPizza.prototype);\nconsole.log(giveLydiaChocolate.prototype);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2440,7 +2440,7 @@
   },
   {
     "id": "93",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const [x, y] of Object.entries(person)) {\n  console.log(x, y);\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const [x, y] of Object.entries(person)) {\n  console.log(x, y);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2467,7 +2467,7 @@
   },
   {
     "id": "94",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getItems(fruitList, ...args, favoriteFruit) {\n  return [...fruitList, ...args, favoriteFruit]\n}\n\ngetItems([\u0022banana\u0022, \u0022apple\u0022], \u0022pear\u0022, \u0022orange\u0022)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getItems(fruitList, ...args, favoriteFruit) {\n  return [...fruitList, ...args, favoriteFruit]\n}\n\ngetItems([\u0022banana\u0022, \u0022apple\u0022], \u0022pear\u0022, \u0022orange\u0022)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2494,7 +2494,7 @@
   },
   {
     "id": "95",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction nums(a, b) {\n  if (a \u003E b) console.log(\u0027a is bigger\u0027);\n  else console.log(\u0027b is bigger\u0027);\n  return\n  a \u002B b;\n}\n\nconsole.log(nums(4, 2));\nconsole.log(nums(1, 2));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction nums(a, b) {\n  if (a \u003E b) console.log(\u0027a is bigger\u0027);\n  else console.log(\u0027b is bigger\u0027);\n  return\n  a \u002B b;\n}\n\nconsole.log(nums(4, 2));\nconsole.log(nums(1, 2));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2521,7 +2521,7 @@
   },
   {
     "id": "96",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Person {\n  constructor() {\n    this.name = \u0027Lydia\u0027;\n  }\n}\n\nPerson = class AnotherPerson {\n  constructor() {\n    this.name = \u0027Sarah\u0027;\n  }\n};\n\nconst member = new Person();\nconsole.log(member.name);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Person {\n  constructor() {\n    this.name = \u0027Lydia\u0027;\n  }\n}\n\nPerson = class AnotherPerson {\n  constructor() {\n    this.name = \u0027Sarah\u0027;\n  }\n};\n\nconst member = new Person();\nconsole.log(member.name);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2548,7 +2548,7 @@
   },
   {
     "id": "97",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst info = {\n  [Symbol(\u0027a\u0027)]: \u0027b\u0027,\n};\n\nconsole.log(info);\nconsole.log(Object.keys(info));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst info = {\n  [Symbol(\u0027a\u0027)]: \u0027b\u0027,\n};\n\nconsole.log(info);\nconsole.log(Object.keys(info));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2575,7 +2575,7 @@
   },
   {
     "id": "98",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst getList = ([x, ...y]) =\u003E [x, y]\nconst getUser = user =\u003E { name: user.name, age: user.age }\n\nconst list = [1, 2, 3, 4]\nconst user = { name: \u0022Lydia\u0022, age: 21 }\n\nconsole.log(getList(list))\nconsole.log(getUser(user))\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst getList = ([x, ...y]) =\u003E [x, y]\nconst getUser = user =\u003E { name: user.name, age: user.age }\n\nconst list = [1, 2, 3, 4]\nconst user = { name: \u0022Lydia\u0022, age: 21 }\n\nconsole.log(getList(list))\nconsole.log(getUser(user))\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2602,7 +2602,7 @@
   },
   {
     "id": "99",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name());\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name());\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2629,7 +2629,7 @@
   },
   {
     "id": "100",
-    "question": "What\u0027s the value of output?\n\n\u0060\u0060\u0060javascript\n// \uD83C\uDF89\u2728 This is my 100th question! \u2728\uD83C\uDF89\n\nconst output = \u0060${[] \u0026\u0026 \u0027Im\u0027}possible!\nYou should${\u0027\u0027 \u0026\u0026 \u0060n\u0027t\u0060} see a therapist after so much JavaScript lol\u0060;\n\u0060\u0060\u0060",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// \uD83C\uDF89\u2728 This is my 100th question! \u2728\uD83C\uDF89\n\nconst output = \u0060${[] \u0026\u0026 \u0027Im\u0027}possible!\nYou should${\u0027\u0027 \u0026\u0026 \u0060n\u0027t\u0060} see a therapist after so much JavaScript lol\u0060;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2656,7 +2656,7 @@
   },
   {
     "id": "101",
-    "question": "What\u0027s the value of output?\n\n\u0060\u0060\u0060javascript\nconst one = false || {} || null;\nconst two = null || false || \u0027\u0027;\nconst three = [] || 0 || true;\n\nconsole.log(one, two, three);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst one = false || {} || null;\nconst two = null || false || \u0027\u0027;\nconst three = [] || 0 || true;\n\nconsole.log(one, two, three);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2683,7 +2683,7 @@
   },
   {
     "id": "102",
-    "question": "What\u0027s the value of output?\n\n\u0060\u0060\u0060javascript\nconst myPromise = () =\u003E Promise.resolve(\u0027I have resolved!\u0027);\n\nfunction firstFunction() {\n  myPromise().then(res =\u003E console.log(res));\n  console.log(\u0027second\u0027);\n}\n\nasync function secondFunction() {\n  console.log(await myPromise());\n  console.log(\u0027second\u0027);\n}\n\nfirstFunction();\nsecondFunction();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myPromise = () =\u003E Promise.resolve(\u0027I have resolved!\u0027);\n\nfunction firstFunction() {\n  myPromise().then(res =\u003E console.log(res));\n  console.log(\u0027second\u0027);\n}\n\nasync function secondFunction() {\n  console.log(await myPromise());\n  console.log(\u0027second\u0027);\n}\n\nfirstFunction();\nsecondFunction();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2710,7 +2710,7 @@
   },
   {
     "id": "103",
-    "question": "What\u0027s the value of output?\n\n\u0060\u0060\u0060javascript\nconst set = new Set();\n\nset.add(1);\nset.add(\u0027Lydia\u0027);\nset.add({ name: \u0027Lydia\u0027 });\n\nfor (let item of set) {\n  console.log(item \u002B 2);\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst set = new Set();\n\nset.add(1);\nset.add(\u0027Lydia\u0027);\nset.add({ name: \u0027Lydia\u0027 });\n\nfor (let item of set) {\n  console.log(item \u002B 2);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2737,7 +2737,7 @@
   },
   {
     "id": "104",
-    "question": "What\u0027s its value?\n\n\u0060\u0060\u0060javascript\nPromise.resolve(5);\n\u0060\u0060\u0060",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nPromise.resolve(5);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2764,7 +2764,7 @@
   },
   {
     "id": "105",
-    "question": "What\u0027s its value?\n\n\u0060\u0060\u0060javascript\nfunction compareMembers(person1, person2 = person) {\n  if (person1 !== person2) {\n    console.log(\u0027Not the same!\u0027);\n  } else {\n    console.log(\u0027They are the same!\u0027);\n  }\n}\n\nconst person = { name: \u0027Lydia\u0027 };\n\ncompareMembers(person);\n\u0060\u0060\u0060",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction compareMembers(person1, person2 = person) {\n  if (person1 !== person2) {\n    console.log(\u0027Not the same!\u0027);\n  } else {\n    console.log(\u0027They are the same!\u0027);\n  }\n}\n\nconst person = { name: \u0027Lydia\u0027 };\n\ncompareMembers(person);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2791,7 +2791,7 @@
   },
   {
     "id": "106",
-    "question": "What\u0027s its value?\n\n\u0060\u0060\u0060javascript\nconst colorConfig = {\n  red: true,\n  blue: false,\n  green: true,\n  black: true,\n  yellow: false,\n};\n\nconst colors = [\u0027pink\u0027, \u0027red\u0027, \u0027blue\u0027];\n\nconsole.log(colorConfig.colors[1]);\n\u0060\u0060\u0060",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst colorConfig = {\n  red: true,\n  blue: false,\n  green: true,\n  black: true,\n  yellow: false,\n};\n\nconst colors = [\u0027pink\u0027, \u0027red\u0027, \u0027blue\u0027];\n\nconsole.log(colorConfig.colors[1]);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2818,7 +2818,7 @@
   },
   {
     "id": "107",
-    "question": "What\u0027s its value?\n\n\u0060\u0060\u0060javascript\nconsole.log(\u0027\u2764\uFE0F\u0027 === \u0027\u2764\uFE0F\u0027);\n\u0060\u0060\u0060",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0027\u2764\uFE0F\u0027 === \u0027\u2764\uFE0F\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2835,7 +2835,7 @@
   },
   {
     "id": "108",
-    "question": "Which of these methods modifies the original array?\n\n\u0060\u0060\u0060javascript\nconst emojis = [\u0027\u2728\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83D\uDE0D\u0027];\n\nemojis.map(x =\u003E x \u002B \u0027\u2728\u0027);\nemojis.filter(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.find(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.reduce((acc, cur) =\u003E acc \u002B \u0027\u2728\u0027);\nemojis.slice(1, 2, \u0027\u2728\u0027);\nemojis.splice(1, 2, \u0027\u2728\u0027);\n\u0060\u0060\u0060",
+    "question": "Which of these methods modifies the original array?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst emojis = [\u0027\u2728\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83D\uDE0D\u0027];\n\nemojis.map(x =\u003E x \u002B \u0027\u2728\u0027);\nemojis.filter(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.find(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.reduce((acc, cur) =\u003E acc \u002B \u0027\u2728\u0027);\nemojis.slice(1, 2, \u0027\u2728\u0027);\nemojis.splice(1, 2, \u0027\u2728\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2862,7 +2862,7 @@
   },
   {
     "id": "109",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst food = [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027];\nconst info = { favoriteFood: food[0] };\n\ninfo.favoriteFood = \u0027\uD83C\uDF5D\u0027;\n\nconsole.log(food);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst food = [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027];\nconst info = { favoriteFood: food[0] };\n\ninfo.favoriteFood = \u0027\uD83C\uDF5D\u0027;\n\nconsole.log(food);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2889,7 +2889,7 @@
   },
   {
     "id": "110",
-    "question": "What does this method do?\n\n\u0060\u0060\u0060javascript\nJSON.parse();\n\u0060\u0060\u0060",
+    "question": "What does this method do?\n\n\u003Cpre class=\u0027js\u0027\u003E\nJSON.parse();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2916,7 +2916,7 @@
   },
   {
     "id": "111",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet name = \u0027Lydia\u0027;\n\nfunction getName() {\n  console.log(name);\n  let name = \u0027Sarah\u0027;\n}\n\ngetName();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet name = \u0027Lydia\u0027;\n\nfunction getName() {\n  console.log(name);\n  let name = \u0027Sarah\u0027;\n}\n\ngetName();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2943,7 +2943,7 @@
   },
   {
     "id": "112",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction* generatorOne() {\n  yield [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nfunction* generatorTwo() {\n  yield* [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nconst one = generatorOne();\nconst two = generatorTwo();\n\nconsole.log(one.next().value);\nconsole.log(two.next().value);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction* generatorOne() {\n  yield [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nfunction* generatorTwo() {\n  yield* [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nconst one = generatorOne();\nconst two = generatorTwo();\n\nconsole.log(one.next().value);\nconsole.log(two.next().value);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2970,7 +2970,7 @@
   },
   {
     "id": "113",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconsole.log(\u0060${(x =\u003E x)(\u0027I love\u0027)} to program\u0060);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0060${(x =\u003E x)(\u0027I love\u0027)} to program\u0060);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -2997,7 +2997,7 @@
   },
   {
     "id": "114",
-    "question": "What will happen?\n\n\u0060\u0060\u0060javascript\nlet config = {\n  alert: setInterval(() =\u003E {\n    console.log(\u0027Alert!\u0027);\n  }, 1000),\n};\n\nconfig = null;\n\u0060\u0060\u0060",
+    "question": "What will happen?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet config = {\n  alert: setInterval(() =\u003E {\n    console.log(\u0027Alert!\u0027);\n  }, 1000),\n};\n\nconfig = null;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3024,7 +3024,7 @@
   },
   {
     "id": "115",
-    "question": "Which method(s) will return the value \u0060\u0027Hello world!\u0027\u0060?\n\n\u0060\u0060\u0060javascript\nconst myMap = new Map();\nconst myFunc = () =\u003E \u0027greeting\u0027;\n\nmyMap.set(myFunc, \u0027Hello world!\u0027);\n\n//1\nmyMap.get(\u0027greeting\u0027);\n//2\nmyMap.get(myFunc);\n//3\nmyMap.get(() =\u003E \u0027greeting\u0027);\n\u0060\u0060\u0060",
+    "question": "Which method(s) will return the value \u0060\u0027Hello world!\u0027\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myMap = new Map();\nconst myFunc = () =\u003E \u0027greeting\u0027;\n\nmyMap.set(myFunc, \u0027Hello world!\u0027);\n\n//1\nmyMap.get(\u0027greeting\u0027);\n//2\nmyMap.get(myFunc);\n//3\nmyMap.get(() =\u003E \u0027greeting\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3051,7 +3051,7 @@
   },
   {
     "id": "116",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nconst changeAge = (x = { ...person }) =\u003E (x.age \u002B= 1);\nconst changeAgeAndName = (x = { ...person }) =\u003E {\n  x.age \u002B= 1;\n  x.name = \u0027Sarah\u0027;\n};\n\nchangeAge(person);\nchangeAgeAndName();\n\nconsole.log(person);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nconst changeAge = (x = { ...person }) =\u003E (x.age \u002B= 1);\nconst changeAgeAndName = (x = { ...person }) =\u003E {\n  x.age \u002B= 1;\n  x.name = \u0027Sarah\u0027;\n};\n\nchangeAge(person);\nchangeAgeAndName();\n\nconsole.log(person);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3078,7 +3078,7 @@
   },
   {
     "id": "117",
-    "question": "Which of the following options will return \u00606\u0060?\n\n\u0060\u0060\u0060javascript\nfunction sumValues(x, y, z) {\n  return x \u002B y \u002B z;\n}\n\u0060\u0060\u0060",
+    "question": "Which of the following options will return \u00606\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sumValues(x, y, z) {\n  return x \u002B y \u002B z;\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3105,7 +3105,7 @@
   },
   {
     "id": "118",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet num = 1;\nconst list = [\u0027\uD83E\uDD73\u0027, \u0027\uD83E\uDD20\u0027, \u0027\uD83E\uDD70\u0027, \u0027\uD83E\uDD2A\u0027];\n\nconsole.log(list[(num \u002B= 1)]);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet num = 1;\nconst list = [\u0027\uD83E\uDD73\u0027, \u0027\uD83E\uDD20\u0027, \u0027\uD83E\uDD70\u0027, \u0027\uD83E\uDD2A\u0027];\n\nconsole.log(list[(num \u002B= 1)]);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3132,7 +3132,7 @@
   },
   {
     "id": "119",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  firstName: \u0027Lydia\u0027,\n  lastName: \u0027Hallie\u0027,\n  pet: {\n    name: \u0027Mara\u0027,\n    breed: \u0027Dutch Tulip Hound\u0027,\n  },\n  getFullName() {\n    return \u0060${this.firstName} ${this.lastName}\u0060;\n  },\n};\n\nconsole.log(person.pet?.name);\nconsole.log(person.pet?.family?.name);\nconsole.log(person.getFullName?.());\nconsole.log(member.getLastName?.());\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  firstName: \u0027Lydia\u0027,\n  lastName: \u0027Hallie\u0027,\n  pet: {\n    name: \u0027Mara\u0027,\n    breed: \u0027Dutch Tulip Hound\u0027,\n  },\n  getFullName() {\n    return \u0060${this.firstName} ${this.lastName}\u0060;\n  },\n};\n\nconsole.log(person.pet?.name);\nconsole.log(person.pet?.family?.name);\nconsole.log(person.getFullName?.());\nconsole.log(member.getLastName?.());\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3159,7 +3159,7 @@
   },
   {
     "id": "120",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst groceries = [\u0027banana\u0027, \u0027apple\u0027, \u0027peanuts\u0027];\n\nif (groceries.indexOf(\u0027banana\u0027)) {\n  console.log(\u0027We have to buy bananas!\u0027);\n} else {\n  console.log(\u0060We don\u0027t have to buy bananas!\u0060);\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst groceries = [\u0027banana\u0027, \u0027apple\u0027, \u0027peanuts\u0027];\n\nif (groceries.indexOf(\u0027banana\u0027)) {\n  console.log(\u0027We have to buy bananas!\u0027);\n} else {\n  console.log(\u0060We don\u0027t have to buy bananas!\u0060);\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3186,7 +3186,7 @@
   },
   {
     "id": "121",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst config = {\n  languages: [],\n  set language(lang) {\n    return this.languages.push(lang);\n  },\n};\n\nconsole.log(config.language);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst config = {\n  languages: [],\n  set language(lang) {\n    return this.languages.push(lang);\n  },\n};\n\nconsole.log(config.language);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3213,7 +3213,7 @@
   },
   {
     "id": "122",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst name = \u0027Lydia Hallie\u0027;\n\nconsole.log(!typeof name === \u0027object\u0027);\nconsole.log(!typeof name === \u0027string\u0027);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\n\nconsole.log(!typeof name === \u0027object\u0027);\nconsole.log(!typeof name === \u0027string\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3240,7 +3240,7 @@
   },
   {
     "id": "123",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst add = x =\u003E y =\u003E z =\u003E {\n  console.log(x, y, z);\n  return x \u002B y \u002B z;\n};\n\nadd(4)(5)(6);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst add = x =\u003E y =\u003E z =\u003E {\n  console.log(x, y, z);\n  return x \u002B y \u002B z;\n};\n\nadd(4)(5)(6);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3267,7 +3267,7 @@
   },
   {
     "id": "124",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nasync function* range(start, end) {\n  for (let i = start; i \u003C= end; i\u002B\u002B) {\n    yield Promise.resolve(i);\n  }\n}\n\n(async () =\u003E {\n  const gen = range(1, 3);\n  for await (const item of gen) {\n    console.log(item);\n  }\n})();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nasync function* range(start, end) {\n  for (let i = start; i \u003C= end; i\u002B\u002B) {\n    yield Promise.resolve(i);\n  }\n}\n\n(async () =\u003E {\n  const gen = range(1, 3);\n  for await (const item of gen) {\n    console.log(item);\n  }\n})();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3294,7 +3294,7 @@
   },
   {
     "id": "125",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst myFunc = ({ x, y, z }) =\u003E {\n  console.log(x, y, z);\n};\n\nmyFunc(1, 2, 3);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myFunc = ({ x, y, z }) =\u003E {\n  console.log(x, y, z);\n};\n\nmyFunc(1, 2, 3);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3321,7 +3321,7 @@
   },
   {
     "id": "126",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getFine(speed, amount) {\n  const formattedSpeed = new Intl.NumberFormat(\u0027en",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getFine(speed, amount) {\n  const formattedSpeed = new Intl.NumberFormat(\u0027en",
     "answers": [
       {
         "index": "US\u0027, {\n    style",
@@ -3333,7 +3333,7 @@
   },
   {
     "id": "127",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst spookyItems = [\u0027\uD83D\uDC7B\u0027, \u0027\uD83C\uDF83\u0027, \u0027\uD83D\uDD78\u0027];\n({ item: spookyItems[3] } = { item: \u0027\uD83D\uDC80\u0027 });\n\nconsole.log(spookyItems);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst spookyItems = [\u0027\uD83D\uDC7B\u0027, \u0027\uD83C\uDF83\u0027, \u0027\uD83D\uDD78\u0027];\n({ item: spookyItems[3] } = { item: \u0027\uD83D\uDC80\u0027 });\n\nconsole.log(spookyItems);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3360,7 +3360,7 @@
   },
   {
     "id": "128",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst name = \u0027Lydia Hallie\u0027;\nconst age = 21;\n\nconsole.log(Number.isNaN(name));\nconsole.log(Number.isNaN(age));\n\nconsole.log(isNaN(name));\nconsole.log(isNaN(age));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\nconst age = 21;\n\nconsole.log(Number.isNaN(name));\nconsole.log(Number.isNaN(age));\n\nconsole.log(isNaN(name));\nconsole.log(isNaN(age));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3387,7 +3387,7 @@
   },
   {
     "id": "129",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst randomValue = 21;\n\nfunction getInfo() {\n  console.log(typeof randomValue);\n  const randomValue = \u0027Lydia Hallie\u0027;\n}\n\ngetInfo();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst randomValue = 21;\n\nfunction getInfo() {\n  console.log(typeof randomValue);\n  const randomValue = \u0027Lydia Hallie\u0027;\n}\n\ngetInfo();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3414,7 +3414,7 @@
   },
   {
     "id": "130",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst myPromise = Promise.resolve(\u0027Woah some cool data\u0027);\n\n(async () =\u003E {\n  try {\n    console.log(await myPromise);\n  } catch {\n    throw new Error(\u0060Oops didn\u0027t work\u0060);\n  } finally {\n    console.log(\u0027Oh finally!\u0027);\n  }\n})();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myPromise = Promise.resolve(\u0027Woah some cool data\u0027);\n\n(async () =\u003E {\n  try {\n    console.log(await myPromise);\n  } catch {\n    throw new Error(\u0060Oops didn\u0027t work\u0060);\n  } finally {\n    console.log(\u0027Oh finally!\u0027);\n  }\n})();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3441,7 +3441,7 @@
   },
   {
     "id": "131",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst emojis = [\u0027\uD83E\uDD51\u0027, [\u0027\u2728\u0027, \u0027\u2728\u0027, [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]];\n\nconsole.log(emojis.flat(1));\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst emojis = [\u0027\uD83E\uDD51\u0027, [\u0027\u2728\u0027, \u0027\u2728\u0027, [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]];\n\nconsole.log(emojis.flat(1));\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3468,7 +3468,7 @@
   },
   {
     "id": "132",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Counter {\n  constructor() {\n    this.count = 0;\n  }\n\n  increment() {\n    this.count\u002B\u002B;\n  }\n}\n\nconst counterOne = new Counter();\ncounterOne.increment();\ncounterOne.increment();\n\nconst counterTwo = counterOne;\ncounterTwo.increment();\n\nconsole.log(counterOne.count);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Counter {\n  constructor() {\n    this.count = 0;\n  }\n\n  increment() {\n    this.count\u002B\u002B;\n  }\n}\n\nconst counterOne = new Counter();\ncounterOne.increment();\ncounterOne.increment();\n\nconst counterTwo = counterOne;\ncounterTwo.increment();\n\nconsole.log(counterOne.count);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3495,7 +3495,7 @@
   },
   {
     "id": "133",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst myPromise = Promise.resolve(Promise.resolve(\u0027Promise\u0027));\n\nfunction funcOne() {\n  setTimeout(() =\u003E console.log(\u0027Timeout 1!\u0027), 0);\n  myPromise.then(res =\u003E res).then(res =\u003E console.log(\u0060${res} 1!\u0060));\n  console.log(\u0027Last line 1!\u0027);\n}\n\nasync function funcTwo() {\n  const res = await myPromise;\n  console.log(\u0060${res} 2!\u0060)\n  setTimeout(() =\u003E console.log(\u0027Timeout 2!\u0027), 0);\n  console.log(\u0027Last line 2!\u0027);\n}\n\nfuncOne();\nfuncTwo();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myPromise = Promise.resolve(Promise.resolve(\u0027Promise\u0027));\n\nfunction funcOne() {\n  setTimeout(() =\u003E console.log(\u0027Timeout 1!\u0027), 0);\n  myPromise.then(res =\u003E res).then(res =\u003E console.log(\u0060${res} 1!\u0060));\n  console.log(\u0027Last line 1!\u0027);\n}\n\nasync function funcTwo() {\n  const res = await myPromise;\n  console.log(\u0060${res} 2!\u0060)\n  setTimeout(() =\u003E console.log(\u0027Timeout 2!\u0027), 0);\n  console.log(\u0027Last line 2!\u0027);\n}\n\nfuncOne();\nfuncTwo();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3522,7 +3522,7 @@
   },
   {
     "id": "134",
-    "question": "How can we invoke \u0060sum\u0060 in \u0060sum.js\u0060 from \u0060index.js?\u0060\n\n\u0060\u0060\u0060javascript\n// sum.js\nexport default function sum(x) {\n  return x \u002B x;\n}\n\n// index.js\nimport * as sum from \u0027./sum\u0027;\n\u0060\u0060\u0060",
+    "question": "How can we invoke \u0060sum\u0060 in \u0060sum.js\u0060 from \u0060index.js?\u0060\n\n\u003Cpre class=\u0027js\u0027\u003E\n// sum.js\nexport default function sum(x) {\n  return x \u002B x;\n}\n\n// index.js\nimport * as sum from \u0027./sum\u0027;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3549,7 +3549,7 @@
   },
   {
     "id": "135",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst handler = {\n  set: () =\u003E console.log(\u0027Added a new property!\u0027),\n  get: () =\u003E console.log(\u0027Accessed a property!\u0027),\n};\n\nconst person = new Proxy({}, handler);\n\nperson.name = \u0027Lydia\u0027;\nperson.name;\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst handler = {\n  set: () =\u003E console.log(\u0027Added a new property!\u0027),\n  get: () =\u003E console.log(\u0027Accessed a property!\u0027),\n};\n\nconst person = new Proxy({}, handler);\n\nperson.name = \u0027Lydia\u0027;\nperson.name;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3576,7 +3576,7 @@
   },
   {
     "id": "136",
-    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u0060\u0060\u0060javascript\nconst person = { name: \u0027Lydia Hallie\u0027 };\n\nObject.seal(person);\n\u0060\u0060\u0060",
+    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = { name: \u0027Lydia Hallie\u0027 };\n\nObject.seal(person);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3603,7 +3603,7 @@
   },
   {
     "id": "137",
-    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  address: {\n    street: \u0027100 Main St\u0027,\n  },\n};\n\nObject.freeze(person);\n\u0060\u0060\u0060",
+    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  address: {\n    street: \u0027100 Main St\u0027,\n  },\n};\n\nObject.freeze(person);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3630,7 +3630,7 @@
   },
   {
     "id": "138",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst add = x =\u003E x \u002B x;\n\nfunction myFunc(num = 2, value = add(num)) {\n  console.log(num, value);\n}\n\nmyFunc();\nmyFunc(3);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst add = x =\u003E x \u002B x;\n\nfunction myFunc(num = 2, value = add(num)) {\n  console.log(num, value);\n}\n\nmyFunc();\nmyFunc(3);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3657,7 +3657,7 @@
   },
   {
     "id": "139",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Counter {\n  #number = 10\n\n  increment() {\n    this.#number\u002B\u002B\n  }\n\n  getNum() {\n    return this.#number\n  }\n}\n\nconst counter = new Counter()\ncounter.increment()\n\nconsole.log(counter.#number)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Counter {\n  #number = 10\n\n  increment() {\n    this.#number\u002B\u002B\n  }\n\n  getNum() {\n    return this.#number\n  }\n}\n\nconst counter = new Counter()\ncounter.increment()\n\nconsole.log(counter.#number)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3684,7 +3684,7 @@
   },
   {
     "id": "140",
-    "question": "What\u0027s missing?\n\n\u0060\u0060\u0060javascript\nconst teams = [\n  { name: \u0027Team 1\u0027, members: [\u0027Paul\u0027, \u0027Lisa\u0027] },\n  { name: \u0027Team 2\u0027, members: [\u0027Laura\u0027, \u0027Tim\u0027] },\n];\n\nfunction* getMembers(members) {\n  for (let i = 0; i \u003C members.length; i\u002B\u002B) {\n    yield members[i];\n  }\n}\n\nfunction* getTeams(teams) {\n  for (let i = 0; i \u003C teams.length; i\u002B\u002B) {\n    // \u2728 SOMETHING IS MISSING HERE \u2728\n  }\n}\n\nconst obj = getTeams(teams);\nobj.next(); // { value: \u0022Paul\u0022, done: false }\nobj.next(); // { value: \u0022Lisa\u0022, done: false }\n\u0060\u0060\u0060",
+    "question": "What\u0027s missing?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst teams = [\n  { name: \u0027Team 1\u0027, members: [\u0027Paul\u0027, \u0027Lisa\u0027] },\n  { name: \u0027Team 2\u0027, members: [\u0027Laura\u0027, \u0027Tim\u0027] },\n];\n\nfunction* getMembers(members) {\n  for (let i = 0; i \u003C members.length; i\u002B\u002B) {\n    yield members[i];\n  }\n}\n\nfunction* getTeams(teams) {\n  for (let i = 0; i \u003C teams.length; i\u002B\u002B) {\n    // \u2728 SOMETHING IS MISSING HERE \u2728\n  }\n}\n\nconst obj = getTeams(teams);\nobj.next(); // { value: \u0022Paul\u0022, done: false }\nobj.next(); // { value: \u0022Lisa\u0022, done: false }\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3711,7 +3711,7 @@
   },
   {
     "id": "141",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  hobbies: [\u0027coding\u0027],\n};\n\nfunction addHobby(hobby, hobbies = person.hobbies) {\n  hobbies.push(hobby);\n  return hobbies;\n}\n\naddHobby(\u0027running\u0027, []);\naddHobby(\u0027dancing\u0027);\naddHobby(\u0027baking\u0027, person.hobbies);\n\nconsole.log(person.hobbies);\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  hobbies: [\u0027coding\u0027],\n};\n\nfunction addHobby(hobby, hobbies = person.hobbies) {\n  hobbies.push(hobby);\n  return hobbies;\n}\n\naddHobby(\u0027running\u0027, []);\naddHobby(\u0027dancing\u0027);\naddHobby(\u0027baking\u0027, person.hobbies);\n\nconsole.log(person.hobbies);\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3738,7 +3738,7 @@
   },
   {
     "id": "142",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Bird {\n  constructor() {\n    console.log(\u0022I\u0027m a bird. \uD83E\uDDA2\u0022);\n  }\n}\n\nclass Flamingo extends Bird {\n  constructor() {\n    console.log(\u0022I\u0027m pink. \uD83C\uDF38\u0022);\n    super();\n  }\n}\n\nconst pet = new Flamingo();\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Bird {\n  constructor() {\n    console.log(\u0022I\u0027m a bird. \uD83E\uDDA2\u0022);\n  }\n}\n\nclass Flamingo extends Bird {\n  constructor() {\n    console.log(\u0022I\u0027m pink. \uD83C\uDF38\u0022);\n    super();\n  }\n}\n\nconst pet = new Flamingo();\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3765,7 +3765,7 @@
   },
   {
     "id": "143",
-    "question": "Which of the options result(s) in an error?\n\n\u0060\u0060\u0060javascript\nconst emojis = [\u0027\uD83C\uDF84\u0027, \u0027\uD83C\uDF85\uD83C\uDFFC\u0027, \u0027\uD83C\uDF81\u0027, \u0027\u2B50\u0027];\n\n/* 1 */ emojis.push(\u0027\uD83E\uDD8C\u0027);\n/* 2 */ emojis.splice(0, 2);\n/* 3 */ emojis = [...emojis, \u0027\uD83E\uDD42\u0027];\n/* 4 */ emojis.length = 0;\n\u0060\u0060\u0060",
+    "question": "Which of the options result(s) in an error?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst emojis = [\u0027\uD83C\uDF84\u0027, \u0027\uD83C\uDF85\uD83C\uDFFC\u0027, \u0027\uD83C\uDF81\u0027, \u0027\u2B50\u0027];\n\n/* 1 */ emojis.push(\u0027\uD83E\uDD8C\u0027);\n/* 2 */ emojis.splice(0, 2);\n/* 3 */ emojis = [...emojis, \u0027\uD83E\uDD42\u0027];\n/* 4 */ emojis.length = 0;\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3792,7 +3792,7 @@
   },
   {
     "id": "144",
-    "question": "What do we need to add to the \u0060person\u0060 object to get \u0060[\u0022Lydia Hallie\u0022, 21]\u0060 as the output of \u0060[...person]\u0060?\n\n\u0060\u0060\u0060javascript\nconst person = {\n  name: \u0022Lydia Hallie\u0022,\n  age: 21\n}\n\n[...person] // [\u0022Lydia Hallie\u0022, 21]\n\u0060\u0060\u0060",
+    "question": "What do we need to add to the \u0060person\u0060 object to get \u0060[\u0022Lydia Hallie\u0022, 21]\u0060 as the output of \u0060[...person]\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0022Lydia Hallie\u0022,\n  age: 21\n}\n\n[...person] // [\u0022Lydia Hallie\u0022, 21]\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3819,7 +3819,7 @@
   },
   {
     "id": "145",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet count = 0;\nconst nums = [0, 1, 2, 3];\n\nnums.forEach(num =\u003E {\n\tif (num) count \u002B= 1\n})\n\nconsole.log(count)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet count = 0;\nconst nums = [0, 1, 2, 3];\n\nnums.forEach(num =\u003E {\n\tif (num) count \u002B= 1\n})\n\nconsole.log(count)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3846,7 +3846,7 @@
   },
   {
     "id": "146",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nfunction getFruit(fruits) {\n\tconsole.log(fruits?.[1]?.[1])\n}\n\ngetFruit([[\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027], [\u0027\uD83C\uDF4D\u0027]])\ngetFruit()\ngetFruit([[\u0027\uD83C\uDF4D\u0027], [\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027]])\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getFruit(fruits) {\n\tconsole.log(fruits?.[1]?.[1])\n}\n\ngetFruit([[\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027], [\u0027\uD83C\uDF4D\u0027]])\ngetFruit()\ngetFruit([[\u0027\uD83C\uDF4D\u0027], [\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027]])\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3873,7 +3873,7 @@
   },
   {
     "id": "147",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nclass Calc {\n\tconstructor() {\n\t\tthis.count = 0 \n\t}\n\n\tincrease() {\n\t\tthis.count \u002B\u002B\n\t}\n}\n\nconst calc = new Calc()\nnew Calc().increase()\n\nconsole.log(calc.count)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Calc {\n\tconstructor() {\n\t\tthis.count = 0 \n\t}\n\n\tincrease() {\n\t\tthis.count \u002B\u002B\n\t}\n}\n\nconst calc = new Calc()\nnew Calc().increase()\n\nconsole.log(calc.count)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3900,7 +3900,7 @@
   },
   {
     "id": "148",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst user = {\n\temail: \u0022e@mail.com\u0022,\n\tpassword: \u002212345\u0022\n}\n\nconst updateUser = ({ email, password }) =\u003E {\n\tif (email) {\n\t\tObject.assign(user, { email })\n\t}\n\n\tif (password) {\n\t\tuser.password = password\n\t}\n\n\treturn user\n}\n\nconst updatedUser = updateUser({ email: \u0022new@email.com\u0022 })\n\nconsole.log(updatedUser === user)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst user = {\n\temail: \u0022e@mail.com\u0022,\n\tpassword: \u002212345\u0022\n}\n\nconst updateUser = ({ email, password }) =\u003E {\n\tif (email) {\n\t\tObject.assign(user, { email })\n\t}\n\n\tif (password) {\n\t\tuser.password = password\n\t}\n\n\treturn user\n}\n\nconst updatedUser = updateUser({ email: \u0022new@email.com\u0022 })\n\nconsole.log(updatedUser === user)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3927,7 +3927,7 @@
   },
   {
     "id": "149",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst fruit = [\u0027\uD83C\uDF4C\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]\n\nfruit.slice(0, 1)\nfruit.splice(0, 1)\nfruit.unshift(\u0027\uD83C\uDF47\u0027)\n\nconsole.log(fruit)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst fruit = [\u0027\uD83C\uDF4C\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]\n\nfruit.slice(0, 1)\nfruit.splice(0, 1)\nfruit.unshift(\u0027\uD83C\uDF47\u0027)\n\nconsole.log(fruit)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3954,7 +3954,7 @@
   },
   {
     "id": "150",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst animals = {};\nlet dog = { emoji: \u0027\uD83D\uDC36\u0027 }\nlet cat = { emoji: \u0027\uD83D\uDC08\u0027 }\n\nanimals[dog] = { ...dog, name: \u0022Mara\u0022 }\nanimals[cat] = { ...cat, name: \u0022Sara\u0022 }\n\nconsole.log(animals[dog])\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst animals = {};\nlet dog = { emoji: \u0027\uD83D\uDC36\u0027 }\nlet cat = { emoji: \u0027\uD83D\uDC08\u0027 }\n\nanimals[dog] = { ...dog, name: \u0022Mara\u0022 }\nanimals[cat] = { ...cat, name: \u0022Sara\u0022 }\n\nconsole.log(animals[dog])\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -3981,7 +3981,7 @@
   },
   {
     "id": "151",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst user = {\n\temail: \u0022my@email.com\u0022,\n\tupdateEmail: email =\u003E {\n\t\tthis.email = email\n\t}\n}\n\nuser.updateEmail(\u0022new@email.com\u0022)\nconsole.log(user.email)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst user = {\n\temail: \u0022my@email.com\u0022,\n\tupdateEmail: email =\u003E {\n\t\tthis.email = email\n\t}\n}\n\nuser.updateEmail(\u0022new@email.com\u0022)\nconsole.log(user.email)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -4008,7 +4008,7 @@
   },
   {
     "id": "152",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst promise1 = Promise.resolve(\u0027First\u0027)\nconst promise2 = Promise.resolve(\u0027Second\u0027)\nconst promise3 = Promise.reject(\u0027Third\u0027)\nconst promise4 = Promise.resolve(\u0027Fourth\u0027)\n\nconst runPromises = async () =\u003E {\n\tconst res1 = await Promise.all([promise1, promise2])\n\tconst res2  = await Promise.all([promise3, promise4])\n\treturn [res1, res2]\n}\n\nrunPromises()\n\t.then(res =\u003E console.log(res))\n\t.catch(err =\u003E console.log(err))\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst promise1 = Promise.resolve(\u0027First\u0027)\nconst promise2 = Promise.resolve(\u0027Second\u0027)\nconst promise3 = Promise.reject(\u0027Third\u0027)\nconst promise4 = Promise.resolve(\u0027Fourth\u0027)\n\nconst runPromises = async () =\u003E {\n\tconst res1 = await Promise.all([promise1, promise2])\n\tconst res2  = await Promise.all([promise3, promise4])\n\treturn [res1, res2]\n}\n\nrunPromises()\n\t.then(res =\u003E console.log(res))\n\t.catch(err =\u003E console.log(err))\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -4035,7 +4035,7 @@
   },
   {
     "id": "153",
-    "question": "What should the value of \u0060method\u0060 be to log \u0060{ name: \u0022Lydia\u0022, age: 22 }\u0060? \n\n\u0060\u0060\u0060javascript\nconst keys = [\u0022name\u0022, \u0022age\u0022]\nconst values = [\u0022Lydia\u0022, 22]\n\nconst method = /* ?? */\nObject[method](keys.map((_, i) =\u003E {\n\treturn [keys[i], values[i]]\n})) // { name: \u0022Lydia\u0022, age: 22 }\n\u0060\u0060\u0060",
+    "question": "What should the value of \u0060method\u0060 be to log \u0060{ name: \u0022Lydia\u0022, age: 22 }\u0060? \n\n\u003Cpre class=\u0027js\u0027\u003E\nconst keys = [\u0022name\u0022, \u0022age\u0022]\nconst values = [\u0022Lydia\u0022, 22]\n\nconst method = /* ?? */\nObject[method](keys.map((_, i) =\u003E {\n\treturn [keys[i], values[i]]\n})) // { name: \u0022Lydia\u0022, age: 22 }\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -4062,7 +4062,7 @@
   },
   {
     "id": "154",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nconst createMember = ({ email, address = {}}) =\u003E {\n\tconst validEmail = /.\u002B\\@.\u002B\\..\u002B/.test(email)\n\tif (!validEmail) throw new Error(\u0022Valid email pls\u0022)\n\n\treturn {\n\t\temail,\n\t\taddress: address ? address : null\n\t}\n}\n\nconst member = createMember({ email: \u0022my@email.com\u0022 })\nconsole.log(member)\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst createMember = ({ email, address = {}}) =\u003E {\n\tconst validEmail = /.\u002B\\@.\u002B\\..\u002B/.test(email)\n\tif (!validEmail) throw new Error(\u0022Valid email pls\u0022)\n\n\treturn {\n\t\temail,\n\t\taddress: address ? address : null\n\t}\n}\n\nconst member = createMember({ email: \u0022my@email.com\u0022 })\nconsole.log(member)\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",
@@ -4089,7 +4089,7 @@
   },
   {
     "id": "155",
-    "question": "What\u0027s the output?\n\n\u0060\u0060\u0060javascript\nlet randomValue = { name: \u0022Lydia\u0022 }\nrandomValue = 23\n\nif (!typeof randomValue === \u0022string\u0022) {\n\tconsole.log(\u0022It\u0027s not a string!\u0022)\n} else {\n\tconsole.log(\u0022Yay it\u0027s a string!\u0022)\n}\n\u0060\u0060\u0060",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet randomValue = { name: \u0022Lydia\u0022 }\nrandomValue = 23\n\nif (!typeof randomValue === \u0022string\u0022) {\n\tconsole.log(\u0022It\u0027s not a string!\u0022)\n} else {\n\tconsole.log(\u0022Yay it\u0027s a string!\u0022)\n}\n\u003C/pre\u003E",
     "answers": [
       {
         "index": "A",

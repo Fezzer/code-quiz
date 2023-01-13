@@ -12,7 +12,7 @@ var questions = regex.Matches(input)
 	.Select(m => new
 	{
 		Id = m.Groups["questionNumber"].Value.Trim(),
-		Question = m.Groups["question"].Value.Trim(),
+		Question = m.Groups["question"].Value.Trim().AddPreTag(),
 		Answers = m.Groups["answerIndex"].Captures.Zip(m.Groups["answer"].Captures)
 			.Select(x => new 
 			{
@@ -35,3 +35,13 @@ JsonSerializer.Serialize(
 		PropertyNamingPolicy = JsonNamingPolicy.CamelCase, 
 		WriteIndented = true
 	});
+	
+static class LocalExtensions
+{
+	public static string AddPreTag(this string source)
+	{
+		return source
+			.Replace("```javascript", "<pre class='js'>")
+			.Replace("```", "</pre>");
+	}
+}

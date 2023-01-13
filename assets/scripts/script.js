@@ -11,6 +11,7 @@ var timer;
 var remainingTime;
 var currentQuestion;
 var answeredQuestions = [];
+var player;
 
 // Returns a non-negative random integer that is less than the specified maximum. 
 function getRandomNumber(maxValue) {
@@ -90,7 +91,7 @@ function getNextQuestion() {
 
 // Displays a question.
 function displayQuestion(question) {
-  document.getElementById("question-title").textContent = question.question;
+  document.getElementById("question-title").innerHTML = question.question;
 
   question.answers.forEach(a => {
     var button = document.createElement("button");
@@ -117,6 +118,7 @@ function init() {
 
     startTimer();
   };
+
 }
 
 init();
