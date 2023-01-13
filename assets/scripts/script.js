@@ -10,7 +10,7 @@ var questions;
 var timer;
 var remainingTime;
 var currentQuestion;
-var askedQuestions = [];
+var answeredQuestions = [];
 
 // Returns a non-negative random integer that is less than the specified maximum. 
 function getRandomNumber(maxValue) {
@@ -77,7 +77,7 @@ function startTimer() {
 
 // Gets the next question to ask.
 function getNextQuestion() {
-  let askedIds = askedQuestions.map(aq => aq.id);
+  let askedIds = answeredQuestions.map(aq => aq.id);
   
   let notAskedIds = questions
     .filter(q => !askedIds.includes(q.id))
