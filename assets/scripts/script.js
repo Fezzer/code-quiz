@@ -5,10 +5,23 @@ var startButton = document.getElementById("start");
 var startScreenElement = document.getElementById("start-screen");
 var questionsElement = document.getElementById("questions");
 var timeElement = document.getElementById("time");
+var choicesElement = document.getElementById("choices");
 var questions;
 var timer;
 var remainingTime;
-var answeredQuestions = [];
+var currentQuestion;
+var askedQuestions = [];
+
+// Returns a non-negative random integer that is less than the specified maximum. 
+function getRandomNumber(maxValue) {
+  return Math.floor(Math.random() * maxValue);
+}
+
+// Generate an array containing a sequence of integer numbers within a specified range.
+function range(start, count) {
+  return new Array(count).fill(undefined).map((_, i) => start + i);
+}
+
 // Retrieves the list of questions from a JSON file hosted on the server.
 function getQuestions(url) {
   let xhr = new XMLHttpRequest();
@@ -38,7 +51,7 @@ function toggleHide(element) {
   element.setAttribute(classAttribute, classes.join(" "));
 }
 
-// Updates the time remaining.
+// Updates the time remaining on the quiz.
 function updateRemainingTime() {
   let mins = Math.floor(remainingTime / 60).toString().padStart(2, "0");
   let secs = String(remainingTime % 60).padStart(2, "0");
@@ -55,18 +68,50 @@ function startTimer() {
     remainingTime--;
     updateRemainingTime();
 
-    if (remainingTime === 0) {
+    if (remainingTime <= 0) {
       clearInterval(timer);
       // TODO: need to handle timer completion here.
     }
   }, 1000);
 }
 
+// Gets the next question to ask.
+function getNextQuestion() {
+  let askedIds = askedQuestions.map(aq => aq.id);
+  
+  let notAskedIds = questions
+    .filter(q => !askedIds.includes(q.id))
+    .map(q => q.id);
+  
+  let nextId = notAskedIds[getRandomNumber(notAskedIds.length)];
+
+  return questions[nextId];
+}
+
+// Displays a question.
+function displayQuestion(question) {
+  document.getElementById("question-title").textContent = question.question;
+
+  question.answers.forEach(a => {
+    var button = document.createElement("button");
+    button.textContent = `${a.index}. ${a.answer}`;
+    button.dataset.index = a.index;
+    choicesElement.appendChild(button);
+  });
+}
+
+// Manages the workflow for processing the next question.
+function processNextQuestion() {
+  currentQuestion = getNextQuestion();
+  displayQuestion(currentQuestion);
+}
+
+// Initialise the app.
 function init() {
   questions = getQuestions(QUESTIONS_URL);
 
   startButton.onclick = () => {
-    // TODO: get first question.
+    processNextQuestion();
     toggleHide(startScreenElement);
     toggleHide(questionsElement);
 
