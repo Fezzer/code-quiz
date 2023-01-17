@@ -2,7 +2,9 @@ const QUESTIONS_URL = "assets/data/questions.json";
 const QUIZ_DURATION = 60;
 const CLASS_ATTRIBUTE = "class";
 const HIDE_VALUE = "hide";
+const HIGH_SCORES = "high-scores";
 
+var startScreenElement = document.getElementById("start-screen");
 var questionsElement = document.getElementById("questions");
 var timeElement = document.getElementById("time");
 var choicesElement = document.getElementById("choices");
@@ -13,7 +15,7 @@ var endScreenElement = document.getElementById("end-screen");
 var questions;
 var timer;
 var remainingTime;
-var answeredQuestions = [];
+var answeredQuestions;
 var correctPlayer = createPlayer("/assets/sfx/correct.wav");
 var incorrectPlayer = createPlayer("/assets/sfx/incorrect.wav");
 var isShowingResult = false;
@@ -46,17 +48,9 @@ function toggleHide(element) {
   element.classList.toggle(HIDE_VALUE);
 }
 
-// Handles the click event of the start button.
-function startButtonClick() {
-  processNextQuestion();
-  toggleHide(document.getElementById("start-screen"));
-  toggleHide(questionsElement);
 
-  startTimer();
-};
-
-// Updates the time remaining on the quiz.
-function updateRemainingTime() {
+// Displays the time remaining on the quiz.
+function displayRemainingTime() {
   let mins = Math.floor(remainingTime / 60).toString().padStart(2, "0");
   let secs = String(remainingTime % 60).padStart(2, "0");
 
@@ -66,7 +60,7 @@ function updateRemainingTime() {
 // Initialises and starts the quiz timer.
 function startTimer() {
   remainingTime = QUIZ_DURATION;
-  updateRemainingTime();
+  displayRemainingTime();
 
   timer = setInterval(() => {
     remainingTime--;
@@ -75,7 +69,7 @@ function startTimer() {
       endQuiz();
     }
 
-    updateRemainingTime();
+    displayRemainingTime();
   }, 1000);
 }
 
@@ -92,17 +86,74 @@ function getNextQuestion() {
   return questions[nextId];
 }
 
+// Gets the count of correct answers from the answered questions.
+function getCountOfCorrectAnswers() {
+  return answeredQuestions.filter(a => a.isCorrect).length
+}
+
+// Gets the number of questions answered.
+function getCountOfQuestionsAnswered() {
+  return answeredQuestions.length;
+}
+
+// Gets the score text from the answered questions.
+function getScore() {
+  return `${getCountOfCorrectAnswers()} out of ${getCountOfQuestionsAnswered()}`;
+}
+
+// Displays a question.
+function displayQuestion(question) {
+  questionsElement.dataset.id = question.id;
+  document.getElementById("question-title").innerHTML = question.question;
+  choicesElement.innerText = "";
+
+  question.answers.forEach(a => {
+    let button = document.createElement("button");
+    button.textContent = `${a.id}. ${a.answer}`;
+    button.dataset.id = a.id;
+    choicesElement.appendChild(button);
+  });
+}
+
+// Manages the workflow for processing the next question.
+function processNextQuestion() {
+  if (answeredQuestions.length === questions.length) {
+    endQuiz();
+    return;
+  }
+
+  isShowingResult = false;
+  correctElement.classList.add(HIDE_VALUE);
+  incorrectElement.classList.add(HIDE_VALUE);
+
+  displayQuestion(getNextQuestion());
+  disableAnswerButtons = false;
+}
+
 // Handles getting to the end of the quiz.
 function endQuiz() {
   clearInterval(timer);
 
+  remainingTime = 0;
+  displayRemainingTime();
+
   toggleHide(questionsElement);
   toggleHide(endScreenElement);
 
-  document.getElementById("final-score").textContent = answeredQuestions.filter(a => a.isCorrect).length;
+  document.getElementById("final-score").textContent = getScore();
 }
 
-// Handles the click of an answer button.
+// Handles the click event of the start button.
+function startButtonClick() {
+  answeredQuestions = [];
+  processNextQuestion();
+  toggleHide(startScreenElement);
+  toggleHide(questionsElement);
+
+  startTimer();
+};
+
+// Handles the click event of an answer button.
 function answerButtonClick(event) {
   if (disableAnswerButtons || !event.target.matches("button")) {
     return;    
@@ -140,33 +191,37 @@ function answerButtonClick(event) {
   }, 500);
 }
 
-// Displays a question.
-function displayQuestion(question) {
-  questionsElement.dataset.id = question.id;
-  document.getElementById("question-title").innerHTML = question.question;
-  choicesElement.innerText = "";
+// Handles the click event of the submit button.
+function submitScoreClick() {
+  var input = document.getElementById("initials");
 
-  question.answers.forEach(a => {
-    let button = document.createElement("button");
-    button.textContent = `${a.id}. ${a.answer}`;
-    button.dataset.id = a.id;
-    choicesElement.appendChild(button);
-  });
-}
-
-// Manages the workflow for processing the next question.
-function processNextQuestion() {
-  if (answeredQuestions.length === questions.length) {
-    endQuiz();
+  if (!input || input.value.trim() === "") {
+    input.value = "";
+    input.setAttribute("placeholder", "please enter your initials");
     return;
   }
 
-  isShowingResult = false;
-  correctElement.classList.add(HIDE_VALUE);
-  incorrectElement.classList.add(HIDE_VALUE);
+  let highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
 
-  displayQuestion(getNextQuestion());
-  disableAnswerButtons = false;
+  highScores.push({ 
+    "initials": input.value.trim(),
+    "correct": getCountOfCorrectAnswers(),
+    "answers": getCountOfQuestionsAnswered()
+   });
+
+   highScores.sort((a, b) => {
+    if (a.correct === b.correct) {
+      return b.answers - a.answers;
+    }
+
+    return b.correct - a.correct;
+   });
+
+   localStorage.setItem(HIGH_SCORES, JSON.stringify(highScores));
+
+   input.value = "";
+   toggleHide(endScreenElement);
+   toggleHide(startScreenElement);
 }
 
 // Initialise the app.
@@ -174,6 +229,7 @@ function init() {
   questions = getQuestions(QUESTIONS_URL);
   document.getElementById("start").onclick = startButtonClick;
   choicesElement.onclick = answerButtonClick;
+  document.getElementById("submit").onclick = submitScoreClick;
 }
 
 init();
