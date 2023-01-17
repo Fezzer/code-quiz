@@ -1,25 +1,25 @@
 [
   {
     "id": "1",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = \u0027Lydia\u0027;\n  let age = 21;\n}\n\nsayHi();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = \u0027Lydia\u0027;\n  let age = 21;\n}\n\nsayHi();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Lydia and undefined",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Lydia and ReferenceError",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "ReferenceError and 21",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined and ReferenceError",
         "isCorrect": true
       }
@@ -28,20 +28,20 @@
   },
   {
     "id": "2",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfor (var i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\nfor (let i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfor (var i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\nfor (let i = 0; i \u003C 3; i\u002B\u002B) {\n  setTimeout(() =\u003E console.log(i), 1);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "0 1 2 and 0 1 2",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "0 1 2 and 3 3 3",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "3 3 3 and 0 1 2",
         "isCorrect": true
       }
@@ -50,25 +50,25 @@
   },
   {
     "id": "3",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () =\u003E 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () =\u003E 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "20 and 62.83185307179586",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "20 and NaN",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "20 and 63",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "NaN and 63",
         "isCorrect": false
       }
@@ -77,20 +77,20 @@
   },
   {
     "id": "4",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n\u002Btrue;\n!\u0027Lydia\u0027;\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n\u002Btrue;\n!\u0027Lydia\u0027;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1 and false",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false and NaN",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "false and false",
         "isCorrect": false
       }
@@ -99,25 +99,25 @@
   },
   {
     "id": "5",
-    "question": "Which one is true?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst bird = {\n  size: \u0027small\u0027,\n};\n\nconst mouse = {\n  name: \u0027Mickey\u0027,\n  small: true,\n};\n\u003C/pre\u003E",
+    "question": "Which one is true?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst bird = {\n  size: \u0027small\u0027,\n};\n\nconst mouse = {\n  name: \u0027Mickey\u0027,\n  small: true,\n};\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "mouse.bird.size is not valid",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "mouse[bird.size] is not valid",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "mouse[bird[\u0022size\u0022]] is not valid",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "All of them are valid",
         "isCorrect": false
       }
@@ -126,30 +126,30 @@
   },
   {
     "id": "6",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet c = { greeting: \u0027Hey!\u0027 };\nlet d;\n\nd = c;\nc.greeting = \u0027Hello\u0027;\nconsole.log(d.greeting);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet c = { greeting: \u0027Hey!\u0027 };\nlet d;\n\nd = c;\nc.greeting = \u0027Hello\u0027;\nconsole.log(d.greeting);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Hello",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Hey!",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       },
       {
-        "index": "E",
+        "id": "E",
         "answer": "TypeError",
         "isCorrect": false
       }
@@ -158,25 +158,25 @@
   },
   {
     "id": "7",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet a = 3;\nlet b = new Number(3);\nlet c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet a = 3;\nlet b = new Number(3);\nlet c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true false true",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false false true",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "true false false",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "false true true",
         "isCorrect": false
       }
@@ -185,25 +185,25 @@
   },
   {
     "id": "8",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor;\n    return this.newColor;\n  }\n\n  constructor({ newColor = \u0027green\u0027 } = {}) {\n    this.newColor = newColor;\n  }\n}\n\nconst freddie = new Chameleon({ newColor: \u0027purple\u0027 });\nconsole.log(freddie.colorChange(\u0027orange\u0027));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor;\n    return this.newColor;\n  }\n\n  constructor({ newColor = \u0027green\u0027 } = {}) {\n    this.newColor = newColor;\n  }\n}\n\nconst freddie = new Chameleon({ newColor: \u0027purple\u0027 });\nconsole.log(freddie.colorChange(\u0027orange\u0027));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "orange",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "purple",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "green",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "TypeError",
         "isCorrect": true
       }
@@ -212,20 +212,20 @@
   },
   {
     "id": "9",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet greeting;\ngreetign = {}; // Typo!\nconsole.log(greetign);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet greeting;\ngreetign = {}; // Typo!\nconsole.log(greetign);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{}",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "ReferenceError: greetign is not defined",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -234,25 +234,25 @@
   },
   {
     "id": "10",
-    "question": "What happens when we do this?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction bark() {\n  console.log(\u0027Woof!\u0027);\n}\n\nbark.animal = \u0027dog\u0027;\n\u003C/pre\u003E",
+    "question": "What happens when we do this?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction bark() {\n  console.log(\u0027Woof!\u0027);\n}\n\nbark.animal = \u0027dog\u0027;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Nothing, this is totally fine!",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "SyntaxError. You cannot add properties to a function this way.",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022Woof\u0022 gets logged.",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -261,25 +261,25 @@
   },
   {
     "id": "11",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nPerson.getFullName = function() {\n  return \u0060${this.firstName} ${this.lastName}\u0060;\n};\n\nconsole.log(member.getFullName());\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nPerson.getFullName = function() {\n  return \u0060${this.firstName} ${this.lastName}\u0060;\n};\n\nconsole.log(member.getFullName());\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "TypeError",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "SyntaxError",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Lydia Hallie",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined undefined",
         "isCorrect": false
       }
@@ -288,25 +288,25 @@
   },
   {
     "id": "12",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nconst sarah = Person(\u0027Sarah\u0027, \u0027Smith\u0027);\n\nconsole.log(lydia);\nconsole.log(sarah);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person(\u0027Lydia\u0027, \u0027Hallie\u0027);\nconst sarah = Person(\u0027Sarah\u0027, \u0027Smith\u0027);\n\nconsole.log(lydia);\nconsole.log(sarah);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Person {firstName: \u0022Lydia\u0022, lastName: \u0022Hallie\u0022} and undefined",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Person {firstName: \u0022Lydia\u0022, lastName: \u0022Hallie\u0022} and Person {firstName: \u0022Sarah\u0022, lastName: \u0022Smith\u0022}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Person {firstName: \u0022Lydia\u0022, lastName: \u0022Hallie\u0022} and {}",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Person {firstName: \u0022Lydia\u0022, lastName: \u0022Hallie\u0022} and ReferenceError",
         "isCorrect": false
       }
@@ -318,22 +318,22 @@
     "question": "What are the three phases of event propagation?",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Target \u003E Capturing \u003E Bubbling",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Bubbling \u003E Target \u003E Capturing",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Target \u003E Bubbling \u003E Capturing",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Capturing \u003E Target \u003E Bubbling",
         "isCorrect": true
       }
@@ -345,12 +345,12 @@
     "question": "All object have prototypes.",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false",
         "isCorrect": true
       }
@@ -359,25 +359,25 @@
   },
   {
     "id": "15",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\nsum(1, \u00272\u0027);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\nsum(1, \u00272\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "NaN",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "TypeError",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u002212\u0022",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "3",
         "isCorrect": false
       }
@@ -386,25 +386,25 @@
   },
   {
     "id": "16",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet number = 0;\nconsole.log(number\u002B\u002B);\nconsole.log(\u002B\u002Bnumber);\nconsole.log(number);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet number = 0;\nconsole.log(number\u002B\u002B);\nconsole.log(\u002B\u002Bnumber);\nconsole.log(number);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1 1 2",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "1 2 2",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "0 2 2",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "0 1 2",
         "isCorrect": false
       }
@@ -413,20 +413,20 @@
   },
   {
     "id": "17",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = \u0027Lydia\u0027;\nconst age = 21;\n\ngetPersonInfo\u0060${person} is ${age} years old\u0060;\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = \u0027Lydia\u0027;\nconst age = 21;\n\ngetPersonInfo\u0060${person} is ${age} years old\u0060;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Lydia\u0022 21 [\u0022\u0022, \u0022 is \u0022, \u0022 years old\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0022\u0022, \u0022 is \u0022, \u0022 years old\u0022] \u0022Lydia\u0022 21",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022Lydia\u0022 [\u0022\u0022, \u0022 is \u0022, \u0022 years old\u0022] 21",
         "isCorrect": false
       }
@@ -435,20 +435,20 @@
   },
   {
     "id": "18",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction checkAge(data) {\n  if (data === { age: 18 }) {\n    console.log(\u0027You are an adult!\u0027);\n  } else if (data == { age: 18 }) {\n    console.log(\u0027You are still an adult.\u0027);\n  } else {\n    console.log(\u0060Hmm.. You don\u0027t have an age I guess\u0060);\n  }\n}\n\ncheckAge({ age: 18 });\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction checkAge(data) {\n  if (data === { age: 18 }) {\n    console.log(\u0027You are an adult!\u0027);\n  } else if (data == { age: 18 }) {\n    console.log(\u0027You are still an adult.\u0027);\n  } else {\n    console.log(\u0060Hmm.. You don\u0027t have an age I guess\u0060);\n  }\n}\n\ncheckAge({ age: 18 });\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "You are an adult!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "You are still an adult.",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Hmm.. You don\u0027t have an age I guess",
         "isCorrect": true
       }
@@ -457,25 +457,25 @@
   },
   {
     "id": "19",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getAge(...args) {\n  console.log(typeof args);\n}\n\ngetAge(21);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getAge(...args) {\n  console.log(typeof args);\n}\n\ngetAge(21);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022number\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022array\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022object\u0022",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022NaN\u0022",
         "isCorrect": false
       }
@@ -484,25 +484,25 @@
   },
   {
     "id": "20",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getAge() {\n  \u0027use strict\u0027;\n  age = 21;\n  console.log(age);\n}\n\ngetAge();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getAge() {\n  \u0027use strict\u0027;\n  age = 21;\n  console.log(age);\n}\n\ngetAge();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "21",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "ReferenceError",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "TypeError",
         "isCorrect": false
       }
@@ -511,25 +511,25 @@
   },
   {
     "id": "21",
-    "question": "What\u0027s the value of \u0060sum\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst sum = eval(\u002710*10\u002B5\u0027);\n\u003C/pre\u003E",
+    "question": "What\u0027s the value of \u0060sum\u0060?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst sum = eval(\u002710*10\u002B5\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "105",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022105\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "TypeError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u002210*10\u002B5\u0022",
         "isCorrect": false
       }
@@ -538,25 +538,25 @@
   },
   {
     "id": "22",
-    "question": "How long is cool_secret accessible?\n\n\u003Cpre class=\u0027js\u0027\u003E\nsessionStorage.setItem(\u0027cool_secret\u0027, 123);\n\u003C/pre\u003E",
+    "question": "How long is cool_secret accessible?\n\n\u003Cpre class=\u0027code\u0027\u003E\nsessionStorage.setItem(\u0027cool_secret\u0027, 123);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Forever, the data doesn\u0027t get lost.",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "When the user closes the tab.",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "When the user closes the entire browser, not only the tab.",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "When the user shuts off their computer.",
         "isCorrect": false
       }
@@ -565,25 +565,25 @@
   },
   {
     "id": "23",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nvar num = 8;\nvar num = 10;\n\nconsole.log(num);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nvar num = 8;\nvar num = 10;\n\nconsole.log(num);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "8",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "10",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "SyntaxError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -592,25 +592,25 @@
   },
   {
     "id": "24",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst obj = { 1: \u0027a\u0027, 2: \u0027b\u0027, 3: \u0027c\u0027 };\nconst set = new Set([1, 2, 3, 4, 5]);\n\nobj.hasOwnProperty(\u00271\u0027);\nobj.hasOwnProperty(1);\nset.has(\u00271\u0027);\nset.has(1);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst obj = { 1: \u0027a\u0027, 2: \u0027b\u0027, 3: \u0027c\u0027 };\nconst set = new Set([1, 2, 3, 4, 5]);\n\nobj.hasOwnProperty(\u00271\u0027);\nobj.hasOwnProperty(1);\nset.has(\u00271\u0027);\nset.has(1);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "false true false true",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false true true true",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "true true false true",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "true true true true",
         "isCorrect": false
       }
@@ -619,25 +619,25 @@
   },
   {
     "id": "25",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst obj = { a: \u0027one\u0027, b: \u0027two\u0027, a: \u0027three\u0027 };\nconsole.log(obj);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst obj = { a: \u0027one\u0027, b: \u0027two\u0027, a: \u0027three\u0027 };\nconsole.log(obj);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ a: \u0022one\u0022, b: \u0022two\u0022 }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ b: \u0022two\u0022, a: \u0022three\u0022 }",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ a: \u0022three\u0022, b: \u0022two\u0022 }",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": false
       }
@@ -649,17 +649,17 @@
     "question": "The JavaScript global execution context creates two things for you: the global object, and the \u0022this\u0022 keyword.",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "it depends",
         "isCorrect": false
       }
@@ -668,25 +668,25 @@
   },
   {
     "id": "27",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfor (let i = 1; i \u003C 5; i\u002B\u002B) {\n  if (i === 3) continue;\n  console.log(i);\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfor (let i = 1; i \u003C 5; i\u002B\u002B) {\n  if (i === 3) continue;\n  console.log(i);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1 2",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "1 2 3",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "1 2 4",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "1 3 4",
         "isCorrect": false
       }
@@ -695,25 +695,25 @@
   },
   {
     "id": "28",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nString.prototype.giveLydiaPizza = () =\u003E {\n  return \u0027Just give Lydia pizza already!\u0027;\n};\n\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name.giveLydiaPizza())\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nString.prototype.giveLydiaPizza = () =\u003E {\n  return \u0027Just give Lydia pizza already!\u0027;\n};\n\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name.giveLydiaPizza())\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Just give Lydia pizza already!\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "TypeError: not a function",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "SyntaxError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -722,25 +722,25 @@
   },
   {
     "id": "29",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst a = {};\nconst b = { key: \u0027b\u0027 };\nconst c = { key: \u0027c\u0027 };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst a = {};\nconst b = { key: \u0027b\u0027 };\nconst c = { key: \u0027c\u0027 };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "123",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "456",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -749,25 +749,25 @@
   },
   {
     "id": "30",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst foo = () =\u003E console.log(\u0027First\u0027);\nconst bar = () =\u003E setTimeout(() =\u003E console.log(\u0027Second\u0027));\nconst baz = () =\u003E console.log(\u0027Third\u0027);\n\nbar();\nfoo();\nbaz();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst foo = () =\u003E console.log(\u0027First\u0027);\nconst bar = () =\u003E setTimeout(() =\u003E console.log(\u0027Second\u0027));\nconst baz = () =\u003E console.log(\u0027Third\u0027);\n\nbar();\nfoo();\nbaz();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "First Second Third",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "First Third Second",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Second First Third",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Second Third First",
         "isCorrect": false
       }
@@ -776,25 +776,25 @@
   },
   {
     "id": "31",
-    "question": "What is the event.target when clicking the button?\n\n\u003C/pre\u003Ehtml\n\u003Cdiv onclick=\u0022console.log(\u0027first div\u0027)\u0022\u003E\n  \u003Cdiv onclick=\u0022console.log(\u0027second div\u0027)\u0022\u003E\n    \u003Cbutton onclick=\u0022console.log(\u0027button\u0027)\u0022\u003E\n      Click!\n    \u003C/button\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003C/pre\u003E",
+    "question": "What is the event.target when clicking the button?\n\n\u003Cpre class=\u0027code\u0027\u003E\n\u003Cdiv onclick=\u0022console.log(\u0027first div\u0027)\u0022\u003E\n  \u003Cdiv onclick=\u0022console.log(\u0027second div\u0027)\u0022\u003E\n    \u003Cbutton onclick=\u0022console.log(\u0027button\u0027)\u0022\u003E\n      Click!\n    \u003C/button\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Outer div",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Inner div",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "button",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "An array of all nested elements.",
         "isCorrect": false
       }
@@ -803,25 +803,25 @@
   },
   {
     "id": "32",
-    "question": "When you click the paragraph, what\u0027s the logged output?\n\n\u003C/pre\u003Ehtml\n\u003Cdiv onclick=\u0022console.log(\u0027div\u0027)\u0022\u003E\n  \u003Cp onclick=\u0022console.log(\u0027p\u0027)\u0022\u003E\n    Click here!\n  \u003C/p\u003E\n\u003C/div\u003E\n\u003C/pre\u003E",
+    "question": "When you click the paragraph, what\u0027s the logged output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n\u003Cdiv onclick=\u0022console.log(\u0027div\u0027)\u0022\u003E\n  \u003Cp onclick=\u0022console.log(\u0027p\u0027)\u0022\u003E\n    Click here!\n  \u003C/p\u003E\n\u003C/div\u003E\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "p div",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "div p",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "p",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "div",
         "isCorrect": false
       }
@@ -830,25 +830,25 @@
   },
   {
     "id": "33",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = { name: \u0027Lydia\u0027 };\n\nfunction sayHi(age) {\n  return \u0060${this.name} is ${age}\u0060;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = { name: \u0027Lydia\u0027 };\n\nfunction sayHi(age) {\n  return \u0060${this.name} is ${age}\u0060;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "undefined is 21 Lydia is 21",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "function function",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Lydia is 21 Lydia is 21",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Lydia is 21 function",
         "isCorrect": true
       }
@@ -857,25 +857,25 @@
   },
   {
     "id": "34",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sayHi() {\n  return (() =\u003E 0)();\n}\n\nconsole.log(typeof sayHi());\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sayHi() {\n  return (() =\u003E 0)();\n}\n\nconsole.log(typeof sayHi());\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022object\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022number\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022function\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022undefined\u0022",
         "isCorrect": false
       }
@@ -884,25 +884,25 @@
   },
   {
     "id": "35",
-    "question": "Which of these values are falsy?\n\n\u003Cpre class=\u0027js\u0027\u003E\n0;\nnew Number(0);\n(\u0027\u0027);\n(\u0027 \u0027);\nnew Boolean(false);\nundefined;\n\u003C/pre\u003E",
+    "question": "Which of these values are falsy?\n\n\u003Cpre class=\u0027code\u0027\u003E\n0;\nnew Number(0);\n(\u0027\u0027);\n(\u0027 \u0027);\nnew Boolean(false);\nundefined;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "0, \u0027\u0027, undefined",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "0, new Number(0), \u0027\u0027, new Boolean(false), undefined",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "0, \u0027\u0027, new Boolean(false), undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "All of them are falsy",
         "isCorrect": false
       }
@@ -911,25 +911,25 @@
   },
   {
     "id": "36",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(typeof typeof 1);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(typeof typeof 1);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022number\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022string\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022object\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022undefined\u0022",
         "isCorrect": false
       }
@@ -938,25 +938,25 @@
   },
   {
     "id": "37",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst numbers = [1, 2, 3];\nnumbers[10] = 11;\nconsole.log(numbers);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst numbers = [1, 2, 3];\nnumbers[10] = 11;\nconsole.log(numbers);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[1, 2, 3, null x 7, 11]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[1, 2, 3, 11]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[1, 2, 3, empty x 7, 11]",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": false
       }
@@ -965,25 +965,25 @@
   },
   {
     "id": "38",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n(() =\u003E {\n  let x, y;\n  try {\n    throw new Error();\n  } catch (x) {\n    (x = 1), (y = 2);\n    console.log(x);\n  }\n  console.log(x);\n  console.log(y);\n})();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n(() =\u003E {\n  let x, y;\n  try {\n    throw new Error();\n  } catch (x) {\n    (x = 1), (y = 2);\n    console.log(x);\n  }\n  console.log(x);\n  console.log(y);\n})();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1 undefined 2",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "undefined undefined undefined",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "1 1 2",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "1 undefined undefined",
         "isCorrect": false
       }
@@ -995,22 +995,22 @@
     "question": "Everything in JavaScript is either a...",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "primitive or object",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "function or object",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "trick question! only objects",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "number or object",
         "isCorrect": false
       }
@@ -1019,25 +1019,25 @@
   },
   {
     "id": "40",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[[0, 1], [2, 3]].reduce(\n  (acc, cur) =\u003E {\n    return acc.concat(cur);\n  },\n  [1, 2],\n);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n[[0, 1], [2, 3]].reduce(\n  (acc, cur) =\u003E {\n    return acc.concat(cur);\n  },\n  [1, 2],\n);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[0, 1, 2, 3, 1, 2]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[6, 1, 2]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[1, 2, 0, 1, 2, 3]",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[1, 2, 6]",
         "isCorrect": false
       }
@@ -1046,25 +1046,25 @@
   },
   {
     "id": "41",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n!!null;\n!!\u0027\u0027;\n!!1;\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n!!null;\n!!\u0027\u0027;\n!!1;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "false true false",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false false true",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "false true true",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "true true false",
         "isCorrect": false
       }
@@ -1073,25 +1073,25 @@
   },
   {
     "id": "42",
-    "question": "What does the \u0060setInterval\u0060 method return in the browser?\n\n\u003Cpre class=\u0027js\u0027\u003E\nsetInterval(() =\u003E console.log(\u0027Hi\u0027), 1000);\n\u003C/pre\u003E",
+    "question": "What does the \u0060setInterval\u0060 method return in the browser?\n\n\u003Cpre class=\u0027code\u0027\u003E\nsetInterval(() =\u003E console.log(\u0027Hi\u0027), 1000);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "a unique id",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "the amount of milliseconds specified",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "the passed function",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -1100,25 +1100,25 @@
   },
   {
     "id": "43",
-    "question": "What does this return?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[...\u0027Lydia\u0027];\n\u003C/pre\u003E",
+    "question": "What does this return?\n\n\u003Cpre class=\u0027code\u0027\u003E\n[...\u0027Lydia\u0027];\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0022L\u0022, \u0022y\u0022, \u0022d\u0022, \u0022i\u0022, \u0022a\u0022]",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0022Lydia\u0022]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[[], \u0022Lydia\u0022]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[[\u0022L\u0022, \u0022y\u0022, \u0022d\u0022, \u0022i\u0022, \u0022a\u0022]]",
         "isCorrect": false
       }
@@ -1127,25 +1127,25 @@
   },
   {
     "id": "44",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction* generator(i) {\n  yield i;\n  yield i * 2;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next().value);\nconsole.log(gen.next().value);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction* generator(i) {\n  yield i;\n  yield i * 2;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next().value);\nconsole.log(gen.next().value);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[0, 10], [10, 20]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "20, 20",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "10, 20",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "0, 10 and 10, 20",
         "isCorrect": false
       }
@@ -1154,25 +1154,25 @@
   },
   {
     "id": "45",
-    "question": "What does this return?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst firstPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 500, \u0027one\u0027);\n});\n\nconst secondPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 100, \u0027two\u0027);\n});\n\nPromise.race([firstPromise, secondPromise]).then(res =\u003E console.log(res));\n\u003C/pre\u003E",
+    "question": "What does this return?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst firstPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 500, \u0027one\u0027);\n});\n\nconst secondPromise = new Promise((res, rej) =\u003E {\n  setTimeout(res, 100, \u0027two\u0027);\n});\n\nPromise.race([firstPromise, secondPromise]).then(res =\u003E console.log(res));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022one\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022two\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022two\u0022 \u0022one\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022one\u0022 \u0022two\u0022",
         "isCorrect": false
       }
@@ -1181,25 +1181,25 @@
   },
   {
     "id": "46",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet person = { name: \u0027Lydia\u0027 };\nconst members = [person];\nperson = null;\n\nconsole.log(members);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet person = { name: \u0027Lydia\u0027 };\nconst members = [person];\nperson = null;\n\nconsole.log(members);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "null",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[null]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[{}]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[{ name: \u0022Lydia\u0022 }]",
         "isCorrect": true
       }
@@ -1208,25 +1208,25 @@
   },
   {
     "id": "47",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const item in person) {\n  console.log(item);\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const item in person) {\n  console.log(item);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ name: \u0022Lydia\u0022 }, { age: 21 }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022name\u0022, \u0022age\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022Lydia\u0022, 21",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[\u0022name\u0022, \u0022Lydia\u0022], [\u0022age\u0022, 21]",
         "isCorrect": false
       }
@@ -1235,25 +1235,25 @@
   },
   {
     "id": "48",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(3 \u002B 4 \u002B \u00275\u0027);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(3 \u002B 4 \u002B \u00275\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022345\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u002275\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "12",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u002212\u0022",
         "isCorrect": false
       }
@@ -1262,25 +1262,25 @@
   },
   {
     "id": "49",
-    "question": "What\u0027s the value of \u0060num\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst num = parseInt(\u00277*6\u0027, 10);\n\u003C/pre\u003E",
+    "question": "What\u0027s the value of \u0060num\u0060?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst num = parseInt(\u00277*6\u0027, 10);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "42",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u002242\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "7",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "NaN",
         "isCorrect": false
       }
@@ -1289,25 +1289,25 @@
   },
   {
     "id": "50",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[1, 2, 3].map(num =\u003E {\n  if (typeof num === \u0027number\u0027) return;\n  return num * 2;\n});\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n[1, 2, 3].map(num =\u003E {\n  if (typeof num === \u0027number\u0027) return;\n  return num * 2;\n});\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[null, null, null]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[undefined, undefined, undefined]",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[ 3 x empty ]",
         "isCorrect": false
       }
@@ -1316,25 +1316,25 @@
   },
   {
     "id": "51",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getInfo(member, year) {\n  member.name = \u0027Lydia\u0027;\n  year = \u00271998\u0027;\n}\n\nconst person = { name: \u0027Sarah\u0027 };\nconst birthYear = \u00271997\u0027;\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getInfo(member, year) {\n  member.name = \u0027Lydia\u0027;\n  year = \u00271998\u0027;\n}\n\nconst person = { name: \u0027Sarah\u0027 };\nconst birthYear = \u00271997\u0027;\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ name: \u0022Lydia\u0022 }, \u00221997\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ name: \u0022Sarah\u0022 }, \u00221998\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ name: \u0022Lydia\u0022 }, \u00221998\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{ name: \u0022Sarah\u0022 }, \u00221997\u0022",
         "isCorrect": false
       }
@@ -1343,25 +1343,25 @@
   },
   {
     "id": "52",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction greeting() {\n  throw \u0027Hello world!\u0027;\n}\n\nfunction sayHi() {\n  try {\n    const data = greeting();\n    console.log(\u0027It worked!\u0027, data);\n  } catch (e) {\n    console.log(\u0027Oh no an error:\u0027, e);\n  }\n}\n\nsayHi();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction greeting() {\n  throw \u0027Hello world!\u0027;\n}\n\nfunction sayHi() {\n  try {\n    const data = greeting();\n    console.log(\u0027It worked!\u0027, data);\n  } catch (e) {\n    console.log(\u0027Oh no an error:\u0027, e);\n  }\n}\n\nsayHi();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "It worked! Hello world!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Oh no an error: undefined",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "SyntaxError: can only throw Error objects",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Oh no an error: Hello world!",
         "isCorrect": true
       }
@@ -1370,25 +1370,25 @@
   },
   {
     "id": "53",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction Car() {\n  this.make = \u0027Lamborghini\u0027;\n  return { make: \u0027Maserati\u0027 };\n}\n\nconst myCar = new Car();\nconsole.log(myCar.make);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction Car() {\n  this.make = \u0027Lamborghini\u0027;\n  return { make: \u0027Maserati\u0027 };\n}\n\nconst myCar = new Car();\nconsole.log(myCar.make);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Lamborghini\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022Maserati\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "ReferenceError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "TypeError",
         "isCorrect": false
       }
@@ -1397,25 +1397,25 @@
   },
   {
     "id": "54",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n(() =\u003E {\n  let x = (y = 10);\n})();\n\nconsole.log(typeof x);\nconsole.log(typeof y);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n(() =\u003E {\n  let x = (y = 10);\n})();\n\nconsole.log(typeof x);\nconsole.log(typeof y);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022undefined\u0022, \u0022number\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022number\u0022, \u0022number\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022object\u0022, \u0022number\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022number\u0022, \u0022undefined\u0022",
         "isCorrect": false
       }
@@ -1424,25 +1424,25 @@
   },
   {
     "id": "55",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nDog.prototype.bark = function() {\n  console.log(\u0060Woof I am ${this.name}\u0060);\n};\n\nconst pet = new Dog(\u0027Mara\u0027);\n\npet.bark();\n\ndelete Dog.prototype.bark;\n\npet.bark();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nDog.prototype.bark = function() {\n  console.log(\u0060Woof I am ${this.name}\u0060);\n};\n\nconst pet = new Dog(\u0027Mara\u0027);\n\npet.bark();\n\ndelete Dog.prototype.bark;\n\npet.bark();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Woof I am Mara\u0022, TypeError",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022Woof I am Mara\u0022, \u0022Woof I am Mara\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022Woof I am Mara\u0022, undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "TypeError, TypeError",
         "isCorrect": false
       }
@@ -1451,25 +1451,25 @@
   },
   {
     "id": "56",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst set = new Set([1, 1, 2, 3, 4]);\n\nconsole.log(set);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst set = new Set([1, 1, 2, 3, 4]);\n\nconsole.log(set);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[1, 1, 2, 3, 4]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[1, 2, 3, 4]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{1, 1, 2, 3, 4}",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{1, 2, 3, 4}",
         "isCorrect": true
       }
@@ -1478,25 +1478,25 @@
   },
   {
     "id": "57",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// counter.js\nlet counter = 10;\nexport default counter;\n\u003C/pre\u003E\n\n\u003Cpre class=\u0027js\u0027\u003E\n// index.js\nimport myCounter from \u0027./counter\u0027;\n\nmyCounter \u002B= 1;\n\nconsole.log(myCounter);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n// counter.js\nlet counter = 10;\nexport default counter;\n\u003C/pre\u003E\n\n\u003Cpre class=\u0027code\u0027\u003E\n// index.js\nimport myCounter from \u0027./counter\u0027;\n\nmyCounter \u002B= 1;\n\nconsole.log(myCounter);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "10",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "11",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Error",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "NaN",
         "isCorrect": false
       }
@@ -1505,25 +1505,25 @@
   },
   {
     "id": "58",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia\u0027;\nage = 21;\n\nconsole.log(delete name);\nconsole.log(delete age);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst name = \u0027Lydia\u0027;\nage = 21;\n\nconsole.log(delete name);\nconsole.log(delete age);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "false, true",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022Lydia\u0022, 21",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "true, true",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined, undefined",
         "isCorrect": false
       }
@@ -1532,25 +1532,25 @@
   },
   {
     "id": "59",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst numbers = [1, 2, 3, 4, 5];\nconst [y] = numbers;\n\nconsole.log(y);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst numbers = [1, 2, 3, 4, 5];\nconst [y] = numbers;\n\nconsole.log(y);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[[1, 2, 3, 4, 5]]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[1, 2, 3, 4, 5]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "1",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[1]",
         "isCorrect": false
       }
@@ -1559,25 +1559,25 @@
   },
   {
     "id": "60",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst user = { name: \u0027Lydia\u0027, age: 21 };\nconst admin = { admin: true, ...user };\n\nconsole.log(admin);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst user = { name: \u0027Lydia\u0027, age: 21 };\nconst admin = { admin: true, ...user };\n\nconsole.log(admin);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ admin: true, user: { name: \u0022Lydia\u0022, age: 21 } }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ admin: true, name: \u0022Lydia\u0022, age: 21 }",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ admin: true, user: [\u0022Lydia\u0022, 21] }",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{ admin: true }",
         "isCorrect": false
       }
@@ -1586,25 +1586,25 @@
   },
   {
     "id": "61",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = { name: \u0027Lydia\u0027 };\n\nObject.defineProperty(person, \u0027age\u0027, { value: 21 });\n\nconsole.log(person);\nconsole.log(Object.keys(person));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = { name: \u0027Lydia\u0027 };\n\nObject.defineProperty(person, \u0027age\u0027, { value: 21 });\n\nconsole.log(person);\nconsole.log(Object.keys(person));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ name: \u0022Lydia\u0022, age: 21 }, [\u0022name\u0022, \u0022age\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ name: \u0022Lydia\u0022, age: 21 }, [\u0022name\u0022]",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ name: \u0022Lydia\u0022}, [\u0022name\u0022, \u0022age\u0022]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{ name: \u0022Lydia\u0022}, [\u0022age\u0022]",
         "isCorrect": false
       }
@@ -1613,25 +1613,25 @@
   },
   {
     "id": "62",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst settings = {\n  username: \u0027lydiahallie\u0027,\n  level: 19,\n  health: 90,\n};\n\nconst data = JSON.stringify(settings, [\u0027level\u0027, \u0027health\u0027]);\nconsole.log(data);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst settings = {\n  username: \u0027lydiahallie\u0027,\n  level: 19,\n  health: 90,\n};\n\nconst data = JSON.stringify(settings, [\u0027level\u0027, \u0027health\u0027]);\nconsole.log(data);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022{\u0022level\u0022:19, \u0022health\u0022:90}\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022{\u0022username\u0022: \u0022lydiahallie\u0022}\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022[\u0022level\u0022, \u0022health\u0022]\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022{\u0022username\u0022: \u0022lydiahallie\u0022, \u0022level\u0022:19, \u0022health\u0022:90}\u0022",
         "isCorrect": false
       }
@@ -1640,25 +1640,25 @@
   },
   {
     "id": "63",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet num = 10;\n\nconst increaseNumber = () =\u003E num\u002B\u002B;\nconst increasePassedNumber = number =\u003E number\u002B\u002B;\n\nconst num1 = increaseNumber();\nconst num2 = increasePassedNumber(num1);\n\nconsole.log(num1);\nconsole.log(num2);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet num = 10;\n\nconst increaseNumber = () =\u003E num\u002B\u002B;\nconst increasePassedNumber = number =\u003E number\u002B\u002B;\n\nconst num1 = increaseNumber();\nconst num2 = increasePassedNumber(num1);\n\nconsole.log(num1);\nconsole.log(num2);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "10, 10",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "10, 11",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "11, 11",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "11, 12",
         "isCorrect": false
       }
@@ -1667,25 +1667,25 @@
   },
   {
     "id": "64",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst value = { number: 10 };\n\nconst multiply = (x = { ...value }) =\u003E {\n  console.log((x.number *= 2));\n};\n\nmultiply();\nmultiply();\nmultiply(value);\nmultiply(value);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst value = { number: 10 };\n\nconst multiply = (x = { ...value }) =\u003E {\n  console.log((x.number *= 2));\n};\n\nmultiply();\nmultiply();\nmultiply(value);\nmultiply(value);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "20, 40, 80, 160",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "20, 40, 20, 40",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "20, 20, 20, 40",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "NaN, NaN, 20, 40",
         "isCorrect": false
       }
@@ -1694,25 +1694,25 @@
   },
   {
     "id": "65",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n[1, 2, 3, 4].reduce((x, y) =\u003E console.log(x, y));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n[1, 2, 3, 4].reduce((x, y) =\u003E console.log(x, y));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1 2 and 3 3 and 6 4",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "1 2 and 2 3 and 3 4",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "1 undefined and 2 undefined and 3 undefined and 4 undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "1 2 and undefined 3 and undefined 4",
         "isCorrect": true
       }
@@ -1721,25 +1721,25 @@
   },
   {
     "id": "66",
-    "question": "With which constructor can we successfully extend the \u0060Dog\u0060 class?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n};\n\nclass Labrador extends Dog {\n  // 1\n  constructor(name, size) {\n    this.size = size;\n  }\n  // 2\n  constructor(name, size) {\n    super(name);\n    this.size = size;\n  }\n  // 3\n  constructor(size) {\n    super(name);\n    this.size = size;\n  }\n  // 4\n  constructor(name, size) {\n    this.name = name;\n    this.size = size;\n  }\n\n};\n\u003C/pre\u003E",
+    "question": "With which constructor can we successfully extend the \u0060Dog\u0060 class?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Dog {\n  constructor(name) {\n    this.name = name;\n  }\n};\n\nclass Labrador extends Dog {\n  // 1\n  constructor(name, size) {\n    this.size = size;\n  }\n  // 2\n  constructor(name, size) {\n    super(name);\n    this.size = size;\n  }\n  // 3\n  constructor(size) {\n    super(name);\n    this.size = size;\n  }\n  // 4\n  constructor(name, size) {\n    this.name = name;\n    this.size = size;\n  }\n\n};\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "2",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "3",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "4",
         "isCorrect": false
       }
@@ -1748,25 +1748,25 @@
   },
   {
     "id": "67",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// index.js\nconsole.log(\u0027running index.js\u0027);\nimport { sum } from \u0027./sum.js\u0027;\nconsole.log(sum(1, 2));\n\n// sum.js\nconsole.log(\u0027running sum.js\u0027);\nexport const sum = (a, b) =\u003E a \u002B b;\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n// index.js\nconsole.log(\u0027running index.js\u0027);\nimport { sum } from \u0027./sum.js\u0027;\nconsole.log(sum(1, 2));\n\n// sum.js\nconsole.log(\u0027running sum.js\u0027);\nexport const sum = (a, b) =\u003E a \u002B b;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "running index.js, running sum.js, 3",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "running sum.js, running index.js, 3",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "running sum.js, 3, running index.js",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "running index.js, undefined, running sum.js",
         "isCorrect": false
       }
@@ -1775,25 +1775,25 @@
   },
   {
     "id": "68",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(Number(2) === Number(2));\nconsole.log(Boolean(false) === Boolean(false));\nconsole.log(Symbol(\u0027foo\u0027) === Symbol(\u0027foo\u0027));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(Number(2) === Number(2));\nconsole.log(Boolean(false) === Boolean(false));\nconsole.log(Symbol(\u0027foo\u0027) === Symbol(\u0027foo\u0027));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true, true, false",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false, true, false",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "true, false, true",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "true, true, true",
         "isCorrect": false
       }
@@ -1802,25 +1802,25 @@
   },
   {
     "id": "69",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\nconsole.log(name.padStart(13));\nconsole.log(name.padStart(2));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\nconsole.log(name.padStart(13));\nconsole.log(name.padStart(2));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Lydia Hallie\u0022, \u0022Lydia Hallie\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022 Lydia Hallie\u0022, \u0022 Lydia Hallie\u0022 (\u0022[13x whitespace]Lydia Hallie\u0022, \u0022[2x whitespace]Lydia Hallie\u0022)",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022 Lydia Hallie\u0022, \u0022Lydia Hallie\u0022 (\u0022[1x whitespace]Lydia Hallie\u0022, \u0022Lydia Hallie\u0022)",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022Lydia Hallie\u0022, \u0022Lyd\u0022,",
         "isCorrect": false
       }
@@ -1829,25 +1829,25 @@
   },
   {
     "id": "70",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0027\uD83E\uDD51\u0027 \u002B \u0027\uD83D\uDCBB\u0027);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(\u0027\uD83E\uDD51\u0027 \u002B \u0027\uD83D\uDCBB\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022\uD83E\uDD51\uD83D\uDCBB\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "257548",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "A string containing their code points",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Error",
         "isCorrect": false
       }
@@ -1856,25 +1856,25 @@
   },
   {
     "id": "71",
-    "question": "How can we log the values that are commented out after the console.log statement?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction* startGame() {\n  const answer = yield \u0027Do you love JavaScript?\u0027;\n  if (answer !== \u0027Yes\u0027) {\n    return \u0022Oh wow... Guess we\u0027re done here\u0022;\n  }\n  return \u0027JavaScript loves you back \u2764\uFE0F\u0027;\n}\n\nconst game = startGame();\nconsole.log(/* 1 */); // Do you love JavaScript?\nconsole.log(/* 2 */); // JavaScript loves you back \u2764\uFE0F\n\u003C/pre\u003E",
+    "question": "How can we log the values that are commented out after the console.log statement?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction* startGame() {\n  const answer = yield \u0027Do you love JavaScript?\u0027;\n  if (answer !== \u0027Yes\u0027) {\n    return \u0022Oh wow... Guess we\u0027re done here\u0022;\n  }\n  return \u0027JavaScript loves you back \u2764\uFE0F\u0027;\n}\n\nconst game = startGame();\nconsole.log(/* 1 */); // Do you love JavaScript?\nconsole.log(/* 2 */); // JavaScript loves you back \u2764\uFE0F\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "game.next(\u0022Yes\u0022).value and game.next().value",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "game.next.value(\u0022Yes\u0022) and game.next.value()",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "game.next().value and game.next(\u0022Yes\u0022).value",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "game.next.value() and game.next.value(\u0022Yes\u0022)",
         "isCorrect": false
       }
@@ -1883,25 +1883,25 @@
   },
   {
     "id": "72",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(String.raw\u0060Hello\\nworld\u0060);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(String.raw\u0060Hello\\nworld\u0060);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Hello world!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Hello \u003Cbr /\u003E\u0026nbsp; \u0026nbsp; \u0026nbsp;world",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Hello\\nworld",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Hello\\n \u003Cbr /\u003E \u0026nbsp; \u0026nbsp; \u0026nbsp;world",
         "isCorrect": false
       }
@@ -1910,25 +1910,25 @@
   },
   {
     "id": "73",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nasync function getData() {\n  return await Promise.resolve(\u0027I made it!\u0027);\n}\n\nconst data = getData();\nconsole.log(data);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nasync function getData() {\n  return await Promise.resolve(\u0027I made it!\u0027);\n}\n\nconst data = getData();\nconsole.log(data);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022I made it!\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Promise {\u003Cresolved\u003E: \u0022I made it!\u0022}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Promise {\u003Cpending\u003E}",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -1937,25 +1937,25 @@
   },
   {
     "id": "74",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction addToList(item, list) {\n  return list.push(item);\n}\n\nconst result = addToList(\u0027apple\u0027, [\u0027banana\u0027]);\nconsole.log(result);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction addToList(item, list) {\n  return list.push(item);\n}\n\nconst result = addToList(\u0027apple\u0027, [\u0027banana\u0027]);\nconsole.log(result);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0027apple\u0027, \u0027banana\u0027]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "2",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "true",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -1964,25 +1964,25 @@
   },
   {
     "id": "75",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst box = { x: 10, y: 20 };\n\nObject.freeze(box);\n\nconst shape = box;\nshape.x = 100;\n\nconsole.log(shape);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst box = { x: 10, y: 20 };\n\nObject.freeze(box);\n\nconst shape = box;\nshape.x = 100;\n\nconsole.log(shape);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ x: 100, y: 20 }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ x: 10, y: 20 }",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ x: 100 }",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -1991,25 +1991,25 @@
   },
   {
     "id": "76",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst { name: myName } = { name: \u0027Lydia\u0027 };\n\nconsole.log(name);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst { name: myName } = { name: \u0027Lydia\u0027 };\n\nconsole.log(name);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Lydia\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022myName\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -2018,15 +2018,15 @@
   },
   {
     "id": "77",
-    "question": "Is this a pure function?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\u003C/pre\u003E",
+    "question": "Is this a pure function?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sum(a, b) {\n  return a \u002B b;\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Yes",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "No",
         "isCorrect": false
       }
@@ -2035,25 +2035,25 @@
   },
   {
     "id": "78",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst add = () =\u003E {\n  const cache = {};\n  return num =\u003E {\n    if (num in cache) {\n      return \u0060From cache! ${cache[num]}\u0060;\n    } else {\n      const result = num \u002B 10;\n      cache[num] = result;\n      return \u0060Calculated! ${result}\u0060;\n    }\n  };\n};\n\nconst addFunction = add();\nconsole.log(addFunction(10));\nconsole.log(addFunction(10));\nconsole.log(addFunction(5 * 2));\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst add = () =\u003E {\n  const cache = {};\n  return num =\u003E {\n    if (num in cache) {\n      return \u0060From cache! ${cache[num]}\u0060;\n    } else {\n      const result = num \u002B 10;\n      cache[num] = result;\n      return \u0060Calculated! ${result}\u0060;\n    }\n  };\n};\n\nconst addFunction = add();\nconsole.log(addFunction(10));\nconsole.log(addFunction(10));\nconsole.log(addFunction(5 * 2));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Calculated! 20 Calculated! 20 Calculated! 20",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Calculated! 20 From cache! 20 Calculated! 20",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Calculated! 20 From cache! 20 From cache! 20",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Calculated! 20 From cache! 20 Error",
         "isCorrect": false
       }
@@ -2062,25 +2062,25 @@
   },
   {
     "id": "79",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myLifeSummedUp = [\u0027\u2615\u0027, \u0027\uD83D\uDCBB\u0027, \u0027\uD83C\uDF77\u0027, \u0027\uD83C\uDF6B\u0027];\n\nfor (let item in myLifeSummedUp) {\n  console.log(item);\n}\n\nfor (let item of myLifeSummedUp) {\n  console.log(item);\n}\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst myLifeSummedUp = [\u0027\u2615\u0027, \u0027\uD83D\uDCBB\u0027, \u0027\uD83C\uDF77\u0027, \u0027\uD83C\uDF6B\u0027];\n\nfor (let item in myLifeSummedUp) {\n  console.log(item);\n}\n\nfor (let item of myLifeSummedUp) {\n  console.log(item);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "0 1 2 3 and \u0022\u2615\u0022 \u0022\uD83D\uDCBB\u0022 \u0022\uD83C\uDF77\u0022 \u0022\uD83C\uDF6B\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022\u2615\u0022 \u0022\uD83D\uDCBB\u0022 \u0022\uD83C\uDF77\u0022 \u0022\uD83C\uDF6B\u0022 and \u0022\u2615\u0022 \u0022\uD83D\uDCBB\u0022 \u0022\uD83C\uDF77\u0022 \u0022\uD83C\uDF6B\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022\u2615\u0022 \u0022\uD83D\uDCBB\u0022 \u0022\uD83C\uDF77\u0022 \u0022\uD83C\uDF6B\u0022 and 0 1 2 3",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "0 1 2 3 and {0: \u0022\u2615\u0022, 1: \u0022\uD83D\uDCBB\u0022, 2: \u0022\uD83C\uDF77\u0022, 3: \u0022\uD83C\uDF6B\u0022}",
         "isCorrect": false
       }
@@ -2089,25 +2089,25 @@
   },
   {
     "id": "80",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst list = [1 \u002B 2, 1 * 2, 1 / 2];\nconsole.log(list);\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst list = [1 \u002B 2, 1 * 2, 1 / 2];\nconsole.log(list);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u00221 \u002B 2\u0022, \u00221 * 2\u0022, \u00221 / 2\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u002212\u0022, 2, 0.5]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[3, 2, 0.5]",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[1, 1, 1]",
         "isCorrect": false
       }
@@ -2116,25 +2116,25 @@
   },
   {
     "id": "81",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sayHi(name) {\n  return \u0060Hi there, ${name}\u0060;\n}\n\nconsole.log(sayHi());\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sayHi(name) {\n  return \u0060Hi there, ${name}\u0060;\n}\n\nconsole.log(sayHi());\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Hi there,",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Hi there, undefined",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Hi there, null",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -2143,25 +2143,25 @@
   },
   {
     "id": "82",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nvar status = \u0027\uD83D\uDE0E\u0027;\n\nsetTimeout(() =\u003E {\n  const status = \u0027\uD83D\uDE0D\u0027;\n\n  const data = {\n    status: \u0027\uD83E\uDD51\u0027,\n    getStatus() {\n      return this.status;\n    },\n  };\n\n  console.log(data.getStatus());\n  console.log(data.getStatus.call(this));\n}, 0);\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nvar status = \u0027\uD83D\uDE0E\u0027;\n\nsetTimeout(() =\u003E {\n  const status = \u0027\uD83D\uDE0D\u0027;\n\n  const data = {\n    status: \u0027\uD83E\uDD51\u0027,\n    getStatus() {\n      return this.status;\n    },\n  };\n\n  console.log(data.getStatus());\n  console.log(data.getStatus.call(this));\n}, 0);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022\uD83E\uDD51\u0022 and \u0022\uD83D\uDE0D\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022\uD83E\uDD51\u0022 and \u0022\uD83D\uDE0E\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022\uD83D\uDE0D\u0022 and \u0022\uD83D\uDE0E\u0022",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022\uD83D\uDE0E\u0022 and \u0022\uD83D\uDE0E\u0022",
         "isCorrect": false
       }
@@ -2170,25 +2170,25 @@
   },
   {
     "id": "83",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nlet city = person.city;\ncity = \u0027Amsterdam\u0027;\n\nconsole.log(person);\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nlet city = person.city;\ncity = \u0027Amsterdam\u0027;\n\nconsole.log(person);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ name: \u0022Lydia\u0022, age: 21 }",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ name: \u0022Lydia\u0022, age: 21, city: \u0022Amsterdam\u0022 }",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ name: \u0022Lydia\u0022, age: 21, city: undefined }",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022Amsterdam\u0022",
         "isCorrect": false
       }
@@ -2197,25 +2197,25 @@
   },
   {
     "id": "84",
-    "question": "What is the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction checkAge(age) {\n  if (age \u003C 18) {\n    const message = \u0022Sorry, you\u0027re too young.\u0022;\n  } else {\n    const message = \u0022Yay! You\u0027re old enough!\u0022;\n  }\n\n  return message;\n}\n\nconsole.log(checkAge(21));\n\u003C/pre\u003E",
+    "question": "What is the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction checkAge(age) {\n  if (age \u003C 18) {\n    const message = \u0022Sorry, you\u0027re too young.\u0022;\n  } else {\n    const message = \u0022Yay! You\u0027re old enough!\u0022;\n  }\n\n  return message;\n}\n\nconsole.log(checkAge(21));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Sorry, you\u0027re too young.\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022Yay! You\u0027re old enough!\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "ReferenceError",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -2224,25 +2224,25 @@
   },
   {
     "id": "85",
-    "question": "What kind of information would get logged?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfetch(\u0027https://www.website.com/api/user/1\u0027)\n  .then(res =\u003E res.json())\n  .then(res =\u003E console.log(res));\n\u003C/pre\u003E",
+    "question": "What kind of information would get logged?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfetch(\u0027https://www.website.com/api/user/1\u0027)\n  .then(res =\u003E res.json())\n  .then(res =\u003E console.log(res));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "The result of the fetch method.",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "The result of the second invocation of the fetch method.",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "The result of the callback in the previous .then().",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "It would always be undefined.",
         "isCorrect": false
       }
@@ -2251,25 +2251,25 @@
   },
   {
     "id": "86",
-    "question": "Which option is a way to set \u0060hasName\u0060 equal to \u0060true\u0060, provided you cannot pass \u0060true\u0060 as an argument?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getName(name) {\n  const hasName = //\n}\n\u003C/pre\u003E",
+    "question": "Which option is a way to set \u0060hasName\u0060 equal to \u0060true\u0060, provided you cannot pass \u0060true\u0060 as an argument?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getName(name) {\n  const hasName = //\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "!!name",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "name",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "new Boolean(name)",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "name.length",
         "isCorrect": false
       }
@@ -2278,25 +2278,25 @@
   },
   {
     "id": "87",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0027I want pizza\u0027[0]);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(\u0027I want pizza\u0027[0]);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022\u0022\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022I\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "SyntaxError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -2305,25 +2305,25 @@
   },
   {
     "id": "88",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sum(num1, num2 = num1) {\n  console.log(num1 \u002B num2);\n}\n\nsum(10);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sum(num1, num2 = num1) {\n  console.log(num1 \u002B num2);\n}\n\nsum(10);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "NaN",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "20",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "ReferenceError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -2332,25 +2332,25 @@
   },
   {
     "id": "89",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// module.js\nexport default () =\u003E \u0027Hello world\u0027;\nexport const name = \u0027Lydia\u0027;\n\n// index.js\nimport * as data from \u0027./module\u0027;\n\nconsole.log(data);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n// module.js\nexport default () =\u003E \u0027Hello world\u0027;\nexport const name = \u0027Lydia\u0027;\n\n// index.js\nimport * as data from \u0027./module\u0027;\n\nconsole.log(data);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ default: function default(), name: \u0022Lydia\u0022 }",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ default: function default() }",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ default: \u0022Hello world\u0022, name: \u0022Lydia\u0022 }",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Global object of module.js",
         "isCorrect": false
       }
@@ -2359,25 +2359,25 @@
   },
   {
     "id": "90",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Person {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nconst member = new Person(\u0027John\u0027);\nconsole.log(typeof member);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Person {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nconst member = new Person(\u0027John\u0027);\nconsole.log(typeof member);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022class\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022function\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "\u0022object\u0022",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0022string\u0022",
         "isCorrect": false
       }
@@ -2386,25 +2386,25 @@
   },
   {
     "id": "91",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet newList = [1, 2, 3].push(4);\n\nconsole.log(newList.push(5));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet newList = [1, 2, 3].push(4);\n\nconsole.log(newList.push(5));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[1, 2, 3, 4, 5]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[1, 2, 3, 5]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[1, 2, 3, 4]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Error",
         "isCorrect": true
       }
@@ -2413,25 +2413,25 @@
   },
   {
     "id": "92",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction giveLydiaPizza() {\n  return \u0027Here is pizza!\u0027;\n}\n\nconst giveLydiaChocolate = () =\u003E\n  \u0022Here\u0027s chocolate... now go hit the gym already.\u0022;\n\nconsole.log(giveLydiaPizza.prototype);\nconsole.log(giveLydiaChocolate.prototype);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction giveLydiaPizza() {\n  return \u0027Here is pizza!\u0027;\n}\n\nconst giveLydiaChocolate = () =\u003E\n  \u0022Here\u0027s chocolate... now go hit the gym already.\u0022;\n\nconsole.log(giveLydiaPizza.prototype);\nconsole.log(giveLydiaChocolate.prototype);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ constructor: ...} { constructor: ...}",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{} { constructor: ...}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ constructor: ...} {}",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{ constructor: ...} undefined",
         "isCorrect": true
       }
@@ -2440,25 +2440,25 @@
   },
   {
     "id": "93",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const [x, y] of Object.entries(person)) {\n  console.log(x, y);\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nfor (const [x, y] of Object.entries(person)) {\n  console.log(x, y);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "name Lydia and age 21",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0022name\u0022, \u0022Lydia\u0022] and [\u0022age\u0022, 21]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0022name\u0022, \u0022age\u0022] and undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Error",
         "isCorrect": false
       }
@@ -2467,25 +2467,25 @@
   },
   {
     "id": "94",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getItems(fruitList, ...args, favoriteFruit) {\n  return [...fruitList, ...args, favoriteFruit]\n}\n\ngetItems([\u0022banana\u0022, \u0022apple\u0022], \u0022pear\u0022, \u0022orange\u0022)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getItems(fruitList, ...args, favoriteFruit) {\n  return [...fruitList, ...args, favoriteFruit]\n}\n\ngetItems([\u0022banana\u0022, \u0022apple\u0022], \u0022pear\u0022, \u0022orange\u0022)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0022banana\u0022, \u0022apple\u0022, \u0022pear\u0022, \u0022orange\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[[\u0022banana\u0022, \u0022apple\u0022], \u0022pear\u0022, \u0022orange\u0022]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0022banana\u0022, \u0022apple\u0022, [\u0022pear\u0022], \u0022orange\u0022]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": true
       }
@@ -2494,25 +2494,25 @@
   },
   {
     "id": "95",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction nums(a, b) {\n  if (a \u003E b) console.log(\u0027a is bigger\u0027);\n  else console.log(\u0027b is bigger\u0027);\n  return\n  a \u002B b;\n}\n\nconsole.log(nums(4, 2));\nconsole.log(nums(1, 2));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction nums(a, b) {\n  if (a \u003E b) console.log(\u0027a is bigger\u0027);\n  else console.log(\u0027b is bigger\u0027);\n  return\n  a \u002B b;\n}\n\nconsole.log(nums(4, 2));\nconsole.log(nums(1, 2));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "a is bigger, 6 and b is bigger, 3",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "a is bigger, undefined and b is bigger, undefined",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined and undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": false
       }
@@ -2521,25 +2521,25 @@
   },
   {
     "id": "96",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Person {\n  constructor() {\n    this.name = \u0027Lydia\u0027;\n  }\n}\n\nPerson = class AnotherPerson {\n  constructor() {\n    this.name = \u0027Sarah\u0027;\n  }\n};\n\nconst member = new Person();\nconsole.log(member.name);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Person {\n  constructor() {\n    this.name = \u0027Lydia\u0027;\n  }\n}\n\nPerson = class AnotherPerson {\n  constructor() {\n    this.name = \u0027Sarah\u0027;\n  }\n};\n\nconst member = new Person();\nconsole.log(member.name);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022Lydia\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022Sarah\u0022",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Error: cannot redeclare Person",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": false
       }
@@ -2548,25 +2548,25 @@
   },
   {
     "id": "97",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst info = {\n  [Symbol(\u0027a\u0027)]: \u0027b\u0027,\n};\n\nconsole.log(info);\nconsole.log(Object.keys(info));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst info = {\n  [Symbol(\u0027a\u0027)]: \u0027b\u0027,\n};\n\nconsole.log(info);\nconsole.log(Object.keys(info));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{Symbol(\u0027a\u0027): \u0027b\u0027} and [\u0022{Symbol(\u0027a\u0027)\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{} and []",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ a: \u0022b\u0022 } and [\u0022a\u0022]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{Symbol(\u0027a\u0027): \u0027b\u0027} and []",
         "isCorrect": true
       }
@@ -2575,25 +2575,25 @@
   },
   {
     "id": "98",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst getList = ([x, ...y]) =\u003E [x, y]\nconst getUser = user =\u003E { name: user.name, age: user.age }\n\nconst list = [1, 2, 3, 4]\nconst user = { name: \u0022Lydia\u0022, age: 21 }\n\nconsole.log(getList(list))\nconsole.log(getUser(user))\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst getList = ([x, ...y]) =\u003E [x, y]\nconst getUser = user =\u003E { name: user.name, age: user.age }\n\nconst list = [1, 2, 3, 4]\nconst user = { name: \u0022Lydia\u0022, age: 21 }\n\nconsole.log(getList(list))\nconsole.log(getUser(user))\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[1, [2, 3, 4]] and SyntaxError",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[1, [2, 3, 4]] and { name: \u0022Lydia\u0022, age: 21 }",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[1, 2, 3, 4] and { name: \u0022Lydia\u0022, age: 21 }",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Error and { name: \u0022Lydia\u0022, age: 21 }",
         "isCorrect": false
       }
@@ -2602,25 +2602,25 @@
   },
   {
     "id": "99",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name());\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst name = \u0027Lydia\u0027;\n\nconsole.log(name());\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "SyntaxError",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "ReferenceError",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "TypeError",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }
@@ -2629,25 +2629,25 @@
   },
   {
     "id": "100",
-    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\n// \uD83C\uDF89\u2728 This is my 100th question! \u2728\uD83C\uDF89\n\nconst output = \u0060${[] \u0026\u0026 \u0027Im\u0027}possible!\nYou should${\u0027\u0027 \u0026\u0026 \u0060n\u0027t\u0060} see a therapist after so much JavaScript lol\u0060;\n\u003C/pre\u003E",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027code\u0027\u003E\n// \uD83C\uDF89\u2728 This is my 100th question! \u2728\uD83C\uDF89\n\nconst output = \u0060${[] \u0026\u0026 \u0027Im\u0027}possible!\nYou should${\u0027\u0027 \u0026\u0026 \u0060n\u0027t\u0060} see a therapist after so much JavaScript lol\u0060;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "possible! You should see a therapist after so much JavaScript lol",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Impossible! You should see a therapist after so much JavaScript lol",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "possible! You shouldn\u0027t see a therapist after so much JavaScript lol",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Impossible! You shouldn\u0027t see a therapist after so much JavaScript lol",
         "isCorrect": false
       }
@@ -2656,25 +2656,25 @@
   },
   {
     "id": "101",
-    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst one = false || {} || null;\nconst two = null || false || \u0027\u0027;\nconst three = [] || 0 || true;\n\nconsole.log(one, two, three);\n\u003C/pre\u003E",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst one = false || {} || null;\nconst two = null || false || \u0027\u0027;\nconst three = [] || 0 || true;\n\nconsole.log(one, two, three);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "false null []",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "null \u0022\u0022 true",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{} \u0022\u0022 []",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "null null true",
         "isCorrect": false
       }
@@ -2683,25 +2683,25 @@
   },
   {
     "id": "102",
-    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myPromise = () =\u003E Promise.resolve(\u0027I have resolved!\u0027);\n\nfunction firstFunction() {\n  myPromise().then(res =\u003E console.log(res));\n  console.log(\u0027second\u0027);\n}\n\nasync function secondFunction() {\n  console.log(await myPromise());\n  console.log(\u0027second\u0027);\n}\n\nfirstFunction();\nsecondFunction();\n\u003C/pre\u003E",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst myPromise = () =\u003E Promise.resolve(\u0027I have resolved!\u0027);\n\nfunction firstFunction() {\n  myPromise().then(res =\u003E console.log(res));\n  console.log(\u0027second\u0027);\n}\n\nasync function secondFunction() {\n  console.log(await myPromise());\n  console.log(\u0027second\u0027);\n}\n\nfirstFunction();\nsecondFunction();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "I have resolved!, second and I have resolved!, second",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "second, I have resolved! and second, I have resolved!",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "I have resolved!, second and second, I have resolved!",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "second, I have resolved! and I have resolved!, second",
         "isCorrect": true
       }
@@ -2710,25 +2710,25 @@
   },
   {
     "id": "103",
-    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst set = new Set();\n\nset.add(1);\nset.add(\u0027Lydia\u0027);\nset.add({ name: \u0027Lydia\u0027 });\n\nfor (let item of set) {\n  console.log(item \u002B 2);\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the value of output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst set = new Set();\n\nset.add(1);\nset.add(\u0027Lydia\u0027);\nset.add({ name: \u0027Lydia\u0027 });\n\nfor (let item of set) {\n  console.log(item \u002B 2);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "3, NaN, NaN",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "3, 7, NaN",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "3, Lydia2, [object Object]2",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u002212\u0022, Lydia2, [object Object]2",
         "isCorrect": false
       }
@@ -2737,25 +2737,25 @@
   },
   {
     "id": "104",
-    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nPromise.resolve(5);\n\u003C/pre\u003E",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027code\u0027\u003E\nPromise.resolve(5);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "5",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Promise {\u003Cpending\u003E: 5}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Promise\u00A0{\u003Cfulfilled\u003E: 5}",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Error",
         "isCorrect": false
       }
@@ -2764,25 +2764,25 @@
   },
   {
     "id": "105",
-    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction compareMembers(person1, person2 = person) {\n  if (person1 !== person2) {\n    console.log(\u0027Not the same!\u0027);\n  } else {\n    console.log(\u0027They are the same!\u0027);\n  }\n}\n\nconst person = { name: \u0027Lydia\u0027 };\n\ncompareMembers(person);\n\u003C/pre\u003E",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction compareMembers(person1, person2 = person) {\n  if (person1 !== person2) {\n    console.log(\u0027Not the same!\u0027);\n  } else {\n    console.log(\u0027They are the same!\u0027);\n  }\n}\n\nconst person = { name: \u0027Lydia\u0027 };\n\ncompareMembers(person);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Not the same!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "They are the same!",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "ReferenceError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": false
       }
@@ -2791,25 +2791,25 @@
   },
   {
     "id": "106",
-    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst colorConfig = {\n  red: true,\n  blue: false,\n  green: true,\n  black: true,\n  yellow: false,\n};\n\nconst colors = [\u0027pink\u0027, \u0027red\u0027, \u0027blue\u0027];\n\nconsole.log(colorConfig.colors[1]);\n\u003C/pre\u003E",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst colorConfig = {\n  red: true,\n  blue: false,\n  green: true,\n  black: true,\n  yellow: false,\n};\n\nconst colors = [\u0027pink\u0027, \u0027red\u0027, \u0027blue\u0027];\n\nconsole.log(colorConfig.colors[1]);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "TypeError",
         "isCorrect": true
       }
@@ -2818,15 +2818,15 @@
   },
   {
     "id": "107",
-    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0027\u2764\uFE0F\u0027 === \u0027\u2764\uFE0F\u0027);\n\u003C/pre\u003E",
+    "question": "What\u0027s its value?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(\u0027\u2764\uFE0F\u0027 === \u0027\u2764\uFE0F\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "false",
         "isCorrect": false
       }
@@ -2835,25 +2835,25 @@
   },
   {
     "id": "108",
-    "question": "Which of these methods modifies the original array?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst emojis = [\u0027\u2728\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83D\uDE0D\u0027];\n\nemojis.map(x =\u003E x \u002B \u0027\u2728\u0027);\nemojis.filter(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.find(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.reduce((acc, cur) =\u003E acc \u002B \u0027\u2728\u0027);\nemojis.slice(1, 2, \u0027\u2728\u0027);\nemojis.splice(1, 2, \u0027\u2728\u0027);\n\u003C/pre\u003E",
+    "question": "Which of these methods modifies the original array?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst emojis = [\u0027\u2728\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83D\uDE0D\u0027];\n\nemojis.map(x =\u003E x \u002B \u0027\u2728\u0027);\nemojis.filter(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.find(x =\u003E x !== \u0027\uD83E\uDD51\u0027);\nemojis.reduce((acc, cur) =\u003E acc \u002B \u0027\u2728\u0027);\nemojis.slice(1, 2, \u0027\u2728\u0027);\nemojis.splice(1, 2, \u0027\u2728\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "All of them",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "map reduce slice splice",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "map slice splice",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "splice",
         "isCorrect": true
       }
@@ -2862,25 +2862,25 @@
   },
   {
     "id": "109",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst food = [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027];\nconst info = { favoriteFood: food[0] };\n\ninfo.favoriteFood = \u0027\uD83C\uDF5D\u0027;\n\nconsole.log(food);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst food = [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027];\nconst info = { favoriteFood: food[0] };\n\ninfo.favoriteFood = \u0027\uD83C\uDF5D\u0027;\n\nconsole.log(food);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027]",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0027\uD83C\uDF5D\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0027\uD83C\uDF5D\u0027, \u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF6B\u0027, \u0027\uD83E\uDD51\u0027, \u0027\uD83C\uDF54\u0027]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -2889,25 +2889,25 @@
   },
   {
     "id": "110",
-    "question": "What does this method do?\n\n\u003Cpre class=\u0027js\u0027\u003E\nJSON.parse();\n\u003C/pre\u003E",
+    "question": "What does this method do?\n\n\u003Cpre class=\u0027code\u0027\u003E\nJSON.parse();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Parses JSON to a JavaScript value",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Parses a JavaScript object to JSON",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Parses any JavaScript value to JSON",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Parses JSON to a JavaScript object only",
         "isCorrect": false
       }
@@ -2916,25 +2916,25 @@
   },
   {
     "id": "111",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet name = \u0027Lydia\u0027;\n\nfunction getName() {\n  console.log(name);\n  let name = \u0027Sarah\u0027;\n}\n\ngetName();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet name = \u0027Lydia\u0027;\n\nfunction getName() {\n  console.log(name);\n  let name = \u0027Sarah\u0027;\n}\n\ngetName();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Lydia",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Sarah",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": true
       }
@@ -2943,25 +2943,25 @@
   },
   {
     "id": "112",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction* generatorOne() {\n  yield [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nfunction* generatorTwo() {\n  yield* [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nconst one = generatorOne();\nconst two = generatorTwo();\n\nconsole.log(one.next().value);\nconsole.log(two.next().value);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction* generatorOne() {\n  yield [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nfunction* generatorTwo() {\n  yield* [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027];\n}\n\nconst one = generatorOne();\nconst two = generatorTwo();\n\nconsole.log(one.next().value);\nconsole.log(two.next().value);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "a and a",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "a and undefined",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0027a\u0027, \u0027b\u0027, \u0027c\u0027] and a",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "a and [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027]",
         "isCorrect": false
       }
@@ -2970,25 +2970,25 @@
   },
   {
     "id": "113",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconsole.log(\u0060${(x =\u003E x)(\u0027I love\u0027)} to program\u0060);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconsole.log(\u0060${(x =\u003E x)(\u0027I love\u0027)} to program\u0060);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "I love to program",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "undefined to program",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "${(x =\u003E x)(\u0027I love\u0027) to program",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "TypeError",
         "isCorrect": false
       }
@@ -2997,25 +2997,25 @@
   },
   {
     "id": "114",
-    "question": "What will happen?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet config = {\n  alert: setInterval(() =\u003E {\n    console.log(\u0027Alert!\u0027);\n  }, 1000),\n};\n\nconfig = null;\n\u003C/pre\u003E",
+    "question": "What will happen?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet config = {\n  alert: setInterval(() =\u003E {\n    console.log(\u0027Alert!\u0027);\n  }, 1000),\n};\n\nconfig = null;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "The setInterval callback won\u0027t be invoked",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "The setInterval callback gets invoked once",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "The setInterval callback will still be called every second",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "We never invoked config.alert(), config is null",
         "isCorrect": false
       }
@@ -3024,25 +3024,25 @@
   },
   {
     "id": "115",
-    "question": "Which method(s) will return the value \u0060\u0027Hello world!\u0027\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myMap = new Map();\nconst myFunc = () =\u003E \u0027greeting\u0027;\n\nmyMap.set(myFunc, \u0027Hello world!\u0027);\n\n//1\nmyMap.get(\u0027greeting\u0027);\n//2\nmyMap.get(myFunc);\n//3\nmyMap.get(() =\u003E \u0027greeting\u0027);\n\u003C/pre\u003E",
+    "question": "Which method(s) will return the value \u0060\u0027Hello world!\u0027\u0060?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst myMap = new Map();\nconst myFunc = () =\u003E \u0027greeting\u0027;\n\nmyMap.set(myFunc, \u0027Hello world!\u0027);\n\n//1\nmyMap.get(\u0027greeting\u0027);\n//2\nmyMap.get(myFunc);\n//3\nmyMap.get(() =\u003E \u0027greeting\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "2",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "2 and 3",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "All of them",
         "isCorrect": false
       }
@@ -3051,25 +3051,25 @@
   },
   {
     "id": "116",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nconst changeAge = (x = { ...person }) =\u003E (x.age \u002B= 1);\nconst changeAgeAndName = (x = { ...person }) =\u003E {\n  x.age \u002B= 1;\n  x.name = \u0027Sarah\u0027;\n};\n\nchangeAge(person);\nchangeAgeAndName();\n\nconsole.log(person);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0027Lydia\u0027,\n  age: 21,\n};\n\nconst changeAge = (x = { ...person }) =\u003E (x.age \u002B= 1);\nconst changeAgeAndName = (x = { ...person }) =\u003E {\n  x.age \u002B= 1;\n  x.name = \u0027Sarah\u0027;\n};\n\nchangeAge(person);\nchangeAgeAndName();\n\nconsole.log(person);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{name: \u0022Sarah\u0022, age: 22}",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{name: \u0022Sarah\u0022, age: 23}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{name: \u0022Lydia\u0022, age: 22}",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{name: \u0022Lydia\u0022, age: 23}",
         "isCorrect": false
       }
@@ -3078,25 +3078,25 @@
   },
   {
     "id": "117",
-    "question": "Which of the following options will return \u00606\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction sumValues(x, y, z) {\n  return x \u002B y \u002B z;\n}\n\u003C/pre\u003E",
+    "question": "Which of the following options will return \u00606\u0060?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction sumValues(x, y, z) {\n  return x \u002B y \u002B z;\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "sumValues([...1, 2, 3])",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "sumValues([...[1, 2, 3]])",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "sumValues(...[1, 2, 3])",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "sumValues([1, 2, 3])",
         "isCorrect": false
       }
@@ -3105,25 +3105,25 @@
   },
   {
     "id": "118",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet num = 1;\nconst list = [\u0027\uD83E\uDD73\u0027, \u0027\uD83E\uDD20\u0027, \u0027\uD83E\uDD70\u0027, \u0027\uD83E\uDD2A\u0027];\n\nconsole.log(list[(num \u002B= 1)]);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet num = 1;\nconst list = [\u0027\uD83E\uDD73\u0027, \u0027\uD83E\uDD20\u0027, \u0027\uD83E\uDD70\u0027, \u0027\uD83E\uDD2A\u0027];\n\nconsole.log(list[(num \u002B= 1)]);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\uD83E\uDD20",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\uD83E\uDD70",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "SyntaxError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -3132,25 +3132,25 @@
   },
   {
     "id": "119",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  firstName: \u0027Lydia\u0027,\n  lastName: \u0027Hallie\u0027,\n  pet: {\n    name: \u0027Mara\u0027,\n    breed: \u0027Dutch Tulip Hound\u0027,\n  },\n  getFullName() {\n    return \u0060${this.firstName} ${this.lastName}\u0060;\n  },\n};\n\nconsole.log(person.pet?.name);\nconsole.log(person.pet?.family?.name);\nconsole.log(person.getFullName?.());\nconsole.log(member.getLastName?.());\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  firstName: \u0027Lydia\u0027,\n  lastName: \u0027Hallie\u0027,\n  pet: {\n    name: \u0027Mara\u0027,\n    breed: \u0027Dutch Tulip Hound\u0027,\n  },\n  getFullName() {\n    return \u0060${this.firstName} ${this.lastName}\u0060;\n  },\n};\n\nconsole.log(person.pet?.name);\nconsole.log(person.pet?.family?.name);\nconsole.log(person.getFullName?.());\nconsole.log(member.getLastName?.());\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "undefined undefined undefined undefined",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Mara undefined Lydia Hallie ReferenceError",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Mara null Lydia Hallie null",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "null ReferenceError null ReferenceError",
         "isCorrect": false
       }
@@ -3159,25 +3159,25 @@
   },
   {
     "id": "120",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst groceries = [\u0027banana\u0027, \u0027apple\u0027, \u0027peanuts\u0027];\n\nif (groceries.indexOf(\u0027banana\u0027)) {\n  console.log(\u0027We have to buy bananas!\u0027);\n} else {\n  console.log(\u0060We don\u0027t have to buy bananas!\u0060);\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst groceries = [\u0027banana\u0027, \u0027apple\u0027, \u0027peanuts\u0027];\n\nif (groceries.indexOf(\u0027banana\u0027)) {\n  console.log(\u0027We have to buy bananas!\u0027);\n} else {\n  console.log(\u0060We don\u0027t have to buy bananas!\u0060);\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "We have to buy bananas!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "We don\u0027t have to buy bananas",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "1",
         "isCorrect": false
       }
@@ -3186,25 +3186,25 @@
   },
   {
     "id": "121",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst config = {\n  languages: [],\n  set language(lang) {\n    return this.languages.push(lang);\n  },\n};\n\nconsole.log(config.language);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst config = {\n  languages: [],\n  set language(lang) {\n    return this.languages.push(lang);\n  },\n};\n\nconsole.log(config.language);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "function language(lang) { this.languages.push(lang }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "0",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": true
       }
@@ -3213,25 +3213,25 @@
   },
   {
     "id": "122",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\n\nconsole.log(!typeof name === \u0027object\u0027);\nconsole.log(!typeof name === \u0027string\u0027);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\n\nconsole.log(!typeof name === \u0027object\u0027);\nconsole.log(!typeof name === \u0027string\u0027);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "false true",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "true false",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "false false",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "true true",
         "isCorrect": false
       }
@@ -3240,25 +3240,25 @@
   },
   {
     "id": "123",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst add = x =\u003E y =\u003E z =\u003E {\n  console.log(x, y, z);\n  return x \u002B y \u002B z;\n};\n\nadd(4)(5)(6);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst add = x =\u003E y =\u003E z =\u003E {\n  console.log(x, y, z);\n  return x \u002B y \u002B z;\n};\n\nadd(4)(5)(6);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "4 5 6",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "6 5 4",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "4 function function",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined undefined 6",
         "isCorrect": false
       }
@@ -3267,25 +3267,25 @@
   },
   {
     "id": "124",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nasync function* range(start, end) {\n  for (let i = start; i \u003C= end; i\u002B\u002B) {\n    yield Promise.resolve(i);\n  }\n}\n\n(async () =\u003E {\n  const gen = range(1, 3);\n  for await (const item of gen) {\n    console.log(item);\n  }\n})();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nasync function* range(start, end) {\n  for (let i = start; i \u003C= end; i\u002B\u002B) {\n    yield Promise.resolve(i);\n  }\n}\n\n(async () =\u003E {\n  const gen = range(1, 3);\n  for await (const item of gen) {\n    console.log(item);\n  }\n})();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Promise {1} Promise {2} Promise {3}",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Promise {\u003Cpending\u003E} Promise {\u003Cpending\u003E} Promise {\u003Cpending\u003E}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "1 2 3",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined undefined undefined",
         "isCorrect": false
       }
@@ -3294,25 +3294,25 @@
   },
   {
     "id": "125",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myFunc = ({ x, y, z }) =\u003E {\n  console.log(x, y, z);\n};\n\nmyFunc(1, 2, 3);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst myFunc = ({ x, y, z }) =\u003E {\n  console.log(x, y, z);\n};\n\nmyFunc(1, 2, 3);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1 2 3",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{1: 1} {2: 2} {3: 3}",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ 1: undefined } undefined undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined undefined undefined",
         "isCorrect": true
       }
@@ -3321,11 +3321,26 @@
   },
   {
     "id": "126",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getFine(speed, amount) {\n  const formattedSpeed = new Intl.NumberFormat(\u0027en",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getFine(speed, amount) {\n  const formattedSpeed = new Intl.NumberFormat(\u0027en-US\u0027, {\n    style: \u0027unit\u0027,\n    unit: \u0027mile-per-hour\u0027\n  }).format(speed);\n\n  const formattedAmount = new Intl.NumberFormat(\u0027en-US\u0027, {\n    style: \u0027currency\u0027,\n    currency: \u0027USD\u0027\n  }).format(amount);\n\n  return \u0060The driver drove ${formattedSpeed} and has to pay ${formattedAmount}\u0060;\n}\n\nconsole.log(getFine(130, 300))\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "US\u0027, {\n    style",
-        "answer": "\u0027unit\u0027,",
+        "id": "A",
+        "answer": "The driver drove 130 and has to pay 300",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "answer": "The driver drove 130 mph and has to pay \\$300.00",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "answer": "The driver drove undefined and has to pay undefined",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "answer": "The driver drove 130.00 and has to pay 300.00",
         "isCorrect": false
       }
     ],
@@ -3333,25 +3348,25 @@
   },
   {
     "id": "127",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst spookyItems = [\u0027\uD83D\uDC7B\u0027, \u0027\uD83C\uDF83\u0027, \u0027\uD83D\uDD78\u0027];\n({ item: spookyItems[3] } = { item: \u0027\uD83D\uDC80\u0027 });\n\nconsole.log(spookyItems);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst spookyItems = [\u0027\uD83D\uDC7B\u0027, \u0027\uD83C\uDF83\u0027, \u0027\uD83D\uDD78\u0027];\n({ item: spookyItems[3] } = { item: \u0027\uD83D\uDC80\u0027 });\n\nconsole.log(spookyItems);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0022\uD83D\uDC7B\u0022, \u0022\uD83C\uDF83\u0022, \u0022\uD83D\uDD78\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0022\uD83D\uDC7B\u0022, \u0022\uD83C\uDF83\u0022, \u0022\uD83D\uDD78\u0022, \u0022\uD83D\uDC80\u0022]",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0022\uD83D\uDC7B\u0022, \u0022\uD83C\uDF83\u0022, \u0022\uD83D\uDD78\u0022, { item: \u0022\uD83D\uDC80\u0022 }]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[\u0022\uD83D\uDC7B\u0022, \u0022\uD83C\uDF83\u0022, \u0022\uD83D\uDD78\u0022, \u0022[object Object]\u0022]",
         "isCorrect": false
       }
@@ -3360,25 +3375,25 @@
   },
   {
     "id": "128",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\nconst age = 21;\n\nconsole.log(Number.isNaN(name));\nconsole.log(Number.isNaN(age));\n\nconsole.log(isNaN(name));\nconsole.log(isNaN(age));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst name = \u0027Lydia Hallie\u0027;\nconst age = 21;\n\nconsole.log(Number.isNaN(name));\nconsole.log(Number.isNaN(age));\n\nconsole.log(isNaN(name));\nconsole.log(isNaN(age));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "true false true false",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "true false false false",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "false false true false",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "false true false true",
         "isCorrect": false
       }
@@ -3387,25 +3402,25 @@
   },
   {
     "id": "129",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst randomValue = 21;\n\nfunction getInfo() {\n  console.log(typeof randomValue);\n  const randomValue = \u0027Lydia Hallie\u0027;\n}\n\ngetInfo();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst randomValue = 21;\n\nfunction getInfo() {\n  console.log(typeof randomValue);\n  const randomValue = \u0027Lydia Hallie\u0027;\n}\n\ngetInfo();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "\u0022number\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "\u0022string\u0022",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": true
       }
@@ -3414,25 +3429,25 @@
   },
   {
     "id": "130",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myPromise = Promise.resolve(\u0027Woah some cool data\u0027);\n\n(async () =\u003E {\n  try {\n    console.log(await myPromise);\n  } catch {\n    throw new Error(\u0060Oops didn\u0027t work\u0060);\n  } finally {\n    console.log(\u0027Oh finally!\u0027);\n  }\n})();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst myPromise = Promise.resolve(\u0027Woah some cool data\u0027);\n\n(async () =\u003E {\n  try {\n    console.log(await myPromise);\n  } catch {\n    throw new Error(\u0060Oops didn\u0027t work\u0060);\n  } finally {\n    console.log(\u0027Oh finally!\u0027);\n  }\n})();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Woah some cool data",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Oh finally!",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Woah some cool data Oh finally!",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Oops didn\u0027t work Oh finally!",
         "isCorrect": false
       }
@@ -3441,25 +3456,25 @@
   },
   {
     "id": "131",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst emojis = [\u0027\uD83E\uDD51\u0027, [\u0027\u2728\u0027, \u0027\u2728\u0027, [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]];\n\nconsole.log(emojis.flat(1));\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst emojis = [\u0027\uD83E\uDD51\u0027, [\u0027\u2728\u0027, \u0027\u2728\u0027, [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]];\n\nconsole.log(emojis.flat(1));\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0027\uD83E\uDD51\u0027, [\u0027\u2728\u0027, \u0027\u2728\u0027, [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0027\uD83E\uDD51\u0027, \u0027\u2728\u0027, \u0027\u2728\u0027, [\u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0027\uD83E\uDD51\u0027, [\u0027\u2728\u0027, \u0027\u2728\u0027, \u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[\u0027\uD83E\uDD51\u0027, \u0027\u2728\u0027, \u0027\u2728\u0027, \u0027\uD83C\uDF55\u0027, \u0027\uD83C\uDF55\u0027]",
         "isCorrect": false
       }
@@ -3468,25 +3483,25 @@
   },
   {
     "id": "132",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Counter {\n  constructor() {\n    this.count = 0;\n  }\n\n  increment() {\n    this.count\u002B\u002B;\n  }\n}\n\nconst counterOne = new Counter();\ncounterOne.increment();\ncounterOne.increment();\n\nconst counterTwo = counterOne;\ncounterTwo.increment();\n\nconsole.log(counterOne.count);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Counter {\n  constructor() {\n    this.count = 0;\n  }\n\n  increment() {\n    this.count\u002B\u002B;\n  }\n}\n\nconst counterOne = new Counter();\ncounterOne.increment();\ncounterOne.increment();\n\nconst counterTwo = counterOne;\ncounterTwo.increment();\n\nconsole.log(counterOne.count);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "0",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "1",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "2",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "3",
         "isCorrect": true
       }
@@ -3495,25 +3510,25 @@
   },
   {
     "id": "133",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst myPromise = Promise.resolve(Promise.resolve(\u0027Promise\u0027));\n\nfunction funcOne() {\n  setTimeout(() =\u003E console.log(\u0027Timeout 1!\u0027), 0);\n  myPromise.then(res =\u003E res).then(res =\u003E console.log(\u0060${res} 1!\u0060));\n  console.log(\u0027Last line 1!\u0027);\n}\n\nasync function funcTwo() {\n  const res = await myPromise;\n  console.log(\u0060${res} 2!\u0060)\n  setTimeout(() =\u003E console.log(\u0027Timeout 2!\u0027), 0);\n  console.log(\u0027Last line 2!\u0027);\n}\n\nfuncOne();\nfuncTwo();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst myPromise = Promise.resolve(Promise.resolve(\u0027Promise\u0027));\n\nfunction funcOne() {\n  setTimeout(() =\u003E console.log(\u0027Timeout 1!\u0027), 0);\n  myPromise.then(res =\u003E res).then(res =\u003E console.log(\u0060${res} 1!\u0060));\n  console.log(\u0027Last line 1!\u0027);\n}\n\nasync function funcTwo() {\n  const res = await myPromise;\n  console.log(\u0060${res} 2!\u0060)\n  setTimeout(() =\u003E console.log(\u0027Timeout 2!\u0027), 0);\n  console.log(\u0027Last line 2!\u0027);\n}\n\nfuncOne();\nfuncTwo();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Promise 1! Last line 1! Promise 2! Last line 2! Timeout 1! Timeout 2!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Last line 1! Timeout 1! Promise 1! Last line 2! Promise2! Timeout 2! ",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Last line 1! Promise 2! Last line 2! Promise 1! Timeout 1! Timeout 2!",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Timeout 1! Promise 1! Last line 1! Promise 2! Timeout 2! Last line 2!",
         "isCorrect": false
       }
@@ -3522,25 +3537,25 @@
   },
   {
     "id": "134",
-    "question": "How can we invoke \u0060sum\u0060 in \u0060sum.js\u0060 from \u0060index.js?\u0060\n\n\u003Cpre class=\u0027js\u0027\u003E\n// sum.js\nexport default function sum(x) {\n  return x \u002B x;\n}\n\n// index.js\nimport * as sum from \u0027./sum\u0027;\n\u003C/pre\u003E",
+    "question": "How can we invoke \u0060sum\u0060 in \u0060sum.js\u0060 from \u0060index.js?\u0060\n\n\u003Cpre class=\u0027code\u0027\u003E\n// sum.js\nexport default function sum(x) {\n  return x \u002B x;\n}\n\n// index.js\nimport * as sum from \u0027./sum\u0027;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "sum(4)",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "sum.sum(4)",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "sum.default(4)",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Default aren\u0027t imported with *, only named exports",
         "isCorrect": false
       }
@@ -3549,25 +3564,25 @@
   },
   {
     "id": "135",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst handler = {\n  set: () =\u003E console.log(\u0027Added a new property!\u0027),\n  get: () =\u003E console.log(\u0027Accessed a property!\u0027),\n};\n\nconst person = new Proxy({}, handler);\n\nperson.name = \u0027Lydia\u0027;\nperson.name;\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst handler = {\n  set: () =\u003E console.log(\u0027Added a new property!\u0027),\n  get: () =\u003E console.log(\u0027Accessed a property!\u0027),\n};\n\nconst person = new Proxy({}, handler);\n\nperson.name = \u0027Lydia\u0027;\nperson.name;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Added a new property!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Accessed a property!",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "Added a new property! Accessed a property!",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Nothing gets logged",
         "isCorrect": false
       }
@@ -3576,25 +3591,25 @@
   },
   {
     "id": "136",
-    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = { name: \u0027Lydia Hallie\u0027 };\n\nObject.seal(person);\n\u003C/pre\u003E",
+    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = { name: \u0027Lydia Hallie\u0027 };\n\nObject.seal(person);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "person.name = \u0022Evan Bacon\u0022",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "person.age = 21",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "delete person.name",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Object.assign(person, { age: 21 })",
         "isCorrect": false
       }
@@ -3603,25 +3618,25 @@
   },
   {
     "id": "137",
-    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  address: {\n    street: \u0027100 Main St\u0027,\n  },\n};\n\nObject.freeze(person);\n\u003C/pre\u003E",
+    "question": "Which of the following will modify the \u0060person\u0060 object?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  address: {\n    street: \u0027100 Main St\u0027,\n  },\n};\n\nObject.freeze(person);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "person.name = \u0022Evan Bacon\u0022",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "delete person.address",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "person.address.street = \u0022101 Main St\u0022",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "person.pet = { name: \u0022Mara\u0022 }",
         "isCorrect": false
       }
@@ -3630,25 +3645,25 @@
   },
   {
     "id": "138",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst add = x =\u003E x \u002B x;\n\nfunction myFunc(num = 2, value = add(num)) {\n  console.log(num, value);\n}\n\nmyFunc();\nmyFunc(3);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst add = x =\u003E x \u002B x;\n\nfunction myFunc(num = 2, value = add(num)) {\n  console.log(num, value);\n}\n\nmyFunc();\nmyFunc(3);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "2 4 and 3 6",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "2 NaN and 3 NaN",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "2 Error and 3 6",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "2 4 and 3 Error",
         "isCorrect": false
       }
@@ -3657,25 +3672,25 @@
   },
   {
     "id": "139",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Counter {\n  #number = 10\n\n  increment() {\n    this.#number\u002B\u002B\n  }\n\n  getNum() {\n    return this.#number\n  }\n}\n\nconst counter = new Counter()\ncounter.increment()\n\nconsole.log(counter.#number)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Counter {\n  #number = 10\n\n  increment() {\n    this.#number\u002B\u002B\n  }\n\n  getNum() {\n    return this.#number\n  }\n}\n\nconst counter = new Counter()\ncounter.increment()\n\nconsole.log(counter.#number)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "10",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "11",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "SyntaxError",
         "isCorrect": true
       }
@@ -3684,25 +3699,25 @@
   },
   {
     "id": "140",
-    "question": "What\u0027s missing?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst teams = [\n  { name: \u0027Team 1\u0027, members: [\u0027Paul\u0027, \u0027Lisa\u0027] },\n  { name: \u0027Team 2\u0027, members: [\u0027Laura\u0027, \u0027Tim\u0027] },\n];\n\nfunction* getMembers(members) {\n  for (let i = 0; i \u003C members.length; i\u002B\u002B) {\n    yield members[i];\n  }\n}\n\nfunction* getTeams(teams) {\n  for (let i = 0; i \u003C teams.length; i\u002B\u002B) {\n    // \u2728 SOMETHING IS MISSING HERE \u2728\n  }\n}\n\nconst obj = getTeams(teams);\nobj.next(); // { value: \u0022Paul\u0022, done: false }\nobj.next(); // { value: \u0022Lisa\u0022, done: false }\n\u003C/pre\u003E",
+    "question": "What\u0027s missing?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst teams = [\n  { name: \u0027Team 1\u0027, members: [\u0027Paul\u0027, \u0027Lisa\u0027] },\n  { name: \u0027Team 2\u0027, members: [\u0027Laura\u0027, \u0027Tim\u0027] },\n];\n\nfunction* getMembers(members) {\n  for (let i = 0; i \u003C members.length; i\u002B\u002B) {\n    yield members[i];\n  }\n}\n\nfunction* getTeams(teams) {\n  for (let i = 0; i \u003C teams.length; i\u002B\u002B) {\n    // \u2728 SOMETHING IS MISSING HERE \u2728\n  }\n}\n\nconst obj = getTeams(teams);\nobj.next(); // { value: \u0022Paul\u0022, done: false }\nobj.next(); // { value: \u0022Lisa\u0022, done: false }\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "yield getMembers(teams[i].members)",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "yield* getMembers(teams[i].members)",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "return getMembers(teams[i].members)",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "return yield getMembers(teams[i].members)",
         "isCorrect": false
       }
@@ -3711,25 +3726,25 @@
   },
   {
     "id": "141",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  hobbies: [\u0027coding\u0027],\n};\n\nfunction addHobby(hobby, hobbies = person.hobbies) {\n  hobbies.push(hobby);\n  return hobbies;\n}\n\naddHobby(\u0027running\u0027, []);\naddHobby(\u0027dancing\u0027);\naddHobby(\u0027baking\u0027, person.hobbies);\n\nconsole.log(person.hobbies);\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0027Lydia Hallie\u0027,\n  hobbies: [\u0027coding\u0027],\n};\n\nfunction addHobby(hobby, hobbies = person.hobbies) {\n  hobbies.push(hobby);\n  return hobbies;\n}\n\naddHobby(\u0027running\u0027, []);\naddHobby(\u0027dancing\u0027);\naddHobby(\u0027baking\u0027, person.hobbies);\n\nconsole.log(person.hobbies);\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0022coding\u0022]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0022coding\u0022, \u0022dancing\u0022]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0022coding\u0022, \u0022dancing\u0022, \u0022baking\u0022]",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[\u0022coding\u0022, \u0022running\u0022, \u0022dancing\u0022, \u0022baking\u0022]",
         "isCorrect": false
       }
@@ -3738,25 +3753,25 @@
   },
   {
     "id": "142",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Bird {\n  constructor() {\n    console.log(\u0022I\u0027m a bird. \uD83E\uDDA2\u0022);\n  }\n}\n\nclass Flamingo extends Bird {\n  constructor() {\n    console.log(\u0022I\u0027m pink. \uD83C\uDF38\u0022);\n    super();\n  }\n}\n\nconst pet = new Flamingo();\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Bird {\n  constructor() {\n    console.log(\u0022I\u0027m a bird. \uD83E\uDDA2\u0022);\n  }\n}\n\nclass Flamingo extends Bird {\n  constructor() {\n    console.log(\u0022I\u0027m pink. \uD83C\uDF38\u0022);\n    super();\n  }\n}\n\nconst pet = new Flamingo();\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "I\u0027m pink. \uD83C\uDF38",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "I\u0027m pink. \uD83C\uDF38 I\u0027m a bird. \uD83E\uDDA2",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "I\u0027m a bird. \uD83E\uDDA2 I\u0027m pink. \uD83C\uDF38",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "Nothing, we didn\u0027t call any method",
         "isCorrect": false
       }
@@ -3765,25 +3780,25 @@
   },
   {
     "id": "143",
-    "question": "Which of the options result(s) in an error?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst emojis = [\u0027\uD83C\uDF84\u0027, \u0027\uD83C\uDF85\uD83C\uDFFC\u0027, \u0027\uD83C\uDF81\u0027, \u0027\u2B50\u0027];\n\n/* 1 */ emojis.push(\u0027\uD83E\uDD8C\u0027);\n/* 2 */ emojis.splice(0, 2);\n/* 3 */ emojis = [...emojis, \u0027\uD83E\uDD42\u0027];\n/* 4 */ emojis.length = 0;\n\u003C/pre\u003E",
+    "question": "Which of the options result(s) in an error?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst emojis = [\u0027\uD83C\uDF84\u0027, \u0027\uD83C\uDF85\uD83C\uDFFC\u0027, \u0027\uD83C\uDF81\u0027, \u0027\u2B50\u0027];\n\n/* 1 */ emojis.push(\u0027\uD83E\uDD8C\u0027);\n/* 2 */ emojis.splice(0, 2);\n/* 3 */ emojis = [...emojis, \u0027\uD83E\uDD42\u0027];\n/* 4 */ emojis.length = 0;\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "1 and 2",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "3 and 4",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "3",
         "isCorrect": true
       }
@@ -3792,25 +3807,25 @@
   },
   {
     "id": "144",
-    "question": "What do we need to add to the \u0060person\u0060 object to get \u0060[\u0022Lydia Hallie\u0022, 21]\u0060 as the output of \u0060[...person]\u0060?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst person = {\n  name: \u0022Lydia Hallie\u0022,\n  age: 21\n}\n\n[...person] // [\u0022Lydia Hallie\u0022, 21]\n\u003C/pre\u003E",
+    "question": "What do we need to add to the \u0060person\u0060 object to get \u0060[\u0022Lydia Hallie\u0022, 21]\u0060 as the output of \u0060[...person]\u0060?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst person = {\n  name: \u0022Lydia Hallie\u0022,\n  age: 21\n}\n\n[...person] // [\u0022Lydia Hallie\u0022, 21]\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "Nothing, object are iterable by default",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "*[Symbol.iterator]() { for (let x in this) yield* this[x] }",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "*[Symbol.iterator]() { yield* Object.values(this) }",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "*[Symbol.iterator]() { for (let x in this) yield this }",
         "isCorrect": false
       }
@@ -3819,25 +3834,25 @@
   },
   {
     "id": "145",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet count = 0;\nconst nums = [0, 1, 2, 3];\n\nnums.forEach(num =\u003E {\n\tif (num) count \u002B= 1\n})\n\nconsole.log(count)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet count = 0;\nconst nums = [0, 1, 2, 3];\n\nnums.forEach(num =\u003E {\n\tif (num) count \u002B= 1\n})\n\nconsole.log(count)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "1",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "2",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "3",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "4",
         "isCorrect": false
       }
@@ -3846,25 +3861,25 @@
   },
   {
     "id": "146",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nfunction getFruit(fruits) {\n\tconsole.log(fruits?.[1]?.[1])\n}\n\ngetFruit([[\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027], [\u0027\uD83C\uDF4D\u0027]])\ngetFruit()\ngetFruit([[\u0027\uD83C\uDF4D\u0027], [\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027]])\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nfunction getFruit(fruits) {\n\tconsole.log(fruits?.[1]?.[1])\n}\n\ngetFruit([[\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027], [\u0027\uD83C\uDF4D\u0027]])\ngetFruit()\ngetFruit([[\u0027\uD83C\uDF4D\u0027], [\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4C\u0027]])\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "null, undefined, \uD83C\uDF4C",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[], null, \uD83C\uDF4C",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[], [], \uD83C\uDF4C",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined, undefined, \uD83C\uDF4C",
         "isCorrect": true
       }
@@ -3873,25 +3888,25 @@
   },
   {
     "id": "147",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nclass Calc {\n\tconstructor() {\n\t\tthis.count = 0 \n\t}\n\n\tincrease() {\n\t\tthis.count \u002B\u002B\n\t}\n}\n\nconst calc = new Calc()\nnew Calc().increase()\n\nconsole.log(calc.count)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nclass Calc {\n\tconstructor() {\n\t\tthis.count = 0 \n\t}\n\n\tincrease() {\n\t\tthis.count \u002B\u002B\n\t}\n}\n\nconst calc = new Calc()\nnew Calc().increase()\n\nconsole.log(calc.count)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "0",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "1",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -3900,25 +3915,25 @@
   },
   {
     "id": "148",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst user = {\n\temail: \u0022e@mail.com\u0022,\n\tpassword: \u002212345\u0022\n}\n\nconst updateUser = ({ email, password }) =\u003E {\n\tif (email) {\n\t\tObject.assign(user, { email })\n\t}\n\n\tif (password) {\n\t\tuser.password = password\n\t}\n\n\treturn user\n}\n\nconst updatedUser = updateUser({ email: \u0022new@email.com\u0022 })\n\nconsole.log(updatedUser === user)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst user = {\n\temail: \u0022e@mail.com\u0022,\n\tpassword: \u002212345\u0022\n}\n\nconst updateUser = ({ email, password }) =\u003E {\n\tif (email) {\n\t\tObject.assign(user, { email })\n\t}\n\n\tif (password) {\n\t\tuser.password = password\n\t}\n\n\treturn user\n}\n\nconst updatedUser = updateUser({ email: \u0022new@email.com\u0022 })\n\nconsole.log(updatedUser === user)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "false",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "true",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "TypeError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -3927,25 +3942,25 @@
   },
   {
     "id": "149",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst fruit = [\u0027\uD83C\uDF4C\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]\n\nfruit.slice(0, 1)\nfruit.splice(0, 1)\nfruit.unshift(\u0027\uD83C\uDF47\u0027)\n\nconsole.log(fruit)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst fruit = [\u0027\uD83C\uDF4C\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]\n\nfruit.slice(0, 1)\nfruit.splice(0, 1)\nfruit.unshift(\u0027\uD83C\uDF47\u0027)\n\nconsole.log(fruit)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[\u0027\uD83C\uDF4C\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[\u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[\u0027\uD83C\uDF47\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "[\u0027\uD83C\uDF47\u0027, \u0027\uD83C\uDF4C\u0027, \u0027\uD83C\uDF4A\u0027, \u0027\uD83C\uDF4E\u0027]",
         "isCorrect": false
       }
@@ -3954,25 +3969,25 @@
   },
   {
     "id": "150",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst animals = {};\nlet dog = { emoji: \u0027\uD83D\uDC36\u0027 }\nlet cat = { emoji: \u0027\uD83D\uDC08\u0027 }\n\nanimals[dog] = { ...dog, name: \u0022Mara\u0022 }\nanimals[cat] = { ...cat, name: \u0022Sara\u0022 }\n\nconsole.log(animals[dog])\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst animals = {};\nlet dog = { emoji: \u0027\uD83D\uDC36\u0027 }\nlet cat = { emoji: \u0027\uD83D\uDC08\u0027 }\n\nanimals[dog] = { ...dog, name: \u0022Mara\u0022 }\nanimals[cat] = { ...cat, name: \u0022Sara\u0022 }\n\nconsole.log(animals[dog])\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ emoji: \u0022\uD83D\uDC36\u0022, name: \u0022Mara\u0022 }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ emoji: \u0022\uD83D\uDC08\u0022, name: \u0022Sara\u0022 }",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -3981,25 +3996,25 @@
   },
   {
     "id": "151",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst user = {\n\temail: \u0022my@email.com\u0022,\n\tupdateEmail: email =\u003E {\n\t\tthis.email = email\n\t}\n}\n\nuser.updateEmail(\u0022new@email.com\u0022)\nconsole.log(user.email)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst user = {\n\temail: \u0022my@email.com\u0022,\n\tupdateEmail: email =\u003E {\n\t\tthis.email = email\n\t}\n}\n\nuser.updateEmail(\u0022new@email.com\u0022)\nconsole.log(user.email)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "my@email.com",
         "isCorrect": true
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "new@email.com",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "undefined",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "ReferenceError",
         "isCorrect": false
       }
@@ -4008,25 +4023,25 @@
   },
   {
     "id": "152",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst promise1 = Promise.resolve(\u0027First\u0027)\nconst promise2 = Promise.resolve(\u0027Second\u0027)\nconst promise3 = Promise.reject(\u0027Third\u0027)\nconst promise4 = Promise.resolve(\u0027Fourth\u0027)\n\nconst runPromises = async () =\u003E {\n\tconst res1 = await Promise.all([promise1, promise2])\n\tconst res2  = await Promise.all([promise3, promise4])\n\treturn [res1, res2]\n}\n\nrunPromises()\n\t.then(res =\u003E console.log(res))\n\t.catch(err =\u003E console.log(err))\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst promise1 = Promise.resolve(\u0027First\u0027)\nconst promise2 = Promise.resolve(\u0027Second\u0027)\nconst promise3 = Promise.reject(\u0027Third\u0027)\nconst promise4 = Promise.resolve(\u0027Fourth\u0027)\n\nconst runPromises = async () =\u003E {\n\tconst res1 = await Promise.all([promise1, promise2])\n\tconst res2  = await Promise.all([promise3, promise4])\n\treturn [res1, res2]\n}\n\nrunPromises()\n\t.then(res =\u003E console.log(res))\n\t.catch(err =\u003E console.log(err))\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "[[\u0027First\u0027, \u0027Second\u0027], [\u0027Fourth\u0027]]",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "[[\u0027First\u0027, \u0027Second\u0027], [\u0027Third\u0027, \u0027Fourth\u0027]]",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "[[\u0027First\u0027, \u0027Second\u0027]]",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "\u0027Third\u0027",
         "isCorrect": true
       }
@@ -4035,25 +4050,25 @@
   },
   {
     "id": "153",
-    "question": "What should the value of \u0060method\u0060 be to log \u0060{ name: \u0022Lydia\u0022, age: 22 }\u0060? \n\n\u003Cpre class=\u0027js\u0027\u003E\nconst keys = [\u0022name\u0022, \u0022age\u0022]\nconst values = [\u0022Lydia\u0022, 22]\n\nconst method = /* ?? */\nObject[method](keys.map((_, i) =\u003E {\n\treturn [keys[i], values[i]]\n})) // { name: \u0022Lydia\u0022, age: 22 }\n\u003C/pre\u003E",
+    "question": "What should the value of \u0060method\u0060 be to log \u0060{ name: \u0022Lydia\u0022, age: 22 }\u0060? \n\n\u003Cpre class=\u0027code\u0027\u003E\nconst keys = [\u0022name\u0022, \u0022age\u0022]\nconst values = [\u0022Lydia\u0022, 22]\n\nconst method = /* ?? */\nObject[method](keys.map((_, i) =\u003E {\n\treturn [keys[i], values[i]]\n})) // { name: \u0022Lydia\u0022, age: 22 }\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "entries",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "values",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "fromEntries",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "forEach",
         "isCorrect": false
       }
@@ -4062,25 +4077,25 @@
   },
   {
     "id": "154",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nconst createMember = ({ email, address = {}}) =\u003E {\n\tconst validEmail = /.\u002B\\@.\u002B\\..\u002B/.test(email)\n\tif (!validEmail) throw new Error(\u0022Valid email pls\u0022)\n\n\treturn {\n\t\temail,\n\t\taddress: address ? address : null\n\t}\n}\n\nconst member = createMember({ email: \u0022my@email.com\u0022 })\nconsole.log(member)\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nconst createMember = ({ email, address = {}}) =\u003E {\n\tconst validEmail = /.\u002B\\@.\u002B\\..\u002B/.test(email)\n\tif (!validEmail) throw new Error(\u0022Valid email pls\u0022)\n\n\treturn {\n\t\temail,\n\t\taddress: address ? address : null\n\t}\n}\n\nconst member = createMember({ email: \u0022my@email.com\u0022 })\nconsole.log(member)\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "{ email: \u0022my@email.com\u0022, address: null }",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "{ email: \u0022my@email.com\u0022 }",
         "isCorrect": false
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "{ email: \u0022my@email.com\u0022, address: {} }",
         "isCorrect": true
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "{ email: \u0022my@email.com\u0022, address: undefined }",
         "isCorrect": false
       }
@@ -4089,25 +4104,25 @@
   },
   {
     "id": "155",
-    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027js\u0027\u003E\nlet randomValue = { name: \u0022Lydia\u0022 }\nrandomValue = 23\n\nif (!typeof randomValue === \u0022string\u0022) {\n\tconsole.log(\u0022It\u0027s not a string!\u0022)\n} else {\n\tconsole.log(\u0022Yay it\u0027s a string!\u0022)\n}\n\u003C/pre\u003E",
+    "question": "What\u0027s the output?\n\n\u003Cpre class=\u0027code\u0027\u003E\nlet randomValue = { name: \u0022Lydia\u0022 }\nrandomValue = 23\n\nif (!typeof randomValue === \u0022string\u0022) {\n\tconsole.log(\u0022It\u0027s not a string!\u0022)\n} else {\n\tconsole.log(\u0022Yay it\u0027s a string!\u0022)\n}\n\u003C/pre\u003E",
     "answers": [
       {
-        "index": "A",
+        "id": "A",
         "answer": "It\u0027s not a string!",
         "isCorrect": false
       },
       {
-        "index": "B",
+        "id": "B",
         "answer": "Yay it\u0027s a string!",
         "isCorrect": true
       },
       {
-        "index": "C",
+        "id": "C",
         "answer": "TypeError",
         "isCorrect": false
       },
       {
-        "index": "D",
+        "id": "D",
         "answer": "undefined",
         "isCorrect": false
       }

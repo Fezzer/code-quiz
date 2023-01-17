@@ -24,6 +24,7 @@ button {
   color: white;
   border: 0;
   transition: background-color 0.1s;
+  text-align: left;
 }
 
 button:hover {
@@ -53,10 +54,13 @@ li:nth-child(odd) {
   background-color: #f3edfc;
 }
 
-pre.js {
+pre.code {
   background-color: wheat;
   padding: 10px;
   border-radius: 5px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 80%;
 }
 
 .wrapper {
@@ -91,4 +95,19 @@ pre.js {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+div#correct, div#incorrect{
+  max-height: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div#correct {
+  background-image: url("../images/check-g425c7af54_1280.png");
+}
+
+div#incorrect {
+  background-image: url("../images/cross-g0c1c5b993_1280.png");
 }

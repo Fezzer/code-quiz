@@ -1,26 +1,36 @@
 const QUESTIONS_URL = "assets/data/questions.json";
 const QUIZ_DURATION = 60;
+const CLASS_ATTRIBUTE = "class";
+const HIDE_VALUE = "hide";
 
 var startButton = document.getElementById("start");
 var startScreenElement = document.getElementById("start-screen");
 var questionsElement = document.getElementById("questions");
 var timeElement = document.getElementById("time");
 var choicesElement = document.getElementById("choices");
+var correctElement = document.getElementById("correct");
+var incorrectElement = document.getElementById("incorrect");
+
 var questions;
 var timer;
 var remainingTime;
-var currentQuestion;
 var answeredQuestions = [];
-var player;
+var correctPlayer = createPlayer("/assets/sfx/correct.wav");
+var incorrectPlayer = createPlayer("/assets/sfx/incorrect.wav");
+var disableAnswerButtons = false;
 
 // Returns a non-negative random integer that is less than the specified maximum. 
 function getRandomNumber(maxValue) {
   return Math.floor(Math.random() * maxValue);
 }
 
-// Generate an array containing a sequence of integer numbers within a specified range.
-function range(start, count) {
-  return new Array(count).fill(undefined).map((_, i) => start + i);
+// Creates an audio player to play a
+function createPlayer(url) {
+  let audio = new Audio(url);
+
+  return {
+    "play": () => audio.play()
+  };
 }
 
 // Retrieves the list of questions from a JSON file hosted on the server.
@@ -32,24 +42,62 @@ function getQuestions(url) {
   return JSON.parse(xhr.responseText);
 }
 
-// Toggles the 'hide' class in an element's class attribute.
-function toggleHide(element) {
-  const hideClass = "hide";
-  const classAttribute = "class";
+// Returns a boolean indicating if the specified element's class attribute contains the specified value.
+function doesClassContain(element, value) {
+  if (!(element instanceof Element)) {
+    return;
+  }
+  
+  let classes = element.getAttribute(CLASS_ATTRIBUTE)?.split(" ") ?? [];
+  
+  return classes.indexOf(value) !== -1;
+}
 
+// Adds the specified value to the specified element's class attribute'
+function addValueToClassAttribute(element, value) {
   if (!(element instanceof Element)) {
     return;
   }
 
-  let classes = element.getAttribute(classAttribute)?.split(" ") ?? [];
-  let index = classes.indexOf(hideClass);
+  if (doesClassContain(element, value))
+    return;
 
-  if (index === -1)
-    classes.push(hideClass);
+  let newValue = `${element.getAttribute(CLASS_ATTRIBUTE)} ${value}`.trim();
+  element.setAttribute(CLASS_ATTRIBUTE, newValue);
+} 
+
+// Removes the specified value from the specified element's class attribute.
+function removeValueFromClassAttribute(element, value) {
+  if (!(element instanceof Element)) {
+    return;
+  }
+
+  if (!doesClassContain(element, value)) 
+    return;
+
+  let values = element.getAttribute(CLASS_ATTRIBUTE).split(" ");
+  let indexToRemove = values.indexOf(value);
+  values.splice(indexToRemove, 1);
+  element.setAttribute(CLASS_ATTRIBUTE, values.join(" ").trim());
+}
+
+// Toggles the specified value in the specified element's class attribute.
+function toggleAttributeValue(element, value) {
+  if (!(element instanceof Element)) {
+    return;
+  }
+
+  element.classList
+
+  if (doesClassContain(element, value))
+    removeValueFromClassAttribute(element, value);
   else
-    classes.splice(index, 1);
+    addValueToClassAttribute(element, value);
+}
 
-  element.setAttribute(classAttribute, classes.join(" "));
+// Toggles the hide value on a specified element's class attribute.
+function toggleHide(element) {
+  toggleAttributeValue(element, HIDE_VALUE);
 }
 
 // Updates the time remaining on the quiz.
@@ -63,7 +111,7 @@ function updateRemainingTime() {
 // Initialises and starts the quiz timer.
 function startTimer() {
   remainingTime = QUIZ_DURATION;
-  updateRemainingTime;
+  updateRemainingTime();
 
   timer = setInterval(() => {
     remainingTime--;
@@ -89,22 +137,60 @@ function getNextQuestion() {
   return questions[nextId];
 }
 
+// Handles the click of an answer button.
+function answerButtonClick(event) {
+  if (disableAnswerButtons) {
+    return;    
+  }
+
+  disableAnswerButtons = true;
+
+  let target = event.target;
+  let questionId = questionsElement.dataset.id;
+  
+  let answer = { 
+    questionId: questionId,
+    answerId: target.dataset.id
+  };
+
+  answeredQuestions.push(answer);
+  let correctAnswerId = questions[questionId].answers.find(a => a.isCorrect).id;
+
+  if (answer.answerId === correctAnswerId) {
+    correctPlayer.play();
+    toggleHide(correctElement);
+  } else {
+    incorrectPlayer.play();
+    toggleHide(incorrectElement);
+    remainingTime -= 10;
+  }
+
+  setTimeout(() => {
+    addValueToClassAttribute(correctElement, HIDE_VALUE);
+    addValueToClassAttribute(incorrectElement, HIDE_VALUE);
+    processNextQuestion();
+  }, 500);
+}
+
 // Displays a question.
 function displayQuestion(question) {
+  questionsElement.dataset.id = question.id;
   document.getElementById("question-title").innerHTML = question.question;
+  choicesElement.innerText = "";
 
   question.answers.forEach(a => {
-    var button = document.createElement("button");
-    button.textContent = `${a.index}. ${a.answer}`;
-    button.dataset.index = a.index;
+    let button = document.createElement("button");
+    button.textContent = `${a.id}. ${a.answer}`;
+    button.dataset.id = a.id;
+    button.onclick = answerButtonClick;
     choicesElement.appendChild(button);
   });
 }
 
 // Manages the workflow for processing the next question.
 function processNextQuestion() {
-  currentQuestion = getNextQuestion();
-  displayQuestion(currentQuestion);
+  displayQuestion(getNextQuestion());
+  disableAnswerButtons = false;
 }
 
 // Initialise the app.
@@ -118,7 +204,6 @@ function init() {
 
     startTimer();
   };
-
 }
 
 init();
