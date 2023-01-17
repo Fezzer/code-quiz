@@ -8,6 +8,7 @@ var timeElement = document.getElementById("time");
 var choicesElement = document.getElementById("choices");
 var correctElement = document.getElementById("correct");
 var incorrectElement = document.getElementById("incorrect");
+var endScreenElement = document.getElementById("end-screen");
 
 var questions;
 var timer;
@@ -15,7 +16,7 @@ var remainingTime;
 var answeredQuestions = [];
 var correctPlayer = createPlayer("/assets/sfx/correct.wav");
 var incorrectPlayer = createPlayer("/assets/sfx/incorrect.wav");
-var disableAnswerButtons = false;
+var isShowingResult = false;
 
 // Returns a non-negative random integer that is less than the specified maximum. 
 function getRandomNumber(maxValue) {
@@ -69,12 +70,12 @@ function startTimer() {
 
   timer = setInterval(() => {
     remainingTime--;
-    updateRemainingTime();
 
-    if (remainingTime <= 0) {
-      clearInterval(timer);
-      // TODO: need to handle timer completion here.
+    if (!isShowingResult && remainingTime <= 0) {
+      endQuiz();
     }
+
+    updateRemainingTime();
   }, 1000);
 }
 
@@ -91,25 +92,37 @@ function getNextQuestion() {
   return questions[nextId];
 }
 
+// Handles getting to the end of the quiz.
+function endQuiz() {
+  clearInterval(timer);
+
+  toggleHide(questionsElement);
+  toggleHide(endScreenElement);
+
+  document.getElementById("final-score").textContent = answeredQuestions.filter(a => a.isCorrect).length;
+}
+
 // Handles the click of an answer button.
 function answerButtonClick(event) {
   if (disableAnswerButtons || !event.target.matches("button")) {
     return;    
   }
 
-  disableAnswerButtons = true;
+  isShowingResult = true;
 
   let questionId = questionsElement.dataset.id;
-  
+  let correctAnswerId = questions[questionId].answers.find(a => a.isCorrect).id;
+  let answerId = event.target.dataset.id;
+
   let answer = { 
     questionId: questionId,
-    answerId: event.target.dataset.id
+    answerId: answerId,
+    isCorrect: answerId === correctAnswerId
   };
 
   answeredQuestions.push(answer);
-  let correctAnswerId = questions[questionId].answers.find(a => a.isCorrect).id;
 
-  if (answer.answerId === correctAnswerId) {
+  if (answer.isCorrect) {
     correctPlayer.play();
     toggleHide(correctElement);
   } else {
@@ -119,9 +132,11 @@ function answerButtonClick(event) {
   }
 
   setTimeout(() => {
-    correctElement.classList.add(HIDE_VALUE);
-    incorrectElement.classList.add(HIDE_VALUE);
-    processNextQuestion();
+    if (remainingTime <= 0) {
+      endQuiz();
+    } else {
+      processNextQuestion();
+    }
   }, 500);
 }
 
@@ -141,6 +156,15 @@ function displayQuestion(question) {
 
 // Manages the workflow for processing the next question.
 function processNextQuestion() {
+  if (answeredQuestions.length === questions.length) {
+    endQuiz();
+    return;
+  }
+
+  isShowingResult = false;
+  correctElement.classList.add(HIDE_VALUE);
+  incorrectElement.classList.add(HIDE_VALUE);
+
   displayQuestion(getNextQuestion());
   disableAnswerButtons = false;
 }
