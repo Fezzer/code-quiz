@@ -5,7 +5,7 @@ var output = @"e:\bootcamp\code-quiz\assets\data\questions.json";
 var regex = new Regex(
 	@"######\s+(?'questionNumber'\d+)\.\s(?'question'.+?)\n" + 
 	@"(?'answers'-\s*(?'answerIndex'.+?):(?'answer'.+?)\n)+.+?" +
-	@"####\s+Answer:(?'correctAnswer'.+?)\n(?'explaination'.+?)</p>.+?---", 
+	@"####\s+Answer:(?'correctAnswer'.+?)\n(?'explanation'.+?)</p>.+?---", 
 	RegexOptions.Singleline);
 
 var questions = regex.Matches(input)
@@ -20,7 +20,7 @@ var questions = regex.Matches(input)
 				Answer = x.Second.Value.Trim().Replace("`", string.Empty),
 				IsCorrect = x.First.Value.Trim() == m.Groups["correctAnswer"].Value.Trim()
 			}),
-		Explanation = m.Groups["explaination"].Value.Trim()
+		Explanation = m.Groups["explanation"].Value.Trim()
 	});
 	
 Console.Write($"Do all questions have a correct answer? {questions.Any(q => q.Answers.All(a => !a.IsCorrect)).ToString()}");
