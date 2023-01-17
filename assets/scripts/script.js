@@ -3,8 +3,6 @@ const QUIZ_DURATION = 60;
 const CLASS_ATTRIBUTE = "class";
 const HIDE_VALUE = "hide";
 
-var startButton = document.getElementById("start");
-var startScreenElement = document.getElementById("start-screen");
 var questionsElement = document.getElementById("questions");
 var timeElement = document.getElementById("time");
 var choicesElement = document.getElementById("choices");
@@ -24,7 +22,7 @@ function getRandomNumber(maxValue) {
   return Math.floor(Math.random() * maxValue);
 }
 
-// Creates an audio player to play a
+// Creates an audio player with a method to play a sound.
 function createPlayer(url) {
   let audio = new Audio(url);
 
@@ -42,63 +40,19 @@ function getQuestions(url) {
   return JSON.parse(xhr.responseText);
 }
 
-// Returns a boolean indicating if the specified element's class attribute contains the specified value.
-function doesClassContain(element, value) {
-  if (!(element instanceof Element)) {
-    return;
-  }
-  
-  let classes = element.getAttribute(CLASS_ATTRIBUTE)?.split(" ") ?? [];
-  
-  return classes.indexOf(value) !== -1;
-}
-
-// Adds the specified value to the specified element's class attribute'
-function addValueToClassAttribute(element, value) {
-  if (!(element instanceof Element)) {
-    return;
-  }
-
-  if (doesClassContain(element, value))
-    return;
-
-  let newValue = `${element.getAttribute(CLASS_ATTRIBUTE)} ${value}`.trim();
-  element.setAttribute(CLASS_ATTRIBUTE, newValue);
-} 
-
-// Removes the specified value from the specified element's class attribute.
-function removeValueFromClassAttribute(element, value) {
-  if (!(element instanceof Element)) {
-    return;
-  }
-
-  if (!doesClassContain(element, value)) 
-    return;
-
-  let values = element.getAttribute(CLASS_ATTRIBUTE).split(" ");
-  let indexToRemove = values.indexOf(value);
-  values.splice(indexToRemove, 1);
-  element.setAttribute(CLASS_ATTRIBUTE, values.join(" ").trim());
-}
-
-// Toggles the specified value in the specified element's class attribute.
-function toggleAttributeValue(element, value) {
-  if (!(element instanceof Element)) {
-    return;
-  }
-
-  element.classList
-
-  if (doesClassContain(element, value))
-    removeValueFromClassAttribute(element, value);
-  else
-    addValueToClassAttribute(element, value);
-}
-
 // Toggles the hide value on a specified element's class attribute.
 function toggleHide(element) {
-  toggleAttributeValue(element, HIDE_VALUE);
+  element.classList.toggle(HIDE_VALUE);
 }
+
+// Handles the click event of the start button.
+function startButtonClick() {
+  processNextQuestion();
+  toggleHide(document.getElementById("start-screen"));
+  toggleHide(questionsElement);
+
+  startTimer();
+};
 
 // Updates the time remaining on the quiz.
 function updateRemainingTime() {
@@ -139,18 +93,17 @@ function getNextQuestion() {
 
 // Handles the click of an answer button.
 function answerButtonClick(event) {
-  if (disableAnswerButtons) {
+  if (disableAnswerButtons || !event.target.matches("button")) {
     return;    
   }
 
   disableAnswerButtons = true;
 
-  let target = event.target;
   let questionId = questionsElement.dataset.id;
   
   let answer = { 
     questionId: questionId,
-    answerId: target.dataset.id
+    answerId: event.target.dataset.id
   };
 
   answeredQuestions.push(answer);
@@ -166,8 +119,8 @@ function answerButtonClick(event) {
   }
 
   setTimeout(() => {
-    addValueToClassAttribute(correctElement, HIDE_VALUE);
-    addValueToClassAttribute(incorrectElement, HIDE_VALUE);
+    correctElement.classList.add(HIDE_VALUE);
+    incorrectElement.classList.add(HIDE_VALUE);
     processNextQuestion();
   }, 500);
 }
@@ -182,7 +135,6 @@ function displayQuestion(question) {
     let button = document.createElement("button");
     button.textContent = `${a.id}. ${a.answer}`;
     button.dataset.id = a.id;
-    button.onclick = answerButtonClick;
     choicesElement.appendChild(button);
   });
 }
@@ -196,14 +148,8 @@ function processNextQuestion() {
 // Initialise the app.
 function init() {
   questions = getQuestions(QUESTIONS_URL);
-
-  startButton.onclick = () => {
-    processNextQuestion();
-    toggleHide(startScreenElement);
-    toggleHide(questionsElement);
-
-    startTimer();
-  };
+  document.getElementById("start").onclick = startButtonClick;
+  choicesElement.onclick = answerButtonClick;
 }
 
 init();
